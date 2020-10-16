@@ -1,0 +1,10 @@
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build-env
+WORKDIR /app
+
+# Copy everything else and build
+COPY ./DNC-DShop.Services.Discounts/src/DShop.Services.Discounts ./src/DShop.Services.Discounts
+RUN dotnet build -c Release ./src/DShop.Services.Discounts
+COPY ./DNC-DShop.Services.Discounts/tests/DShop.Services.Discounts.Tests ./tests/DShop.Services.Discounts.Tests
+RUN dotnet build -c Release ./tests/DShop.Services.Discounts.Tests
+
+ENTRYPOINT dotnet test "./tests/DShop.Services.Discounts.Tests/DShop.Services.Discounts.Tests.csproj" --no-build --no-restore -c Release
