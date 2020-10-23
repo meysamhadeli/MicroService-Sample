@@ -4,4 +4,11 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
+     <ItemGroup>
+    <PackageReference Include="Convey" Version="0.4.*" />
+  </ItemGroup>
+
+     <ItemGroup>
+       <ProjectReference Include="..\..\..\MicroPack\src\MicroPack.csproj" />
+     </ItemGroup>
 </Project>

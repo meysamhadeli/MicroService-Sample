@@ -1,5 +1,5 @@
 using System;
-using Convey.CQRS.Queries;
+using MicroPack.CQRS.Queries;
 using Pacco.Services.Availability.Application.DTO;
 
 namespace Pacco.Services.Availability.Application.Queries

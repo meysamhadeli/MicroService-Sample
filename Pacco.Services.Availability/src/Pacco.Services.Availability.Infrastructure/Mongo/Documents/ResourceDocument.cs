@@ -4,7 +4,7 @@ using Convey.Types;
 
 namespace Pacco.Services.Availability.Infrastructure.Mongo.Documents
 {
-    internal sealed class ResourceDocument : IIdentifiable<Guid>
+    internal sealed class ResourceDocument 
     {
         public Guid Id { get; set; }
         public int Version { get; set; }

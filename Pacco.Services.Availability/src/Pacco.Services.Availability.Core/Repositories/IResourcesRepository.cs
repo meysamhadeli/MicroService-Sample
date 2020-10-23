@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Pacco.Services.Availability.Core.Entities;
 
@@ -10,5 +11,6 @@ namespace Pacco.Services.Availability.Core.Repositories
         Task AddAsync(Resource resource);
         Task UpdateAsync(Resource resource);
         Task DeleteAsync(AggregateId id);
+        Task<IEnumerable<Resource>> GetAllAsync();
     }
 }

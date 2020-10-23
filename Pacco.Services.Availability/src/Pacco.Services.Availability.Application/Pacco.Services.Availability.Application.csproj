@@ -14,6 +14,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\..\MicroPack\src\MicroPack.csproj" />
       <ProjectReference Include="..\Pacco.Services.Availability.Core\Pacco.Services.Availability.Core.csproj" />
     </ItemGroup>
 

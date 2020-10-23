@@ -7,22 +7,12 @@ using Pacco.Services.Availability.Core.ValueObjects;
 
 namespace Pacco.Services.Availability.Core.Entities
 {
-    public class Resource : AggregateRoot
+    public class Resource : AggregateRoot<Guid>
     {
-        private ISet<string> _tags = new HashSet<string>();
-        private ISet<Reservation> _reservations = new HashSet<Reservation>();
+      
+        public IEnumerable<string> Tags{get; private set;} = new List<string>();
         
-        public IEnumerable<string> Tags
-        {
-            get => _tags;
-            private set => _tags = new HashSet<string>(value);
-        }
-        
-        public IEnumerable<Reservation> Reservations
-        {
-            get => _reservations;
-            private set => _reservations = new HashSet<Reservation>(value);
-        }
+        public IEnumerable<Reservation> Reservations{get; private set;} = new List<Reservation>();
 
         public Resource(Guid id, IEnumerable<string> tags, IEnumerable<Reservation> reservations = null,
             int version = 0)
@@ -53,50 +43,6 @@ namespace Pacco.Services.Availability.Core.Entities
             resource.AddEvent(new ResourceCreated(resource));
             return resource;
         }
-
-        public void AddReservation(Reservation reservation)
-        {
-            var hasCollidingReservation = _reservations.Any(HasTheSameReservationDate);
-            if (hasCollidingReservation)
-            {
-                var collidingReservation = _reservations.First(HasTheSameReservationDate);
-                if (collidingReservation.Priority >= reservation.Priority)
-                {
-                    throw new CannotExpropriateReservationException(Id, reservation.DateTime.Date);
-                }
-
-                if (_reservations.Remove(collidingReservation))
-                {
-                    AddEvent(new ReservationCanceled(this, collidingReservation));
-                }
-            }
-
-            if (_reservations.Add(reservation))
-            {
-                AddEvent(new ReservationAdded(this, reservation));
-            }
-
-            bool HasTheSameReservationDate(Reservation r) => r.DateTime.Date == reservation.DateTime.Date;
-        }
-
-        public void ReleaseReservation(Reservation reservation)
-        {
-            if (!_reservations.Remove(reservation))
-            {
-                return;
-            }
-            
-            AddEvent(new ReservationReleased(this, reservation));
-        }
-
-        public void Delete()
-        {
-            foreach (var reservation in Reservations)
-            {
-                AddEvent(new ReservationCanceled(this, reservation));
-            }
-            
-            AddEvent(new ResourceDeleted(this));
-        }
+        
     }
 }

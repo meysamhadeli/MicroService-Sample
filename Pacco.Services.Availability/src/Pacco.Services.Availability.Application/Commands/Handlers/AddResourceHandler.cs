@@ -1,24 +1,22 @@
 using System.Threading.Tasks;
-using Convey.CQRS.Commands;
+using MicroPack.CQRS.Commands;
+using MicroPack.RabbitMq;
 using Pacco.Services.Availability.Application.Exceptions;
-using Pacco.Services.Availability.Application.Services;
 using Pacco.Services.Availability.Core.Entities;
 using Pacco.Services.Availability.Core.Repositories;
 
 namespace Pacco.Services.Availability.Application.Commands.Handlers
 {
-    internal sealed class AddResourceHandler : ICommandHandler<AddResource>
+    public sealed class AddResourceHandler : ICommandHandler<AddResource>
     {
         private readonly IResourcesRepository _repository;
-        private readonly IEventProcessor _eventProcessor;
 
-        public AddResourceHandler(IResourcesRepository repository, IEventProcessor eventProcessor)
+        public AddResourceHandler(IResourcesRepository repository)
         {
             _repository = repository;
-            _eventProcessor = eventProcessor;
         }
         
-        public async Task HandleAsync(AddResource command)
+        public async Task HandleAsync(AddResource command, ICorrelationContext context)
         {
             if (await _repository.ExistsAsync(command.ResourceId))
             {
@@ -27,7 +25,6 @@ namespace Pacco.Services.Availability.Application.Commands.Handlers
             
             var resource = Resource.Create(command.ResourceId, command.Tags);
             await _repository.AddAsync(resource);
-            await _eventProcessor.ProcessAsync(resource.Events);
         }
     }
 }

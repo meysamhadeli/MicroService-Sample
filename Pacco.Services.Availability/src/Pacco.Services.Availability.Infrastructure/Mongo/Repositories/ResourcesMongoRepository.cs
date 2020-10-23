@@ -1,37 +1,43 @@
 using System;
 using System.Threading.Tasks;
-using Convey.Persistence.MongoDB;
 using MongoDB.Driver;
 using Pacco.Services.Availability.Core.Entities;
 using Pacco.Services.Availability.Core.Repositories;
-using Pacco.Services.Availability.Infrastructure.Mongo.Documents;
+using System.Collections.Generic;
+using MicroPack.Mongo;
 
 namespace Pacco.Services.Availability.Infrastructure.Mongo.Repositories
 {
-    internal sealed class ResourcesMongoRepository : IResourcesRepository
+    public class ResourcesMongoRepository : IResourcesRepository
     {
-        private readonly IMongoRepository<ResourceDocument, Guid> _repository;
+        private readonly IMongoRepository<Resource, Guid> _mongoRepository;
 
-        public ResourcesMongoRepository(IMongoRepository<ResourceDocument, Guid> repository)
-            => _repository = repository;
-
+        public ResourcesMongoRepository(IMongoRepository<Resource, Guid> mongoRepository){
+            _mongoRepository = mongoRepository;
+        }
+            
         public async Task<Resource> GetAsync(AggregateId id)
         {
-            var document = await _repository.GetAsync(r => r.Id == id);
-            return document?.AsEntity();
+            var document = await _mongoRepository.GetAsync(r => r.Id == id);
+            return document;
+        }
+
+         public async Task<IEnumerable<Resource>> GetAllAsync()
+        {
+            var document = await _mongoRepository.FindAsync(_=> true);
+            return document;
         }
 
         public Task<bool> ExistsAsync(AggregateId id)
-            => _repository.ExistsAsync(r => r.Id == id);
+            => _mongoRepository.ExistsAsync(r => r.Id == id);
 
         public Task AddAsync(Resource resource)
-            => _repository.AddAsync(resource.AsDocument());
+            => _mongoRepository.AddAsync(resource);
 
         public Task UpdateAsync(Resource resource)
-            => _repository.Collection.ReplaceOneAsync(r => r.Id == resource.Id && r.Version < resource.Version,
-                resource.AsDocument());
+            => _mongoRepository.Collection.ReplaceOneAsync(r => r.Id == resource.Id && r.Version < resource.Version,resource);
 
         public Task DeleteAsync(AggregateId id)
-            => _repository.DeleteAsync(id);
+            => _mongoRepository.DeleteAsync(id);
     }
 }
