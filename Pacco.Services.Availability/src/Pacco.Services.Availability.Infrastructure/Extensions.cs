@@ -1,5 +1,4 @@
 ﻿using System;
-using Convey;
 using MicroPack.MicroPack;
 using MicroPack.Mongo;
 using MicroPack.WebApi;
@@ -8,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Pacco.Services.Availability.Core.Entities;
 using Pacco.Services.Availability.Core.Repositories;
 using Pacco.Services.Availability.Infrastructure.Exceptions;
+using Pacco.Services.Availability.Infrastructure.Mongo.Documents;
 using Pacco.Services.Availability.Infrastructure.Mongo.Repositories;
 
 
@@ -21,7 +21,7 @@ namespace Pacco.Services.Availability.Infrastructure
             services.AddTransient<IResourcesRepository, ResourcesMongoRepository>();
 
             services.AddMongo()
-                .AddMongoRepository<Resource, Guid>("resources");
+                .AddMongoRepository<ResourceDocument, Guid>("resources");
 
             return services;
         }

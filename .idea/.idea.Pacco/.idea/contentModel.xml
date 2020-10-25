@@ -223,7 +223,6 @@
             <e p="ResourcesController.cs" t="Include" />
           </e>
           <e p="ExceptionMiddleware.cs" t="Include" />
-          <e p="ExceptionMiddlewareExtensions.cs" t="Include" />
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">
               <e p="netcoreapp3.1" t="Include">
@@ -244,7 +243,9 @@
             <e p="AddResource.cs" t="Include" />
             <e p="Handlers" t="Include">
               <e p="AddResourceHandler.cs" t="Include" />
+              <e p="ReserveResourceHandler.cs" t="Include" />
             </e>
+            <e p="ReserveResource.cs" t="Include" />
           </e>
           <e p="DTO" t="Include">
             <e p="ReservationDto.cs" t="Include" />
@@ -286,9 +287,12 @@
           </e>
           <e p="Events" t="Include">
             <e p="IDomainEvent.cs" t="Include" />
+            <e p="ReservationAdded.cs" t="Include" />
+            <e p="ReservationCanceled.cs" t="Include" />
             <e p="ResourceCreated.cs" t="Include" />
           </e>
           <e p="Exceptions" t="Include">
+            <e p="CannotExpropriateReservationException.cs" t="Include" />
             <e p="DomainException.cs" t="Include" />
             <e p="InvalidAggregateIdException.cs" t="Include" />
             <e p="InvalidResourceTagsException.cs" t="Include" />

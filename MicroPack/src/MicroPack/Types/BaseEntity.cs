@@ -2,7 +2,7 @@ using System;
 
 namespace MicroPack.MicroPack.Types
 {
-    public abstract class BaseEntity : IIdentifiable
+    public abstract class BaseEntity : IIdentifiable<Guid>
     {
         public Guid Id { get; protected set; }
         public DateTime CreatedDate { get; protected set; } 

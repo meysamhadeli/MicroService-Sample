@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Pacco.Services.Availability.Core.Entities;
@@ -6,11 +7,11 @@ namespace Pacco.Services.Availability.Core.Repositories
 {
     public interface IResourcesRepository
     {
-        Task<Resource> GetAsync(AggregateId id);
-        Task<bool> ExistsAsync(AggregateId id);
+        Task<Resource> GetAsync(Guid id);
+        Task<bool> ExistsAsync(Guid id);
         Task AddAsync(Resource resource);
         Task UpdateAsync(Resource resource);
-        Task DeleteAsync(AggregateId id);
+        Task DeleteAsync(Guid id);
         Task<IEnumerable<Resource>> GetAllAsync();
     }
 }

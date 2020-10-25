@@ -5,23 +5,19 @@ using Pacco.Services.Availability.Core.Events;
 
 namespace Pacco.Services.Availability.Core.Entities
 {
-    public abstract class AggregateRoot<T>: IIdentifiable<T>
+    public abstract class AggregateRoot
     {
-        private readonly List<IDomainEvent> _events = new List<IDomainEvent>();
-        public IEnumerable<IDomainEvent> Events => _events;
-        public T Id { get; protected set; }
+        public List<IDomainEvent> Events { get; protected set; } = new List<IDomainEvent>();
         public int Version { get; protected set; }
-
+        public AggregateId Id { get; protected set; }
         protected void AddEvent(IDomainEvent @event)
         {
-            if (!_events.Any())
-            {
+            if (!Events.Any())
                 Version++;
-            }
-
-            _events.Add(@event);
+            
+            Events.Add(@event);
         }
-
-        public void ClearEvents() => _events.Clear();
+        
+        public void ClearEvents() => Events.Clear();
     }
 }

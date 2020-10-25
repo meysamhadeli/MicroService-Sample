@@ -18,12 +18,13 @@ namespace Pacco.Services.Availability.Application.Commands.Handlers
         
         public async Task HandleAsync(AddResource command, ICorrelationContext context)
         {
-            if (await _repository.ExistsAsync(command.ResourceId))
+            var resource = await _repository.GetAsync(command.ResourceId);
+            if (resource != null)
             {
                 throw new ResourceAlreadyExistsException(command.ResourceId);
             }
             
-            var resource = Resource.Create(command.ResourceId, command.Tags);
+            resource = Resource.Create(command.ResourceId, command.Tags);
             await _repository.AddAsync(resource);
         }
     }

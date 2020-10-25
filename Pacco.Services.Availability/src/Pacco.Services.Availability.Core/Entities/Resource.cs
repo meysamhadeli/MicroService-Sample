@@ -1,26 +1,29 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using MicroPack.MicroPack.Types;
 using Pacco.Services.Availability.Core.Events;
 using Pacco.Services.Availability.Core.Exceptions;
 using Pacco.Services.Availability.Core.ValueObjects;
 
 namespace Pacco.Services.Availability.Core.Entities
 {
-    public class Resource : AggregateRoot<Guid>
+    public class Resource : AggregateRoot
     {
-      
-        public IEnumerable<string> Tags{get; private set;} = new List<string>();
+        public List<string> Tags { get; set; } = new List<string>();
+        public List<Reservation> Reservations { get; set; } = new List<Reservation>();
         
-        public IEnumerable<Reservation> Reservations{get; private set;} = new List<Reservation>();
+        public Resource()
+        {
+        }
 
         public Resource(Guid id, IEnumerable<string> tags, IEnumerable<Reservation> reservations = null,
             int version = 0)
         {
             ValidateTags(tags);
             Id = id;
-            Tags = tags;
-            Reservations = reservations ?? Enumerable.Empty<Reservation>();
+            Tags = tags?.ToList();
+            Reservations = reservations?.ToList() ?? new List<Reservation>();
             Version = version;
         }
 
@@ -43,6 +46,29 @@ namespace Pacco.Services.Availability.Core.Entities
             resource.AddEvent(new ResourceCreated(resource));
             return resource;
         }
-        
+
+
+        public void AddReservation(Reservation reservation)
+        {
+            var hasCollidingReservation = Reservations.Any(HasSameReservationdate);
+            
+            if (hasCollidingReservation)
+            {
+                var collidingReservation = Reservations.First(HasSameReservationdate);
+            
+                if (collidingReservation.Priority >= reservation.Priority)
+                {
+                    throw new CannotExpropriateReservationException(Id, reservation.DateTime);
+                }
+            
+                Reservations.Remove(collidingReservation);
+                AddEvent(new ReservationCanceled(this, collidingReservation));
+            }
+            
+            Reservations.Add(reservation);
+            AddEvent(new ReservationAdded(this, reservation));
+            
+            bool HasSameReservationdate(Reservation r) => r.DateTime == reservation.DateTime;
+        }
     }
 }
