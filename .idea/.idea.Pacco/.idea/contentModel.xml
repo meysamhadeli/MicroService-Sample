@@ -74,12 +74,6 @@
             <e p="FabioOptions.cs" t="Include" />
             <e p="IFabioHttpClient.cs" t="Include" />
           </e>
-          <e p="Jaeger" t="Include">
-            <e p="DShopDefaultTracer.cs" t="Include" />
-            <e p="Extensions.cs" t="Include" />
-            <e p="JaegerOptions.cs" t="Include" />
-            <e p="JaegerStagedMiddleware.cs" t="Include" />
-          </e>
           <e p="Logging" t="Include">
             <e p="ElkOptions.cs" t="Include" />
             <e p="Extensions.cs" t="Include" />
@@ -89,6 +83,73 @@
           <e p="MailKit" t="Include">
             <e p="Extension.cs" t="Include" />
             <e p="MailKitOptions.cs" t="Include" />
+          </e>
+          <e p="MessageBrokers" t="Include">
+            <e p="CorrelationContextAccessor.cs" t="Include" />
+            <e p="IBusPublisher.cs" t="Include" />
+            <e p="IBusSubscriber.cs" t="Include" />
+            <e p="ICorrelationContextAccessor.cs" t="Include" />
+            <e p="IMessageProperties.cs" t="Include" />
+            <e p="IMessagePropertiesAccessor.cs" t="Include" />
+            <e p="MessageAttribute.cs" t="Include" />
+            <e p="MessageProperties.cs" t="Include" />
+            <e p="MessagePropertiesAccessor.cs" t="Include" />
+          </e>
+          <e p="MessageBrokers.CQRS" t="Include">
+            <e p="Dispatchers" t="Include">
+              <e p="ServiceBusMessageDispatcher.cs" t="Include" />
+            </e>
+            <e p="Extensions.cs" t="Include" />
+          </e>
+          <e p="MessageBrokers.RabbitMQ" t="Include">
+            <e p="Clients" t="Include">
+              <e p="RabbitMqClient.cs" t="Include" />
+            </e>
+            <e p="Contexts" t="Include">
+              <e p="ContextProvider.cs" t="Include" />
+            </e>
+            <e p="Conventions" t="Include">
+              <e p="ConventionsBuilder.cs" t="Include" />
+              <e p="ConventionsProvider.cs" t="Include" />
+              <e p="MessageConventions.cs" t="Include" />
+            </e>
+            <e p="ConventionsRegistry.cs" t="Include" />
+            <e p="Extensions.cs" t="Include" />
+            <e p="IContextProvider.cs" t="Include" />
+            <e p="IConventions.cs" t="Include" />
+            <e p="IConventionsBuilder.cs" t="Include" />
+            <e p="IConventionsProvider.cs" t="Include" />
+            <e p="IConventionsRegistry.cs" t="Include" />
+            <e p="IExceptionToMessageMapper.cs" t="Include" />
+            <e p="Initializers" t="Include">
+              <e p="RabbitMqExchangeInitializer.cs" t="Include" />
+            </e>
+            <e p="Internals" t="Include">
+              <e p="RabbitMqHostedService.cs" t="Include" />
+            </e>
+            <e p="IRabbitMqClient.cs" t="Include" />
+            <e p="IRabbitMqPlugin.cs" t="Include" />
+            <e p="IRabbitMqPluginsRegistry.cs" t="Include" />
+            <e p="IRabbitMqSerializer.cs" t="Include" />
+            <e p="Plugins" t="Include">
+              <e p="IRabbitMqPluginAccessor.cs" t="Include" />
+              <e p="IRabbitMqPluginsExecutor.cs" t="Include" />
+              <e p="IRabbitMqPluginsRegistryAccessor.cs" t="Include" />
+              <e p="RabbitMqPluginChain.cs" t="Include" />
+              <e p="RabbitMqPluginExecutor.cs" t="Include" />
+              <e p="RabbitMqPluginsRegistry.cs" t="Include" />
+            </e>
+            <e p="Publishers" t="Include">
+              <e p="RabbitMqPublisher.cs" t="Include" />
+            </e>
+            <e p="RabbitMqOptions.cs" t="Include" />
+            <e p="RabbitMqPlugin.cs" t="Include" />
+            <e p="Serializers" t="Include">
+              <e p="NewtonsoftJsonRabbitMqSerializer.cs" t="Include" />
+            </e>
+            <e p="Subscribers" t="Include">
+              <e p="RabbitMqSubscriber.cs" t="Include" />
+            </e>
           </e>
           <e p="Metrics" t="Include">
             <e p="Extensions.cs" t="Include" />
@@ -145,18 +206,12 @@
               </e>
             </e>
           </e>
-          <e p="RabbitMq" t="Include">
-            <e p="BusPublisher.cs" t="Include" />
-            <e p="BusSubscriber.cs" t="Include" />
-            <e p="CorrelationContext.cs" t="Include" />
-            <e p="Extensions.cs" t="Include" />
-            <e p="IBusPublisher.cs" t="Include" />
-            <e p="IBusSubscriber.cs" t="Include" />
-            <e p="ICorrelationContext.cs" t="Include" />
-            <e p="RabbitMqOptions.cs" t="Include" />
-          </e>
           <e p="Redis" t="Include">
+            <e p="Builders" t="Include">
+              <e p="RedisOptionsBuilder.cs" t="Include" />
+            </e>
             <e p="Extensions.cs" t="Include" />
+            <e p="IRedisOptionsBuilder.cs" t="Include" />
             <e p="RedisOptions.cs" t="Include" />
           </e>
           <e p="RestEase" t="Include">
@@ -252,8 +307,12 @@
             <e p="ResourceDto.cs" t="Include" />
           </e>
           <e p="Events" t="Include">
-            <e p="IDomainEventHandler.cs" t="Include" />
-            <e p="ResourceAdded.cs" t="Include" />
+            <e p="External" t="Include">
+              <e p="CustomerCreated.cs" t="Include" />
+              <e p="Handlers" t="Include">
+                <e p="CustomerCreatedHandler.cs" t="Include" />
+              </e>
+            </e>
           </e>
           <e p="Exceptions" t="Include">
             <e p="AppException.cs" t="Include" />
@@ -337,6 +396,350 @@
             </e>
           </e>
           <e p="Pacco.Services.Availability.Infrastructure.csproj" t="IncludeRecursive" />
+        </e>
+      </e>
+      <e p="Pacco.Services.Customers" t="Include">
+        <e p="src\Pacco.Services.Customers.Api" t="IncludeRecursive">
+          <e p="appsettings.development.json" t="Include" />
+          <e p="appsettings.docker.json" t="Include" />
+          <e p="appsettings.json" t="Include" />
+          <e p="appsettings.local.json" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="certs" t="Include">
+            <e p="localhost.cer" t="Include" />
+          </e>
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Pacco.Services.Customers.Api.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Pacco.Services.Customers.Api.csproj" t="IncludeRecursive" />
+          <e p="Program.cs" t="Include" />
+          <e p="Properties" t="Include">
+            <e p="launchSettings.json" t="Include" />
+          </e>
+        </e>
+        <e p="src\Pacco.Services.Customers.Application" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Commands" t="Include">
+            <e p="ChangeCustomerState.cs" t="Include" />
+            <e p="CompleteCustomerRegistration.cs" t="Include" />
+            <e p="Handlers" t="Include">
+              <e p="ChangeCustomerStateHandler.cs" t="Include" />
+              <e p="CompleteCustomerRegistrationHandler.cs" t="Include" />
+            </e>
+          </e>
+          <e p="ContractAttribute.cs" t="Include" />
+          <e p="DTO" t="Include">
+            <e p="CustomerDetailsDto.cs" t="Include" />
+            <e p="CustomerDto.cs" t="Include" />
+            <e p="CustomerStateDto.cs" t="Include" />
+          </e>
+          <e p="Events" t="Include">
+            <e p="CustomerBecameVip.cs" t="Include" />
+            <e p="CustomerCreated.cs" t="Include" />
+            <e p="CustomerStateChanged.cs" t="Include" />
+            <e p="External" t="Include">
+              <e p="Handlers" t="Include">
+                <e p="OrderCompletedHandler.cs" t="Include" />
+                <e p="SignedUpHandler.cs" t="Include" />
+              </e>
+              <e p="OrderCompleted.cs" t="Include" />
+              <e p="SignedUp.cs" t="Include" />
+            </e>
+            <e p="Rejected" t="Include">
+              <e p="ChangeCustomerStateRejected.cs" t="Include" />
+              <e p="CompleteCustomerRegistrationRejected.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Exceptions" t="Include">
+            <e p="AppException.cs" t="Include" />
+            <e p="CustomerAlreadyCreatedException.cs" t="Include" />
+            <e p="CustomerAlreadyRegisteredException.cs" t="Include" />
+            <e p="InvalidRoleException.cs" t="Include" />
+          </e>
+          <e p="Extensions.cs" t="Include" />
+          <e p="IAppContext.cs" t="Include" />
+          <e p="IIdentityContext.cs" t="Include" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Pacco.Services.Customers.Application.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Pacco.Services.Customers.Application.csproj" t="IncludeRecursive" />
+          <e p="Queries" t="Include">
+            <e p="GetCustomer.cs" t="Include" />
+            <e p="GetCustomers.cs" t="Include" />
+            <e p="GetCustomerState.cs" t="Include" />
+          </e>
+          <e p="Services" t="Include">
+            <e p="IDateTimeProvider.cs" t="Include" />
+            <e p="IEventMapper.cs" t="Include" />
+            <e p="IMessageBroker.cs" t="Include" />
+          </e>
+        </e>
+        <e p="src\Pacco.Services.Customers.Core" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Entities" t="Include">
+            <e p="AggregateId.cs" t="Include" />
+            <e p="AggregateRoot.cs" t="Include" />
+            <e p="Customer.cs" t="Include" />
+            <e p="State.cs" t="Include" />
+          </e>
+          <e p="Events" t="Include">
+            <e p="CustomerBecameVip.cs" t="Include" />
+            <e p="CustomerRegistrationCompleted.cs" t="Include" />
+            <e p="CustomerStateChanged.cs" t="Include" />
+          </e>
+          <e p="Exceptions" t="Include">
+            <e p="CannotChangeCustomerStateException.cs" t="Include" />
+            <e p="CustomerNotFoundException.cs" t="Include" />
+            <e p="DomainException.cs" t="Include" />
+            <e p="InvalidAggregateIdException.cs" t="Include" />
+            <e p="InvalidCustomerAddressException.cs" t="Include" />
+            <e p="InvalidCustomerFullNameException.cs" t="Include" />
+          </e>
+          <e p="IDomainEvent.cs" t="Include" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Pacco.Services.Customers.Core.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Pacco.Services.Customers.Core.csproj" t="IncludeRecursive" />
+          <e p="Repositories" t="Include">
+            <e p="ICustomerRepository.cs" t="Include" />
+          </e>
+          <e p="Services" t="Include">
+            <e p="IVipPolicy.cs" t="Include" />
+            <e p="VipPolicy.cs" t="Include" />
+          </e>
+        </e>
+        <e p="src\Pacco.Services.Customers.Infrastructure" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Contexts" t="Include">
+            <e p="AppContext.cs" t="Include" />
+            <e p="AppContextFactory.cs" t="Include" />
+            <e p="CorrelationContext.cs" t="Include" />
+            <e p="IdentityContext.cs" t="Include" />
+          </e>
+          <e p="Decorators" t="Include">
+            <e p="OutboxCommandHandlerDecorator.cs" t="Include" />
+            <e p="OutboxEventHandlerDecorator.cs" t="Include" />
+          </e>
+          <e p="Exceptions" t="Include">
+            <e p="ExceptionToMessageMapper.cs" t="Include" />
+            <e p="ExceptionToResponseMapper.cs" t="Include" />
+          </e>
+          <e p="Extensions.cs" t="Include" />
+          <e p="IAppContextFactory.cs" t="Include" />
+          <e p="Logging" t="Include">
+            <e p="Extensions.cs" t="Include" />
+            <e p="MessageToLogTemplateMapper.cs" t="Include" />
+          </e>
+          <e p="Mongo" t="Include">
+            <e p="Documents" t="Include">
+              <e p="CustomerDocument.cs" t="Include" />
+              <e p="Extensions.cs" t="Include" />
+            </e>
+            <e p="Queries" t="Include">
+              <e p="Handlers" t="Include">
+                <e p="GetCustomerHandler.cs" t="Include" />
+                <e p="GetCustomersHandler.cs" t="Include" />
+                <e p="GetCustomerStateHandler.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Repositories" t="Include">
+              <e p="CustomerMongoRepository.cs" t="Include" />
+            </e>
+          </e>
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Pacco.Services.Customers.Infrastructure.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Pacco.Services.Customers.Infrastructure.csproj" t="IncludeRecursive" />
+          <e p="Services" t="Include">
+            <e p="DateTimeProvider.cs" t="Include" />
+            <e p="EventMapper.cs" t="Include" />
+            <e p="MessageBroker.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Pacco.Services.Identity" t="Include">
+        <e p="src\Pacco.Services.Identity.Api" t="IncludeRecursive">
+          <e p="appsettings.development.json" t="Include" />
+          <e p="appsettings.docker.json" t="Include" />
+          <e p="appsettings.json" t="Include" />
+          <e p="appsettings.local.json" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="certs" t="Include">
+            <e p="localhost.cer" t="Include" />
+            <e p="localhost.key" t="Include" />
+            <e p="localhost.pem" t="Include" />
+            <e p="localhost.pfx" t="Include" />
+          </e>
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Pacco.Services.Identity.Api.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Pacco.Services.Identity.Api.csproj" t="IncludeRecursive" />
+          <e p="Program.cs" t="Include" />
+          <e p="Properties" t="Include">
+            <e p="launchSettings.json" t="Include" />
+          </e>
+        </e>
+        <e p="src\Pacco.Services.Identity.Application" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Commands" t="Include">
+            <e p="Handlers" t="Include">
+              <e p="SignUpHandler.cs" t="Include" />
+            </e>
+            <e p="RevokeAccessToken.cs" t="Include" />
+            <e p="RevokeRefreshToken.cs" t="Include" />
+            <e p="SignIn.cs" t="Include" />
+            <e p="SignUp.cs" t="Include" />
+            <e p="UseRefreshToken.cs" t="Include" />
+          </e>
+          <e p="ContractAttribute.cs" t="Include" />
+          <e p="DTO" t="Include">
+            <e p="AuthDto.cs" t="Include" />
+            <e p="UserDto.cs" t="Include" />
+          </e>
+          <e p="Events" t="Include">
+            <e p="Rejected" t="Include">
+              <e p="SignInRejected.cs" t="Include" />
+              <e p="SignUpRejected.cs" t="Include" />
+            </e>
+            <e p="SignedIn.cs" t="Include" />
+            <e p="SignedUp.cs" t="Include" />
+          </e>
+          <e p="Exceptions" t="Include">
+            <e p="AppException.cs" t="Include" />
+            <e p="UserNotFoundException.cs" t="Include" />
+          </e>
+          <e p="Extensions.cs" t="Include" />
+          <e p="IAppContext.cs" t="Include" />
+          <e p="IIdentityContext.cs" t="Include" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Pacco.Services.Identity.Application.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Pacco.Services.Identity.Application.csproj" t="IncludeRecursive" />
+          <e p="Queries" t="Include">
+            <e p="GetUser.cs" t="Include" />
+          </e>
+          <e p="Services" t="Include">
+            <e p="Identity" t="Include">
+              <e p="IdentityService.cs" t="Include" />
+              <e p="RefreshTokenService.cs" t="Include" />
+            </e>
+            <e p="IIdentityService.cs" t="Include" />
+            <e p="IJwtProvider.cs" t="Include" />
+            <e p="IMessageBroker.cs" t="Include" />
+            <e p="IPasswordService.cs" t="Include" />
+            <e p="IRefreshTokenService.cs" t="Include" />
+            <e p="IRng.cs" t="Include" />
+          </e>
+        </e>
+        <e p="src\Pacco.Services.Identity.Core" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Entities" t="Include">
+            <e p="AggregateId.cs" t="Include" />
+            <e p="AggregateRoot.cs" t="Include" />
+            <e p="IDomainEvent.cs" t="Include" />
+            <e p="RefreshToken.cs" t="Include" />
+            <e p="Role.cs" t="Include" />
+            <e p="User.cs" t="Include" />
+          </e>
+          <e p="Exceptions" t="Include">
+            <e p="DomainException.cs" t="Include" />
+            <e p="EmailInUseException.cs" t="Include" />
+            <e p="InvalidAggregateIdException.cs" t="Include" />
+            <e p="InvalidCredentialsException.cs" t="Include" />
+            <e p="InvalidEmailException.cs" t="Include" />
+            <e p="InvalidPasswordException.cs" t="Include" />
+            <e p="InvalidRefreshTokenException.cs" t="Include" />
+            <e p="InvalidRoleException.cs" t="Include" />
+            <e p="RevokedRefreshTokenException.cs" t="Include" />
+          </e>
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Pacco.Services.Identity.Core.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Pacco.Services.Identity.Core.csproj" t="IncludeRecursive" />
+          <e p="Repositories" t="Include">
+            <e p="IRefreshTokenRepository.cs" t="Include" />
+            <e p="IUserRepository.cs" t="Include" />
+          </e>
+        </e>
+        <e p="src\Pacco.Services.Identity.Infrastructure" t="IncludeRecursive">
+          <e p="Auth" t="Include">
+            <e p="JwtProvider.cs" t="Include" />
+            <e p="PasswordService.cs" t="Include" />
+            <e p="Rng.cs" t="Include" />
+          </e>
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Contexts" t="Include">
+            <e p="AppContext.cs" t="Include" />
+            <e p="AppContextFactory.cs" t="Include" />
+            <e p="CorrelationContext.cs" t="Include" />
+            <e p="IdentityContext.cs" t="Include" />
+          </e>
+          <e p="Decorators" t="Include">
+            <e p="OutboxCommandHandlerDecorator.cs" t="Include" />
+            <e p="OutboxEventHandlerDecorator.cs" t="Include" />
+          </e>
+          <e p="Exceptions" t="Include">
+            <e p="ExceptionToMessageMapper.cs" t="Include" />
+            <e p="ExceptionToResponseMapper.cs" t="Include" />
+          </e>
+          <e p="Extensions.cs" t="Include" />
+          <e p="IAppContextFactory.cs" t="Include" />
+          <e p="Mongo" t="Include">
+            <e p="Documents" t="Include">
+              <e p="Extensions.cs" t="Include" />
+              <e p="RefreshTokenDocument.cs" t="Include" />
+              <e p="UserDocument.cs" t="Include" />
+            </e>
+            <e p="Extensions.cs" t="Include" />
+            <e p="Queries" t="Include">
+              <e p="Handlers" t="Include">
+                <e p="GetUserHandler.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Repositories" t="Include">
+              <e p="RefreshTokenRepository.cs" t="Include" />
+              <e p="UserRepository.cs" t="Include" />
+            </e>
+          </e>
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Pacco.Services.Identity.Infrastructure.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Pacco.Services.Identity.Infrastructure.csproj" t="IncludeRecursive" />
+          <e p="Services" t="Include">
+            <e p="MessageBroker.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="Pacco.sln" t="IncludeFlat" />

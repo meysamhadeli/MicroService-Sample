@@ -1,5 +1,5 @@
 @url = http://localhost:5002
-@customerId = 00000000-0000-0000-0000-000000000000
+@customerId = 1bfa84008-649a-475c-a6a0-b62f24c13398
 @state = valid
 
 ###
@@ -17,8 +17,8 @@ Content-Type: application/json
 
 {
   "customerId": "{{customerId}}",
-  "fullname": "John Doe",
-  "address": "New York City, Street XYZ"
+  "fullname": "John Doe1",
+  "address": "New York City, Street XYZ1"
 }
 
 ###

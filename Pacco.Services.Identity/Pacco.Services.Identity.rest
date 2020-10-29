@@ -7,7 +7,7 @@ POST {{url}}/sign-up
 Content-Type: application/json
 
 {
-  "email": "pacco-user1@mailinator.com",
+  "email": "pacco-user6@mailinator.com",
   "password": "secret"
 }
 

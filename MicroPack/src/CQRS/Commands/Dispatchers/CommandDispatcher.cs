@@ -1,5 +1,4 @@
 using System.Threading.Tasks;
-using MicroPack.RabbitMq;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace MicroPack.CQRS.Commands.Dispatchers
@@ -13,11 +12,11 @@ namespace MicroPack.CQRS.Commands.Dispatchers
             _serviceFactory = serviceFactory;
         }
 
-        public async Task SendAsync<T>(T command,ICorrelationContext context) where T : class, ICommand
+        public async Task SendAsync<T>(T command) where T : class, ICommand
         {
             using var scope = _serviceFactory.CreateScope();
             var handler = scope.ServiceProvider.GetRequiredService<ICommandHandler<T>>();
-            await handler.HandleAsync(command,context);
+            await handler.HandleAsync(command);
         }
     }
 }

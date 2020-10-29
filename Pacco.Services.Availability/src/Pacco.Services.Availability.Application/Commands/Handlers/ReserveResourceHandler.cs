@@ -1,6 +1,5 @@
 ﻿using System.Threading.Tasks;
 using MicroPack.CQRS.Commands;
-using MicroPack.RabbitMq;
 using Pacco.Services.Availability.Application.Exceptions;
 using Pacco.Services.Availability.Core.Repositories;
 using Pacco.Services.Availability.Core.ValueObjects;
@@ -15,7 +14,7 @@ namespace Pacco.Services.Availability.Application.Commands.Handlers
         {
             _resourceRepository = resourceRepository;
         }
-        public async Task HandleAsync(ReserveResource command, ICorrelationContext context)
+        public async Task HandleAsync(ReserveResource command)
         {
             var resource = await _resourceRepository.GetAsync(command.ResourceId);
             if (resource is null)

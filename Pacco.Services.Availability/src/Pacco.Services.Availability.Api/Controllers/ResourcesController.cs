@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Pacco.Services.Availability.Application.Commands;
 using Pacco.Services.Availability.Application.DTO;
 using Pacco.Services.Availability.Application.Queries;
@@ -27,7 +28,6 @@ namespace Pacco.Services.Availability.Api.Controllers
         {
             var resource = await _queryDispatcher.QueryAsync<ResourceDto>(query);
             if (resource is null) return NotFound();
-
             return resource;
         }
 
