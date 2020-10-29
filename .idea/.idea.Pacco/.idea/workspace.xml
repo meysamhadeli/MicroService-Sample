@@ -30,44 +30,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68b822f7-648c-444c-96de-7a0b39bf4f4d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/tasks.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/tasks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Commands/Dispatchers/CommandDispatcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/CQRS/Commands/Dispatchers/CommandDispatcher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Commands/ICommandDispatcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/CQRS/Commands/ICommandDispatcher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Commands/ICommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/CQRS/Commands/ICommandHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Events/Dispatchers/EventDispatcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/CQRS/Events/Dispatchers/EventDispatcher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Events/IEventDispatcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/CQRS/Events/IEventDispatcher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Events/IEventHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/CQRS/Events/IEventHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Jaeger/DShopDefaultTracer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Jaeger/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Jaeger/JaegerOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Jaeger/JaegerStagedMiddleware.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MicroPack.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/MicroPack.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/RabbitMq/BusPublisher.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/RabbitMq/BusSubscriber.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/RabbitMq/CorrelationContext.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/RabbitMq/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/RabbitMq/IBusPublisher.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/RabbitMq/IBusSubscriber.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/RabbitMq/ICorrelationContext.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/RabbitMq/RabbitMqOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Redis/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/Redis/Extensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Redis/RedisOptions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/Redis/RedisOptions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Controllers/ResourcesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Controllers/ResourcesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Pacco.Services.Availability.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Pacco.Services.Availability.Api.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/appsettings.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/appsettings.development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/ReserveResourceHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/ReserveResourceHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Events/IDomainEventHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Events/ResourceAdded.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Extensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Customers/Pacco.Services.Customers.rest" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Customers/Pacco.Services.Customers.rest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Identity/Pacco.Services.Identity.rest" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Identity/Pacco.Services.Identity.rest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.sln" afterDir="false" />
-    </list>
+    <list default="true" id="68b822f7-648c-444c-96de-7a0b39bf4f4d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,6 +40,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/Meysam/Desktop/Pacco/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/84DD02A2-0F9F-4F84-A962-852FB5A636BF/7/AuthorizationAppBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/93B2128B-A050-4876-9465-0E9DB07159D0/8D/IModel.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/DD7BBB1E-B6CB-4178-A82C-D5136B2606B8/0/IMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
@@ -280,7 +244,7 @@
       <workItem from="1603737673851" duration="80000" />
       <workItem from="1603737847338" duration="3234000" />
       <workItem from="1603822535549" duration="9433000" />
-      <workItem from="1603976546928" duration="2618000" />
+      <workItem from="1603976546928" duration="2985000" />
     </task>
     <task id="LOCAL-00001" summary="Add MicroPack to solution">
       <created>1603465351817</created>
@@ -296,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603644030983</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add rabbitMq">
+      <created>1603980954258</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603980954258</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,7 +303,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Add MicroPack to solution" />
     <MESSAGE value="change in mongo repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="change in mongo repository" />
+    <MESSAGE value="add rabbitMq" />
+    <option name="LAST_COMMIT_MESSAGE" value="add rabbitMq" />
   </component>
   <component name="WindowStateProjectService">
     <state x="711" y="345" key="#Notifications" timestamp="1603737678492">
@@ -471,10 +443,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603834651405" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1603644035836">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1603980959963">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603644035836" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603980959963" />
     <state x="499" y="250" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1603831374566">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
