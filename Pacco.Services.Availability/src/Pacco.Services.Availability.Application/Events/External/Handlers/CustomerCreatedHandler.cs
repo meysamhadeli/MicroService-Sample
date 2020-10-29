@@ -7,6 +7,7 @@ namespace Pacco.Services.Availability.Application.Events.External.Handlers
     {
         public Task HandleAsync(CustomerCreated @event)
         {
+            var b = 2;
             return Task.CompletedTask;
         }
     }

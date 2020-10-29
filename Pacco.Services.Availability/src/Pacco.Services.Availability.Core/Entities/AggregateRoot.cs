@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Linq;
-using MicroPack.MicroPack.Types;
 using Pacco.Services.Availability.Core.Events;
 
 namespace Pacco.Services.Availability.Core.Entities

@@ -1,6 +1,8 @@
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 using Convey.CQRS.Commands;
+using Pacco.Services.Customers.Application.Events;
 using Pacco.Services.Customers.Application.Exceptions;
 using Pacco.Services.Customers.Application.Services;
 using Pacco.Services.Customers.Core.Entities;
@@ -40,7 +42,16 @@ namespace Pacco.Services.Customers.Application.Commands.Handlers
             await _customerRepository.UpdateAsync(customer);
 
             var events = _eventMapper.MapAll(customer.Events);
-            await _messageBroker.PublishAsync(events.ToArray());
+            try
+            {
+                var b = events.ToArray();
+                await _messageBroker.PublishAsync(b);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
     }
 }

@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using MicroPack.MicroPack.Types;
 using Pacco.Services.Availability.Core.Events;
 using Pacco.Services.Availability.Core.Exceptions;
 using Pacco.Services.Availability.Core.ValueObjects;

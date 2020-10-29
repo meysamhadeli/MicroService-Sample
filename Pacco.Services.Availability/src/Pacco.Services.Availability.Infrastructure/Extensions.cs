@@ -6,6 +6,7 @@ using MicroPack.Mongo;
 using MicroPack.WebApi;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using Pacco.Services.Availability.Application.Commands;
 using Pacco.Services.Availability.Application.Events.External;
 using Pacco.Services.Availability.Core.Repositories;
 using Pacco.Services.Availability.Infrastructure.Exceptions;
@@ -21,7 +22,6 @@ namespace Pacco.Services.Availability.Infrastructure
             services.AddErrorHandler<ExceptionToResponseMapper>();
             services.AddTransient<IResourcesRepository, ResourcesMongoRepository>();
             services.AddRabbitMq();
-
             services.AddMongo()
                 .AddMongoRepository<ResourceDocument, Guid>("resources");
 
@@ -33,9 +33,12 @@ namespace Pacco.Services.Availability.Infrastructure
             app.UseMicroPack()
                 .UseErrorHandler();
             app.UseRabbitMq()
-            .SubscribeEvent<CustomerCreated>();
+                .SubscribeCommand<AddResource>()
+                .SubscribeCommand<ReserveResource>()
+                .SubscribeEvent<CustomerCreated>();
 
             return app;
         }
+        
     }
 }

@@ -24,8 +24,8 @@ namespace Pacco.Services.Availability.Api
         {
             services.AddMicroPack()
                 .AddWebApi()
-                .AddApplication()
-                .AddInfrastructure();
+                .AddInfrastructure().AddApplication();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -35,13 +35,11 @@ namespace Pacco.Services.Availability.Api
             {
                 app.UseDeveloperExceptionPage();
             }
-
-            app.UseInfrastructure();
-
+            
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
+            app.UseInfrastructure();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });

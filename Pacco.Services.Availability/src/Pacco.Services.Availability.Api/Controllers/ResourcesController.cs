@@ -1,5 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Pacco.Services.Availability.Application.Commands;
 using Pacco.Services.Availability.Application.DTO;
 using Pacco.Services.Availability.Application.Queries;
