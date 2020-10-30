@@ -8,6 +8,7 @@ namespace Pacco.Services.Availability.Core.Exceptions
         public DateTime DateTime { get; set; }
         public CannotExpropriateReservationException(Guid resourceId, DateTime dateTime):base($"Cannot expropriate reservation with id'{resourceId}' reservation at {dateTime}")
         {
+            ResourceId = resourceId;
             DateTime = dateTime;
             ResourceId = resourceId;
         }

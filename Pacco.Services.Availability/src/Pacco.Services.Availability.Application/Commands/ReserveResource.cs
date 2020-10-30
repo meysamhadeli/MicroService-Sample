@@ -3,6 +3,7 @@ using MicroPack.CQRS.Commands;
 
 namespace Pacco.Services.Availability.Application.Commands
 {
+    [Contract]
     public class ReserveResource: ICommand
     {
         public Guid ResourceId { get; }

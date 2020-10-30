@@ -1,7 +1,16 @@
-﻿namespace Pacco.Services.Availability.Application.Events
+﻿using System;
+using MicroPack.CQRS.Events;
+
+namespace Pacco.Services.Availability.Application.Events
 {
-    public class ResourceAdded
+    [Contract]
+    public class ResourceAdded: IEvent
     {
-        
+        public Guid ResourceId { get; set; }
+
+        public ResourceAdded(Guid resourceId)
+        {
+            ResourceId = resourceId;
+        }
     }
 }

@@ -12,6 +12,7 @@ using System.Web;
 using MicroPack.MicroPack;
 using MicroPack.WebApi.Exceptions;
 using MicroPack.WebApi.Formatters;
+using MicroPack.WebApi.Middlewares;
 using MicroPack.WebApi.Requests;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
@@ -385,5 +386,19 @@ namespace MicroPack.WebApi
         {
             public ExceptionResponse Map(Exception exception) => null;
         }
+        
+        
+        public static IApplicationBuilder UsePublicContracts<T>(this IApplicationBuilder app,
+            string endpoint = "/_contracts") => app.UsePublicContracts(endpoint, typeof(T));
+
+        public static IApplicationBuilder UsePublicContracts(this IApplicationBuilder app,
+            bool attributeRequired, string endpoint = "/_contracts")
+            => app.UsePublicContracts(endpoint, null, attributeRequired);
+
+        public static IApplicationBuilder UsePublicContracts(this IApplicationBuilder app,
+            string endpoint = "/_contracts", Type attributeType = null, bool attributeRequired = true)
+            => app.UseMiddleware<PublicContractsMiddleware>(string.IsNullOrWhiteSpace(endpoint) ? "/_contracts" :
+                endpoint.StartsWith("/") ? endpoint : $"/{endpoint}", attributeType ?? typeof(PublicContractAttribute),
+                attributeRequired);
     }
 }

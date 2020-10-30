@@ -1,6 +1,8 @@
-﻿namespace Pacco.Services.Availability.Application
+﻿using System;
+
+namespace Pacco.Services.Availability.Application
 {
-    public class ContractAttribute
+    public class ContractAttribute : Attribute
     {
         
     }
