@@ -6,10 +6,14 @@ using Convey.CQRS.Events;
 using Convey.MessageBrokers;
 using Convey.MessageBrokers.Outbox;
 using Convey.MessageBrokers.RabbitMQ;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using OpenTracing;
+using Pacco.Services.Identity.Application.Events;
 using Pacco.Services.Identity.Application.Services;
+using Pacco.Services.Identity.Infrastructure.Contexts;
 
 namespace Pacco.Services.Identity.Infrastructure.Services
 {
@@ -61,8 +65,8 @@ namespace Pacco.Services.Identity.Infrastructure.Services
             }
 
             var headers = messageProperties.GetHeadersToForward();
-            var correlationContext = _contextAccessor.CorrelationContext ??
-                                     _httpContextAccessor.GetCorrelationContext();
+            CorrelationContext correlationContext = (CorrelationContext)_contextAccessor.CorrelationContext ??
+                                                    _httpContextAccessor.GetCorrelationContext();
 
             foreach (var @event in events)
             {

@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
+using System.Collections.Generic;
 using MicroPack.CQRS.Events;
 using Pacco.Services.Availability.Core.Events;
 

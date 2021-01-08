@@ -15,7 +15,8 @@ namespace Pacco.Services.Operations.Api.Services
         }
 
         public async Task PublishToUserAsync(string userId, string message, object data)
-            => await _hubContext.Clients.Group(userId.ToUserGroup()).SendAsync(message, data);
+            // => await _hubContext.Clients.Group(userId.ToUserGroup()).SendAsync(message, data);
+            => await _hubContext.Clients.All.SendAsync(message, data);
 
         public async Task PublishToAllAsync(string message, object data)
             => await _hubContext.Clients.All.SendAsync(message, data);

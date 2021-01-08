@@ -7,10 +7,9 @@ namespace Pacco.Services.Availability.Application.Events.External
     [Message("customers")]
     public class CustomerCreated : IEvent
     {
-        public Guid CustomerId { get; set; }
+        public Guid CustomerId { get; }
+
         public CustomerCreated(Guid customerId)
-        {
-            this.CustomerId = customerId;
-        }
+            => CustomerId = customerId;
     }
 }

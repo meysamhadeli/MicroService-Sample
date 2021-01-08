@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
-using Convey.Persistence.MongoDB;
-using Convey.Types;
+using MicroPack.MicroPack.Types;
+using MicroPack.Mongo;
 using MongoDB.Driver;
 using Pacco.Services.Availability.Tests.Shared.Helpers;
 

@@ -2,6 +2,7 @@
 using Convey;
 using Convey.Secrets.Vault;
 using Convey.Logging;
+using Convey.MessageBrokers.RabbitMQ;
 using Convey.Types;
 using Convey.WebApi;
 using Microsoft.AspNetCore;

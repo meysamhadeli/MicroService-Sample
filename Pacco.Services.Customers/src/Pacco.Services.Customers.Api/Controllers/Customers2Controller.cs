@@ -7,10 +7,10 @@ namespace Pacco.Services.Customers.Api.Controllers
     [Route("[controller]")]
     public class Customers2Controller : ControllerBase
     {
-        [HttpGet(nameof(test))]
-        public async Task<ActionResult> test()
+        [HttpGet]
+        public async Task<ActionResult<string>> Get()
         {
-            return null;
+            return "meysam hadeli";
         }
     }
 }

@@ -12,7 +12,7 @@ namespace MicroPack.Authentication
     {
         private static readonly string SectionName = "jwt";
 
-        public static void AddJwt(this IServiceCollection services)
+        public static IServiceCollection AddJwt(this IServiceCollection services)
         {
             IConfiguration configuration;
             using (var serviceProvider = services.BuildServiceProvider())
@@ -26,6 +26,8 @@ namespace MicroPack.Authentication
             services.AddSingleton<IJwtHandler, JwtHandler>();
             services.AddTransient<IAccessTokenService, AccessTokenService>();
             services.AddTransient<AccessTokenValidatorMiddleware>();
+            
+
             services.AddAuthentication()
                 .AddJwtBearer(cfg =>
                 {
@@ -39,6 +41,7 @@ namespace MicroPack.Authentication
                         ClockSkew = TimeSpan.Zero
                     };
                 });
+            return services;
         }
 
         public static IApplicationBuilder UseAccessTokenValidator(this IApplicationBuilder app)

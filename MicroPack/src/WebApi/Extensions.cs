@@ -9,10 +9,11 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
+using MicroPack.CQRS.Commands;
+using MicroPack.CQRS.Queries;
 using MicroPack.MicroPack;
 using MicroPack.WebApi.Exceptions;
 using MicroPack.WebApi.Formatters;
-using MicroPack.WebApi.Middlewares;
 using MicroPack.WebApi.Requests;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
@@ -36,7 +37,23 @@ namespace MicroPack.WebApi
         private const string LocationHeader = "Location";
         private const string JsonContentType = "application/json";
         private static bool _bindRequestFromRoute;
-        
+
+        public static IApplicationBuilder UseEndpoints(this IApplicationBuilder app, Action<IEndpointsBuilder> build,
+            bool useAuthorization = true, Action<IApplicationBuilder> middleware = null)
+        {
+            var definitions = app.ApplicationServices.GetRequiredService<WebApiEndpointDefinitions>();
+            app.UseRouting();
+            if (useAuthorization)
+            {
+                app.UseAuthorization();
+            }
+            
+            middleware?.Invoke(app);
+
+            app.UseEndpoints(router => build(new EndpointsBuilder(router, definitions)));
+
+            return app;
+        }
 
         [Description("By default Newtonsoft JSON serializer is being used and it sets Kestrel's and IIS ServerOptions AllowSynchronousIO = true")]
         public static IServiceCollection AddWebApi(this IServiceCollection services, Action<IMvcCoreBuilder> configureMvc = null,
@@ -46,7 +63,7 @@ namespace MicroPack.WebApi
             {
                 sectionName = SectionName;
             }
-            
+
             if (jsonSerializer is null)
             {
                 var factory = new Open.Serialization.Json.Newtonsoft.JsonSerializerFactory(new JsonSerializerSettings
@@ -60,12 +77,13 @@ namespace MicroPack.WebApi
             if (jsonSerializer.GetType().Namespace?.Contains("Newtonsoft") == true)
             {
                 services.Configure<KestrelServerOptions>(o => o.AllowSynchronousIO = true);
+                services.Configure<IISServerOptions>(o => o.AllowSynchronousIO = true);
             }
             
             services.AddSingleton(jsonSerializer);
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddSingleton(new WebApiEndpointDefinitions());
-            var options = services.GetOptions<WebApiOptions>(sectionName);
+            var options = services.GetOptions<WebApiOptions>(sectionName); 
             services.AddSingleton(options);
             _bindRequestFromRoute = options.BindRequestFromRoute;
 
@@ -107,14 +125,14 @@ namespace MicroPack.WebApi
         {
             services.AddTransient<ErrorHandlerMiddleware>();
             services.AddSingleton<IExceptionToResponseMapper, T>();
+
             return services;
         }
 
-        public static IApplicationBuilder UseErrorHandler(this IApplicationBuilder app)
-            => app.UseMiddleware<ErrorHandlerMiddleware>();
-        
+        public static IApplicationBuilder UseErrorHandler(this IApplicationBuilder builder)
+            => builder.UseMiddleware<ErrorHandlerMiddleware>();
 
-        public static IApplicationBuilder UseAllForwardedHeaders(this IApplicationBuilder app,
+        public static IApplicationBuilder UseAllForwardedHeaders(this IApplicationBuilder builder,
             bool resetKnownNetworksAndProxies = true)
         {
             var forwardingOptions = new ForwardedHeadersOptions
@@ -127,7 +145,7 @@ namespace MicroPack.WebApi
                 forwardingOptions.KnownProxies.Clear();
             }
 
-            return app.UseForwardedHeaders(forwardingOptions);
+            return builder.UseForwardedHeaders(forwardingOptions);
         }
 
         public static Task<TResult> DispatchAsync<TRequest, TResult>(this HttpContext httpContext, TRequest request)
@@ -217,7 +235,7 @@ namespace MicroPack.WebApi
         
         public static Task Redirect(this HttpResponse response, string url)
         {
-            response.StatusCode = (int) HttpStatusCode.Redirect;
+            response.StatusCode = (int) HttpStatusCode.PermanentRedirect;
             if (!response.Headers.ContainsKey(LocationHeader))
             {
                 response.Headers.Add(LocationHeader, url);
@@ -280,10 +298,10 @@ namespace MicroPack.WebApi
                 if (_bindRequestFromRoute && HasRouteData(request))
                 {
                     var values = request.HttpContext.GetRouteData().Values;
-                    foreach (var value in values)
+                    foreach (var (key, value) in values)
                     {
                         var field = payload.GetType().GetFields(BindingFlags.Instance | BindingFlags.NonPublic)
-                            .SingleOrDefault(f => f.Name.ToLowerInvariant().StartsWith($"<{value.Key}>",
+                            .SingleOrDefault(f => f.Name.ToLowerInvariant().StartsWith($"<{key}>",
                                 StringComparison.InvariantCultureIgnoreCase));
 
                         if (field is null)
@@ -292,7 +310,7 @@ namespace MicroPack.WebApi
                         }
                         
                         var fieldValue = TypeDescriptor.GetConverter(field.FieldType)
-                            .ConvertFromInvariantString(value.Value.ToString());
+                            .ConvertFromInvariantString(value.ToString());
                         field.SetValue(payload, fieldValue);
                     }
                 }
@@ -382,11 +400,44 @@ namespace MicroPack.WebApi
             return (T) TypeDescriptor.GetConverter(typeof(T)).ConvertFromInvariantString(data);
         }
         
+        
+         public static IApplicationBuilder UseDispatcherEndpoints(this IApplicationBuilder app,
+            Action<IDispatcherEndpointsBuilder> builder, bool useAuthorization = true,
+            Action<IApplicationBuilder> middleware = null)
+        {
+            var definitions = app.ApplicationServices.GetService<WebApiEndpointDefinitions>();
+            app.UseRouting();
+            if (useAuthorization)
+            {
+                app.UseAuthorization();
+            }
+
+            middleware?.Invoke(app);
+            
+            app.UseEndpoints(router => builder(new DispatcherEndpointsBuilder(
+                new EndpointsBuilder(router, definitions))));
+
+            return app;
+        }
+
+        public static IDispatcherEndpointsBuilder Dispatch(this IEndpointsBuilder endpoints,
+            Func<IDispatcherEndpointsBuilder, IDispatcherEndpointsBuilder> builder)
+            => builder(new DispatcherEndpointsBuilder(endpoints));
+        
+        public static Task SendAsync<T>(this HttpContext context, T command) where T : class, ICommand
+            => context.RequestServices.GetService<ICommandDispatcher>().SendAsync(command);
+
+        public static Task<TResult> QueryAsync<TResult>(this HttpContext context, IQuery<TResult> query)
+            => context.RequestServices.GetService<IQueryDispatcher>().QueryAsync(query);
+
+        public static Task<TResult> QueryAsync<TQuery, TResult>(this HttpContext context, TQuery query)
+            where TQuery : class, IQuery<TResult>
+            => context.RequestServices.GetService<IQueryDispatcher>().QueryAsync<TQuery, TResult>(query);
+        
         private class EmptyExceptionToResponseMapper : IExceptionToResponseMapper
         {
             public ExceptionResponse Map(Exception exception) => null;
         }
-        
         
         public static IApplicationBuilder UsePublicContracts<T>(this IApplicationBuilder app,
             string endpoint = "/_contracts") => app.UsePublicContracts(endpoint, typeof(T));

@@ -1,4 +1,4 @@
-using MicroPack.Types;
+using MicroPack.MicroPack.Types;
 
 namespace MicroPack.Mongo
 {

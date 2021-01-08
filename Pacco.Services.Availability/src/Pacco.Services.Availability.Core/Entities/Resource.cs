@@ -9,11 +9,19 @@ namespace Pacco.Services.Availability.Core.Entities
 {
     public class Resource : AggregateRoot
     {
-        public List<string> Tags { get; set; } = new List<string>();
-        public List<Reservation> Reservations { get; set; } = new List<Reservation>();
+        private ISet<string> _tags = new HashSet<string>();
+        private ISet<Reservation> _reservations = new HashSet<Reservation>();
         
-        public Resource()
+        public IEnumerable<string> Tags
         {
+            get => _tags;
+            private set => _tags = new HashSet<string>(value);
+        }
+        
+        public IEnumerable<Reservation> Reservations
+        {
+            get => _reservations;
+            private set => _reservations = new HashSet<Reservation>(value);
         }
 
         public Resource(Guid id, IEnumerable<string> tags, IEnumerable<Reservation> reservations = null,
@@ -21,8 +29,8 @@ namespace Pacco.Services.Availability.Core.Entities
         {
             ValidateTags(tags);
             Id = id;
-            Tags = tags?.ToList();
-            Reservations = reservations?.ToList() ?? new List<Reservation>();
+            Tags = tags;
+            Reservations = reservations ?? Enumerable.Empty<Reservation>();
             Version = version;
         }
 
@@ -46,28 +54,49 @@ namespace Pacco.Services.Availability.Core.Entities
             return resource;
         }
 
-
         public void AddReservation(Reservation reservation)
         {
-            var hasCollidingReservation = Reservations.Any(HasSameReservationdate);
-            
+            var hasCollidingReservation = _reservations.Any(HasTheSameReservationDate);
             if (hasCollidingReservation)
             {
-                var collidingReservation = Reservations.First(HasSameReservationdate);
-            
+                var collidingReservation = _reservations.First(HasTheSameReservationDate);
                 if (collidingReservation.Priority >= reservation.Priority)
                 {
-                    throw new CannotExpropriateReservationException(Id, reservation.DateTime);
+                    throw new CannotExpropriateReservationException(Id, reservation.DateTime.Date);
                 }
-            
-                Reservations.Remove(collidingReservation);
-                AddEvent(new ReservationCanceled(this, collidingReservation));
+
+                if (_reservations.Remove(collidingReservation))
+                {
+                    AddEvent(new ReservationCanceled(this, collidingReservation));
+                }
+            }
+
+            if (_reservations.Add(reservation))
+            {
+                AddEvent(new ReservationAdded(this, reservation));
+            }
+
+            bool HasTheSameReservationDate(Reservation r) => r.DateTime.Date == reservation.DateTime.Date;
+        }
+
+        public void ReleaseReservation(Reservation reservation)
+        {
+            if (!_reservations.Remove(reservation))
+            {
+                return;
             }
             
-            Reservations.Add(reservation);
-            AddEvent(new ReservationAdded(this, reservation));
+            AddEvent(new ReservationReleased(this, reservation));
+        }
+
+        public void Delete()
+        {
+            foreach (var reservation in Reservations)
+            {
+                AddEvent(new ReservationCanceled(this, reservation));
+            }
             
-            bool HasSameReservationdate(Reservation r) => r.DateTime == reservation.DateTime;
+            AddEvent(new ResourceDeleted(this));
         }
     }
 }

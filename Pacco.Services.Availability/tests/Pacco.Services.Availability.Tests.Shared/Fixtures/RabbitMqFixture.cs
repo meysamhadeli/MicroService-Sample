@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Convey.MessageBrokers.RabbitMQ;
+using MicroPack.MessageBrokers.RabbitMQ;
 using Newtonsoft.Json;
 using Pacco.Services.Availability.Tests.Shared.Helpers;
 using RabbitMQ.Client;
@@ -15,9 +15,11 @@ namespace Pacco.Services.Availability.Tests.Shared.Fixtures
     {
         private readonly IModel _channel;
         private bool _disposed = false;
+        private readonly string _defaultNameSpace;
         
-        public RabbitMqFixture()
+        public RabbitMqFixture(string defaultNameSpace)
         {
+            _defaultNameSpace = defaultNameSpace;
             var options = OptionsHelper.GetOptions<RabbitMqOptions>("rabbitMq");
             var connectionFactory = new ConnectionFactory
             {

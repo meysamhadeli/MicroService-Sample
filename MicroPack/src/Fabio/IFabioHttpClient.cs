@@ -1,9 +1,8 @@
-using System.Threading.Tasks;
+using MicroPack.Http;
 
 namespace MicroPack.Fabio
 {
-    public interface IFabioHttpClient
+    public interface IFabioHttpClient : IHttpClient
     {
-        Task<T> GetAsync<T>(string requestUri);
     }
 }

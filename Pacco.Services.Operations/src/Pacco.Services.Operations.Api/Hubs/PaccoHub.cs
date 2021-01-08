@@ -32,7 +32,9 @@ namespace Pacco.Services.Operations.Api.Hubs
                 }
 
                 var group = Guid.Parse(payload.Subject).ToUserGroup();
-                await Groups.AddToGroupAsync(Context.ConnectionId, group);
+                await Groups
+                    .AddToGroupAsync(Context.ConnectionId, group);
+   
                 await ConnectAsync();
             }
             catch

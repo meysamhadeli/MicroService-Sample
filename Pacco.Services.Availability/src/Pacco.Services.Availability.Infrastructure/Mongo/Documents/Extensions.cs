@@ -15,7 +15,7 @@ namespace Pacco.Services.Availability.Infrastructure.Mongo.Documents
         public static ResourceDocument AsDocument(this Resource entity)
             => new ResourceDocument
             {
-                Id = entity.Id, 
+                Id = entity.Id,
                 Version = entity.Version,
                 Tags = entity.Tags,
                 Reservations = entity.Reservations.Select(r => new ReservationDocument

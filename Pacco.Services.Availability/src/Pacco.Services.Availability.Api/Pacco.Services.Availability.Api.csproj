@@ -7,16 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.9" />
-  </ItemGroup>
-
-  <ItemGroup>
-<!--    <ProjectReference Include="..\..\..\MicroPack\src\MicroPack.csproj" />-->
+    <ProjectReference Include="..\..\..\MicroPack\src\MicroPack.csproj" />
     <ProjectReference Include="..\Pacco.Services.Availability.Infrastructure\Pacco.Services.Availability.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="certs\**" CopyToPublishDirectory="Always" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.10" />
   </ItemGroup>
 
 </Project>

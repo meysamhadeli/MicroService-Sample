@@ -19,7 +19,6 @@ namespace Pacco.Services.Identity.Infrastructure.Auth
             IDictionary<string, IEnumerable<string>> claims = null)
         {
             var jwt = _jwtHandler.CreateToken(userId.ToString("N"), role, audience, claims);
-
             return new AuthDto
             {
                 AccessToken = jwt.AccessToken,

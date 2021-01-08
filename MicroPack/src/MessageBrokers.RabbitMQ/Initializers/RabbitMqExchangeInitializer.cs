@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
-using MicroPack.Types;
+using MicroPack.MicroPack.Types;
 using Microsoft.Extensions.Logging;
 using RabbitMQ.Client;
 

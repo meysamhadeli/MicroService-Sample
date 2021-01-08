@@ -59,7 +59,7 @@ GET {{api}}/customers/{{customerId}}/state
 Authorization: Bearer {{accessToken}}
 
 ###
-POST {{api}}/customers
+POST customers
 Authorization: Bearer {{accessToken}}
 Content-Type: application/json
 

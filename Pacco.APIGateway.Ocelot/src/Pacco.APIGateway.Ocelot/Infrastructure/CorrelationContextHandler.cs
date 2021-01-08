@@ -35,8 +35,8 @@ namespace Pacco.APIGateway.Ocelot.Infrastructure
             var spanContext = _tracer.ActiveSpan is null ? string.Empty : _tracer.ActiveSpan.Context.ToString();
             var correlationId = Guid.NewGuid().ToString("N");
             var resourceId = httpContext.GetResourceIdFoRequest();
-            var correlationContext = _correlationContextBuilder.Build(httpContext, correlationId, spanContext,
-                resourceId: resourceId);
+            var correlationContext = _correlationContextBuilder.Build(httpContext, correlationId: correlationId,
+                spanContext, resourceId: resourceId);
             request.Headers.TryAddWithoutValidation("Correlation-Context",
                 JsonConvert.SerializeObject(correlationContext));
 

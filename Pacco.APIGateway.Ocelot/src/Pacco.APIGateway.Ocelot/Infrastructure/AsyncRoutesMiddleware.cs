@@ -1,14 +1,15 @@
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using Convey.MessageBrokers.RabbitMQ;
-using Convey.MessageBrokers.RabbitMQ.Conventions;
+using MicroPack.MessageBrokers.RabbitMQ;
+using MicroPack.MessageBrokers.RabbitMQ.Conventions;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Options;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using OpenTracing;
 
@@ -24,11 +25,12 @@ namespace Pacco.APIGateway.Ocelot.Infrastructure
         private readonly ITracer _tracer;
         private readonly ICorrelationContextBuilder _correlationContextBuilder;
         private readonly IAnonymousRouteValidator _anonymousRouteValidator;
+        private readonly IHttpContextAccessor _accessor;
         private readonly IDictionary<string, AsyncRouteOptions> _routes;
         private readonly bool _authenticate;
 
         public AsyncRoutesMiddleware(IRabbitMqClient rabbitMqClient, IPayloadBuilder payloadBuilder, ITracer tracer,
-            ICorrelationContextBuilder correlationContextBuilder, IAnonymousRouteValidator anonymousRouteValidator,
+            ICorrelationContextBuilder correlationContextBuilder, IAnonymousRouteValidator anonymousRouteValidator, IHttpContextAccessor accessor,
             IOptions<AsyncRoutesOptions> asyncRoutesOptions)
         {
             _rabbitMqClient = rabbitMqClient;
@@ -36,6 +38,7 @@ namespace Pacco.APIGateway.Ocelot.Infrastructure
             _tracer = tracer;
             _correlationContextBuilder = correlationContextBuilder;
             _anonymousRouteValidator = anonymousRouteValidator;
+            _accessor = accessor;
             _routes = asyncRoutesOptions.Value.Routes;
             _authenticate = asyncRoutesOptions.Value.Authenticate == true;
         }
@@ -92,5 +95,6 @@ namespace Pacco.APIGateway.Ocelot.Infrastructure
         }
 
         private static string GetKey(HttpContext context) => $"{context.Request.Method} {context.Request.Path}";
+        
     }
 }

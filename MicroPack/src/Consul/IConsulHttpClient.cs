@@ -1,10 +1,9 @@
-using System.Threading.Tasks;
+using MicroPack.Http;
 
 namespace MicroPack.Consul
 {
-    public interface IConsulHttpClient
+    public interface IConsulHttpClient : IHttpClient
     {
-        Task<T> GetAsync<T>(string requestUri);
     }
 }
 

@@ -4,13 +4,12 @@ namespace Pacco.Services.Availability.Core.Exceptions
 {
     public class CannotExpropriateReservationException : DomainException
     {
-        public Guid ResourceId { get; set; }
-        public DateTime DateTime { get; set; }
-        public CannotExpropriateReservationException(Guid resourceId, DateTime dateTime):base($"Cannot expropriate reservation with id'{resourceId}' reservation at {dateTime}")
-        {
-            ResourceId = resourceId;
-            DateTime = dateTime;
-            ResourceId = resourceId;
-        }
+        public override string Code { get; } = "cannot_expropriate_reservation";
+        public Guid ResourceId { get; }
+        public DateTime DateTime { get; }
+
+        public CannotExpropriateReservationException(Guid resourceId, DateTime dateTime)
+            : base($"Cannot expropriate resource {resourceId} reservation at {dateTime}")
+            => (ResourceId, DateTime) = (resourceId, dateTime);
     }
 }

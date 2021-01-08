@@ -1,10 +1,10 @@
 using System.Threading.Tasks;
-using Consul;
+using MicroPack.Consul.Models;
 
 namespace MicroPack.Consul
 {
     public interface IConsulServicesRegistry
     {
-        Task<AgentService> GetAsync(string name);
+        Task<ServiceAgent> GetAsync(string name);
     }
 }

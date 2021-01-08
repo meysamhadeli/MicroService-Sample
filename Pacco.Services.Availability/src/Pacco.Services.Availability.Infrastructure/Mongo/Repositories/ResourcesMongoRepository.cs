@@ -1,9 +1,9 @@
 using System;
 using System.Threading.Tasks;
+using MicroPack.Mongo;
+using MongoDB.Driver;
 using Pacco.Services.Availability.Core.Entities;
 using Pacco.Services.Availability.Core.Repositories;
-using System.Collections.Generic;
-using MicroPack.Mongo;
 using Pacco.Services.Availability.Infrastructure.Mongo.Documents;
 
 namespace Pacco.Services.Availability.Infrastructure.Mongo.Repositories
@@ -15,27 +15,23 @@ namespace Pacco.Services.Availability.Infrastructure.Mongo.Repositories
         public ResourcesMongoRepository(IMongoRepository<ResourceDocument, Guid> repository)
             => _repository = repository;
 
-        public async Task<Resource> GetAsync(Guid id)
+        public async Task<Resource> GetAsync(AggregateId id)
         {
             var document = await _repository.GetAsync(r => r.Id == id);
             return document?.AsEntity();
         }
 
-        public Task<bool> ExistsAsync(Guid id)
+        public Task<bool> ExistsAsync(AggregateId id)
             => _repository.ExistsAsync(r => r.Id == id);
 
         public Task AddAsync(Resource resource)
             => _repository.AddAsync(resource.AsDocument());
 
         public Task UpdateAsync(Resource resource)
-            => _repository.UpdateAsync(resource.AsDocument());
+            => _repository.Collection.ReplaceOneAsync(r => r.Id == resource.Id && r.Version < resource.Version,
+                resource.AsDocument());
 
-        public Task DeleteAsync(Guid id)
+        public Task DeleteAsync(AggregateId id)
             => _repository.DeleteAsync(id);
-
-        public Task<IEnumerable<Resource>> GetAllAsync()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

@@ -11,6 +11,7 @@
     <PackageReference Include="Convey.Logging" Version="0.4.*" />
     <PackageReference Include="Convey.WebApi" Version="0.4.*" />
     <PackageReference Include="Convey.WebApi.CQRS" Version="0.4.*" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.10" />
   </ItemGroup>
 
   <ItemGroup>

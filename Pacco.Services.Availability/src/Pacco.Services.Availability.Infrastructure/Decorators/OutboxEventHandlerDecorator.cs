@@ -1,35 +1,37 @@
-﻿using System;
+using System;
 using System.Threading.Tasks;
 using MicroPack.CQRS.Events;
 using MicroPack.MessageBrokers;
 using MicroPack.MessageBrokers.Outbox;
+using MicroPack.MicroPack.Types;
 
 namespace Pacco.Services.Availability.Infrastructure.Decorators
 {
-    public class OutboxEventHandlerDecorator<T> : IEventHandler<T> where T : class, IEvent
+    [Decorator]
+    internal sealed class OutboxEventHandlerDecorator<TEvent> : IEventHandler<TEvent>
+        where TEvent : class, IEvent
     {
-        private readonly IEventHandler<T> _handler;
+        private readonly IEventHandler<TEvent> _handler;
         private readonly IMessageOutbox _outbox;
-        private readonly IMessagePropertiesAccessor _messagePropertiesAccessor;
-        private readonly bool _enabled;
         private readonly string _messageId;
+        private readonly bool _enabled;
 
-        public OutboxEventHandlerDecorator(IEventHandler<T> handler,
-            IMessageOutbox outbox,
-            IMessagePropertiesAccessor messagePropertiesAccessor)
+        public OutboxEventHandlerDecorator(IEventHandler<TEvent> handler, IMessageOutbox outbox,
+            OutboxOptions outboxOptions, IMessagePropertiesAccessor messagePropertiesAccessor)
         {
             _handler = handler;
             _outbox = outbox;
-            _messagePropertiesAccessor = messagePropertiesAccessor;
-            _enabled = outbox.Enabled;
+            _enabled = outboxOptions.Enabled;
+
             var messageProperties = messagePropertiesAccessor.MessageProperties;
             _messageId = string.IsNullOrWhiteSpace(messageProperties?.MessageId)
                 ? Guid.NewGuid().ToString("N")
                 : messageProperties.MessageId;
         }
 
-        public Task HandleAsync(T @event) => _enabled
-            ? _outbox.HandleAsync(_messageId, () => _handler.HandleAsync(@event))
-            : _handler.HandleAsync(@event);
+        public Task HandleAsync(TEvent @event)
+            => _enabled
+                ? _outbox.HandleAsync(_messageId, () => _handler.HandleAsync(@event))
+                : _handler.HandleAsync(@event);
     }
 }

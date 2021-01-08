@@ -1,6 +1,5 @@
 using System.Threading.Tasks;
 using MicroPack.CQRS.Commands;
-using Pacco.Services.Availability.Application.Events;
 using Pacco.Services.Availability.Application.Exceptions;
 using Pacco.Services.Availability.Application.Services;
 using Pacco.Services.Availability.Core.Entities;
@@ -8,7 +7,7 @@ using Pacco.Services.Availability.Core.Repositories;
 
 namespace Pacco.Services.Availability.Application.Commands.Handlers
 {
-    public sealed class AddResourceHandler : ICommandHandler<AddResource>
+    public class AddResourceHandler : ICommandHandler<AddResource>
     {
         private readonly IResourcesRepository _repository;
         private readonly IEventProcessor _eventProcessor;
@@ -21,13 +20,12 @@ namespace Pacco.Services.Availability.Application.Commands.Handlers
         
         public async Task HandleAsync(AddResource command)
         {
-            var resource = await _repository.GetAsync(command.ResourceId);
-            if (resource != null)
+            if (await _repository.ExistsAsync(command.ResourceId))
             {
                 throw new ResourceAlreadyExistsException(command.ResourceId);
             }
             
-            resource = Resource.Create(command.ResourceId, command.Tags);
+            var resource = Resource.Create(command.ResourceId, command.Tags);
             await _repository.AddAsync(resource);
             await _eventProcessor.ProcessAsync(resource.Events);
         }

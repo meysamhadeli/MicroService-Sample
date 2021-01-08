@@ -15,6 +15,26 @@
       ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [],
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/customers/{everything}",
+      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": []
       },
       "QoSOptions": {
@@ -60,7 +80,14 @@
       "POST /availability/resources/reservations": {
         "Exchange": "availability",
         "RoutingKey": "reserve_resource"
+      },
+      "POST /customers": {
+        "Exchange": "customers",
+        "RoutingKey": "complete_customer_registration"
       }
     }
-  }
+  },
+  "Routes": [
+    
+  ]
 }

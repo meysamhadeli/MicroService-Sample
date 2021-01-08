@@ -17,6 +17,7 @@
     <PackageReference Include="Convey.Tracing.Jaeger" Version="0.4.*" />
     <PackageReference Include="Convey.Tracing.Jaeger.RabbitMQ" Version="0.4.*" />
     <PackageReference Include="Convey.WebApi" Version="0.4.*" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.10" />
     <PackageReference Include="Ocelot" Version="15.0.6" />
     <PackageReference Include="Ocelot.Provider.Polly" Version="15.0.6" />
   </ItemGroup>
@@ -31,6 +32,10 @@
 
   <ItemGroup>
     <Content Include="certs\**" CopyToPublishDirectory="Always" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\MicroPack\src\MicroPack.csproj" />
   </ItemGroup>
 
 </Project>

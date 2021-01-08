@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace MicroPack.Types
+namespace MicroPack.MicroPack.Types
 {
     public interface IInitializer
     {

@@ -7,7 +7,7 @@ using Open.Serialization.Json;
 
 namespace MicroPack.WebApi.Exceptions
 {
-    public class ErrorHandlerMiddleware : IMiddleware
+    internal sealed class ErrorHandlerMiddleware : IMiddleware
     {
         private readonly IExceptionToResponseMapper _exceptionToResponseMapper;
         private readonly IJsonSerializer _jsonSerializer;

@@ -1,5 +1,3 @@
-using MicroPack.Types;
-
 namespace MicroPack.MicroPack.Types
 {
     public interface IStartupInitializer : IInitializer

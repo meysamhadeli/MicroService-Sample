@@ -1,12 +1,12 @@
 using System;
 using System.Threading.Tasks;
-using Convey.CQRS.Commands;
-using Convey.CQRS.Queries;
+using MicroPack.CQRS.Commands;
+using MicroPack.CQRS.Queries;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Convey.WebApi.CQRS.Builders
+namespace MicroPack.WebApi
 {
     public class DispatcherEndpointsBuilder : IDispatcherEndpointsBuilder
     {

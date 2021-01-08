@@ -4,12 +4,8 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
-     <ItemGroup>
-    <PackageReference Include="Convey" Version="0.4.*" />
-  </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.10" />
+    </ItemGroup>
 
-     <ItemGroup>
-       <ProjectReference Include="..\..\..\MicroPack\src\MicroPack.csproj" />
-     </ItemGroup>
-    
 </Project>

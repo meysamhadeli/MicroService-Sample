@@ -6,17 +6,21 @@ namespace Pacco.Services.Availability.Core.Entities
 {
     public abstract class AggregateRoot
     {
-        public List<IDomainEvent> Events { get; protected set; } = new List<IDomainEvent>();
-        public int Version { get; protected set; }
+        private readonly List<IDomainEvent> _events = new List<IDomainEvent>();
+        public IEnumerable<IDomainEvent> Events => _events;
         public AggregateId Id { get; protected set; }
+        public int Version { get; protected set; }
+
         protected void AddEvent(IDomainEvent @event)
         {
-            if (!Events.Any())
+            if (!_events.Any())
+            {
                 Version++;
-            
-            Events.Add(@event);
+            }
+
+            _events.Add(@event);
         }
-        
-        public void ClearEvents() => Events.Clear();
+
+        public void ClearEvents() => _events.Clear();
     }
 }

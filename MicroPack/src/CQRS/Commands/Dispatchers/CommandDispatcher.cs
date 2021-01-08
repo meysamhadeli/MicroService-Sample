@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace MicroPack.CQRS.Commands.Dispatchers
 {
-    internal sealed class CommandDispatcher : ICommandDispatcher
+    public class CommandDispatcher : ICommandDispatcher
     {
         private readonly IServiceScopeFactory _serviceFactory;
 

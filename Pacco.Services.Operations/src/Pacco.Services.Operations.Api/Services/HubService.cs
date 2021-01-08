@@ -13,7 +13,8 @@ namespace Pacco.Services.Operations.Api.Services
         }
 
         public async Task PublishOperationPendingAsync(OperationDto operation)
-            => await _hubContextWrapper.PublishToUserAsync(operation.UserId,
+        {
+            await _hubContextWrapper.PublishToUserAsync(operation.UserId,
                 "operation_pending",
                 new
                 {
@@ -21,8 +22,10 @@ namespace Pacco.Services.Operations.Api.Services
                     name = operation.Name
                 }
             );
+            var b = 2;
+        }
 
-        public async Task PublishOperationCompletedAsync(OperationDto operation)
+    public async Task PublishOperationCompletedAsync(OperationDto operation)
             => await _hubContextWrapper.PublishToUserAsync(operation.UserId,
                 "operation_completed",
                 new

@@ -53,9 +53,9 @@ namespace Pacco.Services.Operations.Api.Services
                 {
                     SlidingExpiration = TimeSpan.FromSeconds(_options.ExpirySeconds)
                 });
-
-            OperationUpdated?.Invoke(this, new OperationUpdatedEventArgs(operation));
-
+            
+            OperationUpdated?.Invoke(this,new OperationUpdatedEventArgs(operation));
+            
             return (true, operation);
         }
 
