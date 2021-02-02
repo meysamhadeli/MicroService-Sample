@@ -12,9 +12,9 @@ case "${Branch_Name}" in
     ;;    
 esac
 
-REPOSITORY=$DOCKER_USERNAME/pacco.services.availability
+REPOSITORY=${{secrets.DOCKER_USERNAME}}/pacco.services.availability
 
-docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{secrets.DOCKER_PASSWORD}}
 docker build -t $REPOSITORY:$TAG -t $REPOSITORY:$VERSION_TAG -f ./Pacco.Services.Availability/Dockerfile ./Pacco.Services.Availability
 docker push $REPOSITORY:$TAG
 docker push $REPOSITORY:$VERSION_TAG
