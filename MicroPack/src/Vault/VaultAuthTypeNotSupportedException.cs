@@ -2,10 +2,10 @@ using System;
 
 namespace MicroPack.Vault
 {
-    public class VaultAuthTypeNotSupportedException : Exception
+    internal sealed class VaultAuthTypeNotSupportedException : Exception
     {
         public string AuthType { get; set; }
-        
+
         public VaultAuthTypeNotSupportedException(string authType) : this(string.Empty, authType)
         {
         }

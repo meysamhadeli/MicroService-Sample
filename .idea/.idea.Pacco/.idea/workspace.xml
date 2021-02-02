@@ -7,6 +7,8 @@
     <projectFile>Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Pacco.APIGateway.Ocelot.csproj</projectFile>
     <projectFile>Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Pacco.Services.Operations.Api.csproj</projectFile>
     <projectFile>Pacco.Services.Availability-master/src/Pacco.Services.Availability.Api/Pacco.Services.Availability.Api.csproj</projectFile>
+    <projectFile>Pacco.Services.OrderMaker/src/Pacco.Services.OrderMaker/Pacco.Services.OrderMaker.csproj</projectFile>
+    <projectFile>Pacco.Services.Orders/src/Pacco.Services.Orders.Api/Pacco.Services.Orders.Api.csproj</projectFile>
   </component>
   <component name="BranchesTreeState">
     <expand>
@@ -34,156 +36,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68b822f7-648c-444c-96de-7a0b39bf4f4d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MicroPack/src/WebApi/DispatcherEndpointsBuilder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Startup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Exceptions/CustomerNotFoundException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Exceptions/InvalidCustomerStateException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Decorators/OutboxCommandHandlerDecorator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Decorators/OutboxEventHandlerDecorator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.EndToEnd/Sync/AddResourceTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Integration/Async/AddResourceTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Unit/Application/Handlers/ReserveResourceHandlerTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Unit/Core/Entities/CreateResourceTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/Controllers/Customers2Controller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Decorators/JaegerCommandHandlerDecorator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Decorators/SecurityDecorator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Metrics/MetricsJob.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Performance/PerformanceTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/riderModule.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Authentication/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/Authentication/Extensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Commands/Dispatchers/CommandDispatcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/CQRS/Commands/Dispatchers/CommandDispatcher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Consul/ConsulHttpClient.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Consul/ConsulOptions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/Consul/ConsulOptions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Consul/ConsulServiceDiscoveryMessageHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Consul/ConsulServiceNotFoundException.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Consul/ConsulServicesRegistry.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Consul/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/Consul/Extensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Consul/IConsulHttpClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/Consul/IConsulHttpClient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Consul/IConsulServicesRegistry.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/Consul/IConsulServicesRegistry.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Fabio/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/Fabio/Extensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Fabio/FabioHttpClient.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Fabio/FabioMessageHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Fabio/FabioOptions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/Fabio/FabioOptions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Fabio/IFabioHttpClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/Fabio/IFabioHttpClient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Logging/ElkOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Logging/SeqOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Logging/SerilogOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Initializers/RabbitMqExchangeInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Initializers/RabbitMqExchangeInitializer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroPack/src/Metrics/Extensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroPack/src/Metrics/MetricsOptions.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MicroPack/src/MicroPack.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/MicroPack.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MicroPack/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/MicroPack/Extensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MicroPack/Types/IInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/MicroPack/Types/IInitializer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MicroPack/Types/IStartupInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/MicroPack/Types/IStartupInitializer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MicroPack/Types/StartupInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/MicroPack/Types/StartupInitializer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Mongo/IMongoDbInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/Mongo/IMongoDbInitializer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/RestEase/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/RestEase/QueryParamSerializer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/RestEase/RestEaseOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/RestEase/RestEaseServiceNotFoundException.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/WebApi/Exceptions/ErrorHandlerMiddleware.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/WebApi/Exceptions/ErrorHandlerMiddleware.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/WebApi/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/WebApi/Extensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/WebApi/Middlewares/PublicContractsMiddleware.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/AsyncRoutesMiddleware.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/AsyncRoutesMiddleware.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/CorrelationContextHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/CorrelationContextHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/ExceptionToResponseMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/ExceptionToResponseMapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Pacco.APIGateway.Ocelot.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Pacco.APIGateway.Ocelot.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/ocelot.json" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/ocelot.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.APIGateway/Pacco.rest" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.APIGateway/Pacco.rest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/scripts/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/scripts/build.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/scripts/dockerize.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/scripts/dockerize.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/scripts/start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/scripts/start.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/scripts/test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/scripts/test.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroPack/src/Security/Convey.Security.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/Vault/Extensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/IVaultStore.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/VaultAuthTypeNotSupportedException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/Vault/VaultAuthTypeNotSupportedException.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/VaultException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/Vault/VaultException.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/VaultOptions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/Vault/VaultOptions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/VaultStore.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Controllers/ResourcesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Controllers/ResourcesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Pacco.Services.Availability.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Pacco.Services.Availability.Api.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/appsettings.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/appsettings.development.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/appsettings.tests.json" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/appsettings.tests.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/certs/localhost.cer" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/certs/localhost.cer" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/AddResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/AddResource.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/ReserveResourceHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/ReserveResourceHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/ReserveResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/ReserveResource.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/ContractAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/ContractAttribute.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/DTO/ReservationDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/DTO/ReservationDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/DTO/ResourceDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/DTO/ResourceDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Events/External/CustomerCreated.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Events/External/CustomerCreated.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Events/External/Handlers/CustomerCreatedHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Events/External/Handlers/CustomerCreatedHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Events/Rejected/AddResourceRejected.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Events/Rejected/AddResourceRejected.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Events/Rejected/ReserveResourceRejected.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Events/ResourceAdded.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Events/ResourceAdded.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Events/ResourceReservationCanceled.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Events/ResourceReservationCanceled.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Events/ResourceReserved.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Events/ResourceReserved.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Exceptions/AppException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Exceptions/AppException.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Exceptions/ResourceAlreadyExistsException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Exceptions/ResourceAlreadyExistsException.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Exceptions/ResourceNotFoundException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Exceptions/ResourceNotFoundException.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Extensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Pacco.Services.Availability.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Pacco.Services.Availability.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Queries/GetResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Queries/GetResource.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Queries/GetResources.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Queries/GetResources.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Queries/Handlers/GetResourceHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Queries/Handlers/GetResourcesHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Services/IEventMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Services/IEventMapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Services/IEventProcessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Services/IEventProcessor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Services/IMessageBroker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Services/IMessageBroker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Entities/AggregateId.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Entities/AggregateId.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Entities/AggregateRoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Entities/AggregateRoot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Entities/Resource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Entities/Resource.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Events/IDomainEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Events/IDomainEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Events/ReservationAdded.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Events/ReservationAdded.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Events/ReservationCanceled.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Events/ReservationCanceled.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Events/ResourceCreated.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Events/ResourceCreated.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Exceptions/CannotExpropriateReservationException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Exceptions/CannotExpropriateReservationException.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Exceptions/DomainException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Exceptions/DomainException.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Exceptions/InvalidAggregateIdException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Exceptions/InvalidAggregateIdException.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Exceptions/InvalidResourceTagsException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Exceptions/InvalidResourceTagsException.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Exceptions/MissingResourceTagsException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Exceptions/MissingResourceTagsException.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Pacco.Services.Availability.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Pacco.Services.Availability.Core.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Repositories/IResourcesRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Repositories/IResourcesRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/ValueObjects/Reservation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/ValueObjects/Reservation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Exceptions/ExceptionToMessageMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Exceptions/ExceptionToMessageMapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Exceptions/ExceptionToResponseMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Exceptions/ExceptionToResponseMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/appsettings.local.json" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/appsettings.local.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Extensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Mongo/Documents/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Mongo/Documents/Extensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Mongo/Documents/ReservationDocument.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Mongo/Documents/ReservationDocument.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Mongo/Documents/ResourceDocument.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Mongo/Documents/ResourceDocument.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Mongo/Repositories/ResourcesMongoRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Mongo/Repositories/ResourcesMongoRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Pacco.Services.Availability.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Pacco.Services.Availability.Infrastructure.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Services/EventMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Services/EventMapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Services/EventProcessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Services/EventProcessor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Services/MessageBroker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Services/MessageBroker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.EndToEnd/Pacco.Services.Availability.Tests.EndToEnd.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.EndToEnd/Pacco.Services.Availability.Tests.EndToEnd.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Factories/PaccoApplicationFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Factories/PaccoApplicationFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Fixtures/MongoDbFixture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Fixtures/MongoDbFixture.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Fixtures/MongoDbFixtureInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Fixtures/MongoDbFixtureInitializer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Fixtures/RabbitMqFixture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Fixtures/RabbitMqFixture.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Pacco.Services.Availability.Tests.Shared.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Pacco.Services.Availability.Tests.Shared.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Unit/Pacco.Services.Availability.Tests.Unit.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Unit/Pacco.Services.Availability.Tests.Unit.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/Pacco.Services.Customers.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/Pacco.Services.Customers.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Services/Clients/CustomersServiceClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Services/Clients/CustomersServiceClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Tests/EnableInternalsTesting.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/appsettings.local.json" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/appsettings.local.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Application/Pacco.Services.Customers.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Application/Pacco.Services.Customers.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Core/Pacco.Services.Customers.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Core/Pacco.Services.Customers.Core.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Infrastructure/Pacco.Services.Customers.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Infrastructure/Pacco.Services.Customers.Infrastructure.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/Pacco.Services.Identity.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/Pacco.Services.Identity.Api.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/Pacco.Services.Identity.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/Pacco.Services.Identity.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Core/Pacco.Services.Identity.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Core/Pacco.Services.Identity.Core.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Auth/JwtProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Auth/JwtProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Pacco.Services.Identity.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Pacco.Services.Identity.Infrastructure.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Services/MessageBroker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Services/MessageBroker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Hubs/PaccoHub.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Hubs/PaccoHub.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Pacco.Services.Operations.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Pacco.Services.Operations.Api.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/HubService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/HubService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/HubWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/HubWrapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/OperationsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/OperationsService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/messages.json" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/messages.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.GrpcClient/Pacco.Services.Operations.GrpcClient.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.GrpcClient/Pacco.Services.Operations.GrpcClient.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/appsettings.local.json" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/appsettings.local.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.OrderMaker/src/Pacco.Services.OrderMaker/Sagas/AIOrderMakingSaga.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.OrderMaker/src/Pacco.Services.OrderMaker/Sagas/AIOrderMakingSaga.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pacco.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco/compose/infrastructure.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco/compose/infrastructure.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco/compose/prometheus/prometheus.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco/compose/prometheus/prometheus.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,10 +90,8 @@
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/Services/Identity/RefreshTokenService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/Services/Identity/IdentityService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/Logging/CorrelationContextLoggingMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Meysam/Desktop/Pacco/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/Logging/Options/ConsoleOptions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/Logging/Options/SeqOptions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Meysam/Desktop/Pacco/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/Logging/Options/ElkOptions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Messages/OutboxMessage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/Logging/Options/FileOptions.cs" root0="FORCE_HIGHLIGHTING" />
@@ -222,20 +105,24 @@
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway/src/Pacco.APIGateway/Infrastructure/CorrelationContextBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Configurators/MessageOutboxConfigurator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Meysam/Desktop/Pacco/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Application/IIdentityContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/appsettings.local.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/appsettings.development.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/appsettings.docker.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2BC5ED24-0D5C-402C-8B6A-BD14FFCEE267/30/4972c254/Func`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Application/DTO/CustomerDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/ocelot.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2BC5ED24-0D5C-402C-8B6A-BD14FFCEE267/df/15fa2fe6/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F7CA45F0-C5CF-4243-9732-FE9571C41B37/1B/HostingOptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/Security/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F7CA45F0-C5CF-4243-9732-FE9571C41B37/1E/AspNetCoreDiagnosticOptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/messages.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/Security/ISigner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/67DEEEA0-6C91-48C7-AF38-A73CD231FD1B/02/97923dfb/HttpContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Infrastructure/Contexts/CorrelationContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/Security/Internals/Signer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Infrastructure/Contexts/IdentityContext.cs" root0="FORCE_HIGHLIGHTING" />
@@ -243,24 +130,27 @@
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Infrastructure/Contexts/AppContextFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/Security/Internals/Encryptor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Hubs/PaccoHub.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/233AC80E-3FE7-49B0-A48C-1BD1CECF5EA0/2f/7c266fc7/AppMetricsServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/Mongo/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Infrastructure/Services/MessageBroker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/MicroPack/ConveyBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/MicroPack/IConveyBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/RabbitMqPlugin.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/ConventionsRegistry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8338029A-4D54-40B8-9F70-31A55A74DF13/40/248f9e5f/MetricsMiddlewareApplicationBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/IConventions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/HubWrapper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Meysam/Desktop/Pacco/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/IContextProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2BC5ED24-0D5C-402C-8B6A-BD14FFCEE267/1E0/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/HubService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/IRabbitMqSerializer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/849B28EE-106E-4AF5-A970-AC152CA22BF5/14/4b72e0d6/DefaultEndpointsApplicationBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/RabbitMqOptions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Auth/JwtProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/appsettings.development.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/appsettings.docker.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CB515CC-B7A8-46D5-9718-66F0C2E452EA/dd/4935ad8a/DefaultEndpointsApplicationBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/CorrelationContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/OperationsService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/AnonymousRoutesOptions.cs" root0="FORCE_HIGHLIGHTING" />
@@ -280,7 +170,6 @@
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/ICorrelationContextBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Auth/Rng.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/PayloadBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Meysam/Desktop/Pacco/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/AnonymousRouteValidator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Services/MessageBroker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/JsonWebTokenPayload.cs" root0="FORCE_HIGHLIGHTING" />
@@ -295,11 +184,9 @@
     <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/AccessTokenValidatorMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/AccessTokenService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/JwtOptions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Meysam/Desktop/Pacco/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Controllers/WeatherForecastController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/EF7CC6D6-928D-4251-A19B-D12387C95CD3/1/WebApplicationFactory.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Meysam/Desktop/Pacco/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Application/Commands/CompleteCustomerRegistration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/IIdentityContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers/IBusPublisher.cs" root0="FORCE_HIGHLIGHTING" />
@@ -330,18 +217,16 @@
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Exceptions/ExceptionToResponseMapper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Exceptions/ExceptionToMessageMapper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Types/OperationState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Meysam/Desktop/Pacco/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Meysam/Desktop/Pacco/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Meysam/Desktop/Pacco/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Handlers/GenericEventHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.Mongo/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Queries/GetOperation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Infrastructure/GrpcServiceHost.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.Mongo/Internals/MongoOutboxInitializer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/21BCA824-3AF7-4B5B-A3D8-97D8E6C79E81/3/LoggerConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.Mongo/Internals/MongoMessageOutbox.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.EntityFramework/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Meysam/Desktop/Pacco/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9266CB88-28FF-46EC-8EB1-7AAA8D5921C5/75/2ce04450/ISagaCoordinator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/appsettings.local.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger/IJaegerOptionsBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/Program.cs" root0="FORCE_HIGHLIGHTING" />
@@ -354,11 +239,13 @@
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Handlers/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/IOperationsService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/IHubWrapper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9266CB88-28FF-46EC-8EB1-7AAA8D5921C5/d4/8a822c99/SagaStates.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.EntityFramework/Internals/EntityFrameworkMessageOutbox.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/OperationUpdatedEventArgs.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/IHubService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Infrastructure/CorrelationContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Infrastructure/ExceptionToResponseMapper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/53CF9CE5-185B-4256-B9B5-67A070495B48/0f/169fd822/IBusPublisher.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Infrastructure/RequestsOptions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/appsettings.local.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/WebApi/PublicContractsMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
@@ -369,47 +256,22 @@
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/appsettings.docker.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.GrpcClient/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9266CB88-28FF-46EC-8EB1-7AAA8D5921C5/d1/e10d4384/Saga`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Meysam/Desktop/Pacco/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9266CB88-28FF-46EC-8EB1-7AAA8D5921C5/99/4971a356/ISaga.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9266CB88-28FF-46EC-8EB1-7AAA8D5921C5/67/22f01a95/Saga.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger/Builders/JaegerOptionsBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Meysam/Desktop/Pacco/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9266CB88-28FF-46EC-8EB1-7AAA8D5921C5/fa/1f412966/SagaId.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway/src/Pacco.APIGateway/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/Events/SignedIn.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.CQRS/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/FAB8AF11-488B-4973-9928-A24541F28226/8/HttpClientFactoryServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Meysam/Desktop/Pacco/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9266CB88-28FF-46EC-8EB1-7AAA8D5921C5/50/59317b4d/ISagaAction`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2BC5ED24-0D5C-402C-8B6A-BD14FFCEE267/25F/AsyncMethodBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.CQRS/Dispatchers/ServiceBusMessageDispatcher.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Events/ResourceReserved.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Events/ResourceReservationReleased.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Events/ResourceReservationCanceled.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Events/ResourceAdded.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Services/IEventMapper.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Events/External/Handlers/VehicleDeletedHandler.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Events/External/Handlers/CustomerCreatedHandler.cs" />
-      <option value="$PROJECT_DIR$/MicroPack/src/WebApi/IDispatcherEndpointsBuilder.cs" />
-      <option value="$PROJECT_DIR$/MicroPack/src/WebApi/DispatcherEndpointsBuilder.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Queries/GetResources.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Queries/GetResource.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/tests/Pacco.Services.Availability.Tests.Shared/Pacco.Services.Availability.Tests.Shared.csproj" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/tests/Pacco.Services.Availability.Tests.Shared/Fixtures/MongoDbFixture.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/tests/Pacco.Services.Availability.Tests.Shared/Fixtures/MongoDbFixtureInitializer.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/tests/Pacco.Services.Availability.Tests.Shared/Fixtures/RabbitMqFixture.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Infrastructure/Mongo/Queries/Handlers/GetResourceHandler.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Infrastructure/Mongo/Queries/Handlers/GetResourcesHandler.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Api/Pacco.Services.Availability.Api.csproj" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Infrastructure/Services/MessageBroker.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Commands/Handlers/DeleteResourceHandler.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Commands/Handlers/ReleaseResourceReservationHandler.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Commands/Handlers/ReserveResourceHandler.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/tests/Pacco.Services.Availability.Tests.EndToEnd/Pacco.Services.Availability.Tests.EndToEnd.csproj" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Commands/ReserveResource.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Infrastructure/Pacco.Services.Availability.Infrastructure.csproj" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Pacco.Services.Availability.Application.csproj" />
       <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Infrastructure/Decorators/OutboxCommandHandlerDecorator.cs" />
       <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Infrastructure/Decorators/OutboxEventHandlerDecorator.cs" />
       <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Infrastructure/Jaeger/Extensions.cs" />
@@ -429,11 +291,38 @@
       <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/tests/Pacco.Services.Availability.Tests.EndToEnd/Sync/AddResourceTests.cs" />
       <option value="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Factories/PaccoApplicationFactory.cs" />
       <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/ReserveResourceHandler.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Program.cs" />
       <option value="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Unit/Application/Handlers/ReserveResourceHandlerTests.cs" />
       <option value="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Unit/Core/Entities/CreateResourceTests.cs" />
       <option value="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Fixtures/RabbitMqFixture.cs" />
       <option value="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Integration/Async/AddResourceTests.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Performance/PerformanceTests.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.OrderMaker/src/Pacco.Services.OrderMaker/Sagas/AIOrderMakingSaga.cs" />
+      <option value="$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Decorators/LoggingHandlerDecorator.cs" />
+      <option value="$PROJECT_DIR$/MicroPack/src/Metrics.AppMetrics/Builders/MetricsOptionsBuilder.cs" />
+      <option value="$PROJECT_DIR$/MicroPack/src/Metrics.AppMetrics/MetricsOptions.cs" />
+      <option value="$PROJECT_DIR$/MicroPack/src/Metrics.AppMetrics/Extensions.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Metrics/MetricsJob.cs" />
+      <option value="$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger/Extensions.cs" />
+      <option value="$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger.RabbitMQ/Plugins/JaegerPlugin.cs" />
+      <option value="$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger.RabbitMQ/Extensions.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/appsettings.local.json" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Decorators/JaegerCommandHandlerDecorator.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Mongo/Documents/ResourceDocument.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Mongo/Documents/ReservationDocument.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Controllers/ResourcesController.cs" />
+      <option value="$PROJECT_DIR$/MicroPack/src/Vault/Extensions.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Program.cs" />
+      <option value="$PROJECT_DIR$/MicroPack/src/Security/Extensions.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Services/Clients/CustomersServiceClient.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/appsettings.local.json" />
+      <option value="$PROJECT_DIR$/MicroPack/src/WebApi.Security/Extensions.cs" />
+      <option value="$PROJECT_DIR$/MicroPack/src/WebApi.Security/CertificateMiddleware.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/appsettings.json" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Extensions.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/appsettings.local.json" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/appsettings.json" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Decorators/SecurityDecorator.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1j0YylGMOVIFPQMO18RhwYwhPRt" />
@@ -457,7 +346,7 @@
     <property name="do_not_show_solution_notification" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="threadsIsVisibleKey" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -569,12 +458,44 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="Pacco.Services.OrderMaker" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Pacco.Services.OrderMaker/src/Pacco.Services.OrderMaker/Pacco.Services.OrderMaker.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="Pacco.Services.OrderMaker" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Pacco.Services.Orders.Api: Pacco.Services.Orders" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Pacco.Services.Orders/src/Pacco.Services.Orders.Api/Pacco.Services.Orders.Api.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="Pacco.Services.Orders" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue=".NET Launch Settings Profile.Pacco.Services.Operations" />
       <item itemvalue=".NET Launch Settings Profile.Pacco.Services.Availability.Api: Pacco.Services.Availability" />
       <item itemvalue=".NET Launch Settings Profile.Pacco.APIGateway.Ocelot" />
       <item itemvalue=".NET Launch Settings Profile.Pacco.Services.Customers.Api: Pacco.Services.Customers" />
       <item itemvalue=".NET Launch Settings Profile.Pacco.Services.Identity.Api: Pacco.Services.Identity" />
+      <item itemvalue=".NET Launch Settings Profile.Pacco.Services.OrderMaker" />
+      <item itemvalue=".NET Launch Settings Profile.Pacco.Services.Orders.Api: Pacco.Services.Orders" />
       <item itemvalue=".NET Project.Grpc" />
       <item itemvalue="Compound.Avalibility/Ocelot/Identity/Customer/Operation" />
     </list>
@@ -654,7 +575,18 @@
       <workItem from="1609885371063" duration="305000" />
       <workItem from="1609951779247" duration="1337000" />
       <workItem from="1610026075785" duration="17976000" />
-      <workItem from="1610112906519" duration="5729000" />
+      <workItem from="1610112906519" duration="7773000" />
+      <workItem from="1610192991895" duration="9604000" />
+      <workItem from="1610280376177" duration="3778000" />
+      <workItem from="1610368573080" duration="3107000" />
+      <workItem from="1610371775944" duration="12383000" />
+      <workItem from="1610538122054" duration="179000" />
+      <workItem from="1610559652282" duration="365000" />
+      <workItem from="1610633170577" duration="5869000" />
+      <workItem from="1610720831949" duration="9613000" />
+      <workItem from="1610787916831" duration="8919000" />
+      <workItem from="1610883299232" duration="2307000" />
+      <workItem from="1611234014983" duration="585000" />
     </task>
     <task id="LOCAL-00001" summary="Add MicroPack to solution">
       <created>1603465351817</created>
@@ -844,45 +776,9 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/ReserveResourceHandler.cs</url>
-          <line>22</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Application\Commands\Handlers\ReserveResourceHandler.cs" initialLine="24" containingFunctionPresentation="method 'HandleAsync'" />
-          <option name="timeStamp" value="176" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/ReserveResourceHandler.cs</url>
           <line>23</line>
           <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Application\Commands\Handlers\ReserveResourceHandler.cs" initialLine="25" containingFunctionPresentation="method 'HandleAsync'" />
           <option name="timeStamp" value="177" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/ReserveResourceHandler.cs</url>
-          <line>25</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Application\Commands\Handlers\ReserveResourceHandler.cs" initialLine="27" containingFunctionPresentation="method 'HandleAsync'" />
-          <option name="timeStamp" value="178" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs</url>
-          <line>23</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Application\Commands\Handlers\AddResourceHandler.cs" initialLine="23" containingFunctionPresentation="method 'HandleAsync'" />
-          <option name="timeStamp" value="205" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs</url>
-          <line>29</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Application\Commands\Handlers\AddResourceHandler.cs" initialLine="29" containingFunctionPresentation="method 'HandleAsync'" />
-          <option name="timeStamp" value="207" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs</url>
-          <line>24</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Application\Commands\Handlers\AddResourceHandler.cs" initialLine="24" containingFunctionPresentation="method 'HandleAsync'" />
-          <option name="timeStamp" value="208" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs</url>
-          <line>30</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Application\Commands\Handlers\AddResourceHandler.cs" initialLine="30" containingFunctionPresentation="method 'HandleAsync'" />
-          <option name="timeStamp" value="209" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs</url>
@@ -893,7 +789,201 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs</url>
           <line>22</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\src\Pacco.Services.Availability.Application\Commands\Handlers\AddResourceHandler.cs" initialLine="22" containingFunctionPresentation="method 'HandleAsync'">
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\src\Pacco.Services.Availability.Application\Commands\Handlers\AddResourceHandler.cs" initialLine="22" containingFunctionPresentation="method 'HandleAsync'" />
+          <option name="timeStamp" value="215" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Commands/Handlers/ReserveResourceHandler.cs</url>
+          <line>29</line>
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\src\Pacco.Services.Availability.Application\Commands\Handlers\ReserveResourceHandler.cs" initialLine="29" containingFunctionPresentation="method 'HandleAsync'" />
+          <option name="timeStamp" value="217" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Commands/Handlers/ReserveResourceHandler.cs</url>
+          <line>31</line>
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\src\Pacco.Services.Availability.Application\Commands\Handlers\ReserveResourceHandler.cs" initialLine="31" containingFunctionPresentation="method 'HandleAsync'" />
+          <option name="timeStamp" value="218" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs</url>
+          <line>27</line>
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\src\Pacco.Services.Availability.Application\Commands\Handlers\AddResourceHandler.cs" initialLine="27" containingFunctionPresentation="method 'HandleAsync'" />
+          <option name="timeStamp" value="220" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs</url>
+          <line>28</line>
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\src\Pacco.Services.Availability.Application\Commands\Handlers\AddResourceHandler.cs" initialLine="28" containingFunctionPresentation="method 'HandleAsync'" />
+          <option name="timeStamp" value="221" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs</url>
+          <line>24</line>
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\src\Pacco.Services.Availability.Application\Commands\Handlers\AddResourceHandler.cs" initialLine="24" containingFunctionPresentation="method 'HandleAsync'" />
+          <option name="timeStamp" value="222" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs</url>
+          <line>29</line>
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\src\Pacco.Services.Availability.Application\Commands\Handlers\AddResourceHandler.cs" initialLine="29" containingFunctionPresentation="method 'HandleAsync'" />
+          <option name="timeStamp" value="223" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Commands/Handlers/ReserveResourceHandler.cs</url>
+          <line>21</line>
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\src\Pacco.Services.Availability.Application\Commands\Handlers\ReserveResourceHandler.cs" initialLine="21" containingFunctionPresentation="constructor 'ReserveResourceHandler'" />
+          <option name="timeStamp" value="239" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Commands/Handlers/ReserveResourceHandler.cs</url>
+          <line>28</line>
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\src\Pacco.Services.Availability.Application\Commands\Handlers\ReserveResourceHandler.cs" initialLine="28" containingFunctionPresentation="method 'HandleAsync'" />
+          <option name="timeStamp" value="240" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Commands/Handlers/ReserveResourceHandler.cs</url>
+          <line>20</line>
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\src\Pacco.Services.Availability.Application\Commands\Handlers\ReserveResourceHandler.cs" initialLine="20" containingFunctionPresentation="constructor 'ReserveResourceHandler'" />
+          <option name="timeStamp" value="241" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability-master/tests/Pacco.Services.Availability.Tests.EndToEnd/Sync/AddResourceTests.cs</url>
+          <line>47</line>
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\tests\Pacco.Services.Availability.Tests.EndToEnd\Sync\AddResourceTests.cs" initialLine="47" containingFunctionPresentation="method 'add_resource_endpoint_should_return_http_status_code_created'" />
+          <option name="timeStamp" value="246" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability-master/tests/Pacco.Services.Availability.Tests.EndToEnd/Sync/AddResourceTests.cs</url>
+          <line>48</line>
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\tests\Pacco.Services.Availability.Tests.EndToEnd\Sync\AddResourceTests.cs" initialLine="48" containingFunctionPresentation="method 'add_resource_endpoint_should_return_http_status_code_created'" />
+          <option name="timeStamp" value="247" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability-master/tests/Pacco.Services.Availability.Tests.EndToEnd/Sync/AddResourceTests.cs</url>
+          <line>49</line>
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\tests\Pacco.Services.Availability.Tests.EndToEnd\Sync\AddResourceTests.cs" initialLine="49" containingFunctionPresentation="method 'add_resource_endpoint_should_return_http_status_code_created'" />
+          <option name="timeStamp" value="248" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability-master/tests/Pacco.Services.Availability.Tests.EndToEnd/Sync/AddResourceTests.cs</url>
+          <line>41</line>
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\tests\Pacco.Services.Availability.Tests.EndToEnd\Sync\AddResourceTests.cs" initialLine="41" containingFunctionPresentation="method 'Act'" />
+          <option name="timeStamp" value="251" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability-master/tests/Pacco.Services.Availability.Tests.EndToEnd/Sync/AddResourceTests.cs</url>
+          <line>46</line>
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\tests\Pacco.Services.Availability.Tests.EndToEnd\Sync\AddResourceTests.cs" initialLine="46" containingFunctionPresentation="method 'add_resource_endpoint_should_return_http_status_code_created'" />
+          <option name="timeStamp" value="258" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Services/Clients/CustomersServiceClient.cs</url>
+          <line>38</line>
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Infrastructure\Services\Clients\CustomersServiceClient.cs" initialLine="38" containingFunctionPresentation="constructor 'CustomersServiceClient'">
+            <startOffsets>
+              <option value="1456" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1513" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="259" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Services/Clients/CustomersServiceClient.cs</url>
+          <line>34</line>
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Infrastructure\Services\Clients\CustomersServiceClient.cs" initialLine="34" containingFunctionPresentation="constructor 'CustomersServiceClient'">
+            <startOffsets>
+              <option value="1351" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1358" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="260" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Services/Clients/CustomersServiceClient.cs</url>
+          <line>28</line>
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Infrastructure\Services\Clients\CustomersServiceClient.cs" initialLine="28" containingFunctionPresentation="constructor 'CustomersServiceClient'">
+            <startOffsets>
+              <option value="1179" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1186" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="261" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Services/Clients/CustomersServiceClient.cs</url>
+          <line>39</line>
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Infrastructure\Services\Clients\CustomersServiceClient.cs" initialLine="39" containingFunctionPresentation="constructor 'CustomersServiceClient'">
+            <startOffsets>
+              <option value="1526" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1580" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="262" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Services/Clients/CustomersServiceClient.cs</url>
+          <line>37</line>
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Infrastructure\Services\Clients\CustomersServiceClient.cs" initialLine="37" containingFunctionPresentation="constructor 'CustomersServiceClient'">
+            <startOffsets>
+              <option value="1386" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1443" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="263" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Services/Clients/CustomersServiceClient.cs</url>
+          <line>42</line>
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Infrastructure\Services\Clients\CustomersServiceClient.cs" initialLine="42" containingFunctionPresentation="method 'GetStateAsync'">
+            <startOffsets>
+              <option value="1667" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1733" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="264" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/ReserveResourceHandler.cs</url>
+          <line>26</line>
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Application\Commands\Handlers\ReserveResourceHandler.cs" initialLine="26" containingFunctionPresentation="method 'HandleAsync'">
+            <startOffsets>
+              <option value="1104" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1166" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="265" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/ReserveResourceHandler.cs</url>
+          <line>33</line>
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Application\Commands\Handlers\ReserveResourceHandler.cs" initialLine="33" containingFunctionPresentation="method 'HandleAsync'">
+            <startOffsets>
+              <option value="1412" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1438" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="266" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs</url>
+          <line>22</line>
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Application\Commands\Handlers\AddResourceHandler.cs" initialLine="22" containingFunctionPresentation="method 'HandleAsync'">
             <startOffsets>
               <option value="832" />
             </startOffsets>
@@ -901,64 +991,12 @@
               <option value="886" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="215" />
+          <option name="timeStamp" value="268" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Commands/Handlers/ReserveResourceHandler.cs</url>
-          <line>29</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\src\Pacco.Services.Availability.Application\Commands\Handlers\ReserveResourceHandler.cs" initialLine="29" containingFunctionPresentation="method 'HandleAsync'">
-            <startOffsets>
-              <option value="1265" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1352" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="217" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Commands/Handlers/ReserveResourceHandler.cs</url>
-          <line>31</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\src\Pacco.Services.Availability.Application\Commands\Handlers\ReserveResourceHandler.cs" initialLine="31" containingFunctionPresentation="method 'HandleAsync'">
-            <startOffsets>
-              <option value="1383" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1462" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="218" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs</url>
-          <line>27</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\src\Pacco.Services.Availability.Application\Commands\Handlers\AddResourceHandler.cs" initialLine="27" containingFunctionPresentation="method 'HandleAsync'">
-            <startOffsets>
-              <option value="1018" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1083" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="220" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs</url>
-          <line>28</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\src\Pacco.Services.Availability.Application\Commands\Handlers\AddResourceHandler.cs" initialLine="28" containingFunctionPresentation="method 'HandleAsync'">
-            <startOffsets>
-              <option value="1096" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1133" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="221" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs</url>
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs</url>
           <line>24</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\src\Pacco.Services.Availability.Application\Commands\Handlers\AddResourceHandler.cs" initialLine="24" containingFunctionPresentation="method 'HandleAsync'">
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Application\Commands\Handlers\AddResourceHandler.cs" initialLine="24" containingFunctionPresentation="method 'HandleAsync'">
             <startOffsets>
               <option value="917" />
             </startOffsets>
@@ -966,293 +1004,59 @@
               <option value="978" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="222" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs</url>
-          <line>29</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\src\Pacco.Services.Availability.Application\Commands\Handlers\AddResourceHandler.cs" initialLine="29" containingFunctionPresentation="method 'HandleAsync'">
-            <startOffsets>
-              <option value="1146" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1198" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="223" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Commands/Handlers/ReserveResourceHandler.cs</url>
-          <line>21</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\src\Pacco.Services.Availability.Application\Commands\Handlers\ReserveResourceHandler.cs" initialLine="21" containingFunctionPresentation="constructor 'ReserveResourceHandler'">
-            <startOffsets>
-              <option value="986" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1035" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="239" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Commands/Handlers/ReserveResourceHandler.cs</url>
-          <line>28</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\src\Pacco.Services.Availability.Application\Commands\Handlers\ReserveResourceHandler.cs" initialLine="28" containingFunctionPresentation="method 'HandleAsync'">
-            <startOffsets>
-              <option value="1216" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1252" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="240" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Commands/Handlers/ReserveResourceHandler.cs</url>
-          <line>20</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\src\Pacco.Services.Availability.Application\Commands\Handlers\ReserveResourceHandler.cs" initialLine="20" containingFunctionPresentation="constructor 'ReserveResourceHandler'">
-            <startOffsets>
-              <option value="948" />
-            </startOffsets>
-            <endOffsets>
-              <option value="973" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="241" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability-master/tests/Pacco.Services.Availability.Tests.EndToEnd/Sync/AddResourceTests.cs</url>
-          <line>47</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\tests\Pacco.Services.Availability.Tests.EndToEnd\Sync\AddResourceTests.cs" initialLine="47" containingFunctionPresentation="method 'add_resource_endpoint_should_return_http_status_code_created'">
-            <startOffsets>
-              <option value="1660" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1694" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="246" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability-master/tests/Pacco.Services.Availability.Tests.EndToEnd/Sync/AddResourceTests.cs</url>
-          <line>48</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\tests\Pacco.Services.Availability.Tests.EndToEnd\Sync\AddResourceTests.cs" initialLine="48" containingFunctionPresentation="method 'add_resource_endpoint_should_return_http_status_code_created'">
-            <startOffsets>
-              <option value="1707" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1734" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="247" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability-master/tests/Pacco.Services.Availability.Tests.EndToEnd/Sync/AddResourceTests.cs</url>
-          <line>49</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\tests\Pacco.Services.Availability.Tests.EndToEnd\Sync\AddResourceTests.cs" initialLine="49" containingFunctionPresentation="method 'add_resource_endpoint_should_return_http_status_code_created'">
-            <startOffsets>
-              <option value="1747" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1795" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="248" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability-master/tests/Pacco.Services.Availability.Tests.EndToEnd/Sync/AddResourceTests.cs</url>
-          <line>41</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\tests\Pacco.Services.Availability.Tests.EndToEnd\Sync\AddResourceTests.cs" initialLine="41" containingFunctionPresentation="method 'Act'">
-            <startOffsets>
-              <option value="1398" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1457" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="251" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability-master/tests/Pacco.Services.Availability.Tests.EndToEnd/Sync/AddResourceTests.cs</url>
-          <line>46</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability-master\tests\Pacco.Services.Availability.Tests.EndToEnd\Sync\AddResourceTests.cs" initialLine="46" containingFunctionPresentation="method 'add_resource_endpoint_should_return_http_status_code_created'">
-            <startOffsets>
-              <option value="1586" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1647" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="258" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Integration/Async/AddResourceTests.cs</url>
-          <line>34</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\tests\Pacco.Services.Availability.Tests.Integration\Async\AddResourceTests.cs" initialLine="33" containingFunctionPresentation="method 'add_resource_command_should_add_document_with_given_id_to_database'">
-            <startOffsets>
-              <option value="1418" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1455" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="261" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Integration/Async/AddResourceTests.cs</url>
-          <line>29</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\tests\Pacco.Services.Availability.Tests.Integration\Async\AddResourceTests.cs" initialLine="28" containingFunctionPresentation="method 'add_resource_command_should_add_document_with_given_id_to_database'">
-            <startOffsets>
-              <option value="1248" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1267" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="262" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Integration/Async/AddResourceTests.cs</url>
-          <line>31</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\tests\Pacco.Services.Availability.Tests.Integration\Async\AddResourceTests.cs" initialLine="30" containingFunctionPresentation="method 'add_resource_command_should_add_document_with_given_id_to_database'">
-            <startOffsets>
-              <option value="1281" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1311" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="263" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Integration/Async/AddResourceTests.cs</url>
-          <line>32</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\tests\Pacco.Services.Availability.Tests.Integration\Async\AddResourceTests.cs" initialLine="31" containingFunctionPresentation="method 'add_resource_command_should_add_document_with_given_id_to_database'">
-            <startOffsets>
-              <option value="1324" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1351" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="264" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Fixtures/RabbitMqFixture.cs</url>
-          <line>42</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\tests\Pacco.Services.Availability.Tests.Shared\Fixtures\RabbitMqFixture.cs" initialLine="42" containingFunctionPresentation="method 'PublishAsync'">
-            <startOffsets>
-              <option value="1473" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1524" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="265" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Fixtures/RabbitMqFixture.cs</url>
-          <line>50</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\tests\Pacco.Services.Availability.Tests.Shared\Fixtures\RabbitMqFixture.cs" initialLine="50" containingFunctionPresentation="method 'PublishAsync'">
-            <startOffsets>
-              <option value="1984" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2010" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="267" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Fixtures/RabbitMqFixture.cs</url>
-          <line>51</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\tests\Pacco.Services.Availability.Tests.Shared\Fixtures\RabbitMqFixture.cs" initialLine="51" containingFunctionPresentation="method 'PublishAsync'">
-            <startOffsets>
-              <option value="2019" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2020" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="268" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Integration/Async/AddResourceTests.cs</url>
-          <line>23</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\tests\Pacco.Services.Availability.Tests.Integration\Async\AddResourceTests.cs" initialLine="23" containingFunctionPresentation="method 'add_resource_command_should_add_document_with_given_id_to_database'">
-            <startOffsets>
-              <option value="973" />
-            </startOffsets>
-            <endOffsets>
-              <option value="974" />
-            </endOffsets>
-          </properties>
           <option name="timeStamp" value="269" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Fixtures/RabbitMqFixture.cs</url>
-          <line>48</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\tests\Pacco.Services.Availability.Tests.Shared\Fixtures\RabbitMqFixture.cs" initialLine="48" containingFunctionPresentation="method 'PublishAsync'">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs</url>
+          <line>27</line>
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Application\Commands\Handlers\AddResourceHandler.cs" initialLine="27" containingFunctionPresentation="method 'HandleAsync'">
             <startOffsets>
-              <option value="1843" />
+              <option value="1018" />
             </startOffsets>
             <endOffsets>
-              <option value="1896" />
+              <option value="1083" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="270" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs</url>
+          <line>28</line>
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Application\Commands\Handlers\AddResourceHandler.cs" initialLine="28" containingFunctionPresentation="method 'HandleAsync'">
+            <startOffsets>
+              <option value="1096" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1133" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="271" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Fixtures/RabbitMqFixture.cs</url>
-          <line>47</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\tests\Pacco.Services.Availability.Tests.Shared\Fixtures\RabbitMqFixture.cs" initialLine="47" containingFunctionPresentation="method 'PublishAsync'">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/ReserveResourceHandler.cs</url>
+          <line>38</line>
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Application\Commands\Handlers\ReserveResourceHandler.cs" initialLine="38" containingFunctionPresentation="method 'HandleAsync'">
             <startOffsets>
-              <option value="1781" />
+              <option value="1553" />
             </startOffsets>
             <endOffsets>
-              <option value="1830" />
+              <option value="1580" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="272" />
+          <option name="timeStamp" value="277" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Fixtures/RabbitMqFixture.cs</url>
-          <line>46</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\tests\Pacco.Services.Availability.Tests.Shared\Fixtures\RabbitMqFixture.cs" initialLine="46" containingFunctionPresentation="method 'PublishAsync'">
+          <url>file://$PROJECT_DIR$/MicroPack/src/WebApi.Security/DefaultCertificatePermissionValidator.cs</url>
+          <line>9</line>
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\MicroPack\src\WebApi.Security\DefaultCertificatePermissionValidator.cs" initialLine="9" containingFunctionPresentation="method 'HasAccess'">
             <startOffsets>
-              <option value="1714" />
+              <option value="392" />
             </startOffsets>
             <endOffsets>
-              <option value="1768" />
+              <option value="396" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="273" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Fixtures/RabbitMqFixture.cs</url>
-          <line>45</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\tests\Pacco.Services.Availability.Tests.Shared\Fixtures\RabbitMqFixture.cs" initialLine="45" containingFunctionPresentation="method 'PublishAsync'">
-            <startOffsets>
-              <option value="1651" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1701" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="274" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Fixtures/RabbitMqFixture.cs</url>
-          <line>49</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\tests\Pacco.Services.Availability.Tests.Shared\Fixtures\RabbitMqFixture.cs" initialLine="49" containingFunctionPresentation="method 'PublishAsync'">
-            <startOffsets>
-              <option value="1909" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1971" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="275" />
+          <option name="timeStamp" value="302" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

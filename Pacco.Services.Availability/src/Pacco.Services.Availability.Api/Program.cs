@@ -16,6 +16,7 @@ namespace Pacco.Services.Availability.Api
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+                .UseVault()
                 .UseLogging()
                 .ConfigureWebHostDefaults(webBuilder => webBuilder
                     .UseStartup<Startup>());

@@ -1,15 +1,14 @@
-#!/bin/bash
 TAG=''
 VERSION_TAG=
 
-case "$TRAVIS_BRANCH" in
+case "${Branch_Name}" in
   "master")
     TAG=latest
-    VERSION_TAG=$TRAVIS_BUILD_NUMBER
+    VERSION_TAG=${Github_ID}
     ;;
   "develop")
     TAG=dev
-    VERSION_TAG=$TAG-$TRAVIS_BUILD_NUMBER
+    VERSION_TAG=${Github_ID}
     ;;    
 esac
 

@@ -241,8 +241,12 @@
               <e p="RabbitMqSubscriber.cs" t="Include" />
             </e>
           </e>
-          <e p="Metrics" t="Include">
+          <e p="Metrics.AppMetrics" t="Include">
+            <e p="Builders" t="Include">
+              <e p="MetricsOptionsBuilder.cs" t="Include" />
+            </e>
             <e p="Extensions.cs" t="Include" />
+            <e p="IMetricsOptionsBuilder.cs" t="Include" />
             <e p="MetricsOptions.cs" t="Include" />
           </e>
           <e p="MicroPack" t="Include">
@@ -334,13 +338,32 @@
               <e p="ConveyDefaultTracer.cs" t="Include" />
             </e>
           </e>
+          <e p="Tracing.Jaeger.RabbitMQ" t="Include">
+            <e p="Extensions.cs" t="Include" />
+            <e p="Plugins" t="Include">
+              <e p="JaegerPlugin.cs" t="Include" />
+            </e>
+          </e>
           <e p="Vault" t="Include">
             <e p="Extensions.cs" t="Include" />
-            <e p="IVaultStore.cs" t="Include" />
+            <e p="ICertificatesIssuer.cs" t="Include" />
+            <e p="ICertificatesService.cs" t="Include" />
+            <e p="IKeyValueSecrets.cs" t="Include" />
+            <e p="ILeaseService.cs" t="Include" />
+            <e p="Internals" t="Include">
+              <e p="CertificatesIssuer.cs" t="Include" />
+              <e p="CertificatesService.cs" t="Include" />
+              <e p="EmptyCertificatesIssuer.cs" t="Include" />
+              <e p="KeyValueSecrets.cs" t="Include" />
+              <e p="LeaseService.cs" t="Include" />
+              <e p="VaultHostedService.cs" t="Include" />
+            </e>
+            <e p="JsonParser.cs" t="Include" />
+            <e p="LeaseData.cs" t="Include" />
+            <e p="UserCredentials.cs" t="Include" />
             <e p="VaultAuthTypeNotSupportedException.cs" t="Include" />
             <e p="VaultException.cs" t="Include" />
             <e p="VaultOptions.cs" t="Include" />
-            <e p="VaultStore.cs" t="Include" />
           </e>
           <e p="WebApi" t="Include">
             <e p="ConveyFormatterResolver.cs" t="Include" />
@@ -374,6 +397,13 @@
             </e>
             <e p="WebApiEndpointDefinition.cs" t="Include" />
             <e p="WebApiOptions.cs" t="Include" />
+          </e>
+          <e p="WebApi.Security" t="Include">
+            <e p="CertificateMiddleware.cs" t="Include" />
+            <e p="DefaultCertificatePermissionValidator.cs" t="Include" />
+            <e p="Extensions.cs" t="Include" />
+            <e p="ICertificatePermissionValidator.cs" t="Include" />
+            <e p="SecurityOptions.cs" t="Include" />
           </e>
         </e>
       </e>
@@ -434,6 +464,7 @@
             <e p="bin" t="ExcludeRecursive" />
             <e p="certs" t="Include">
               <e p="localhost.cer" t="Include" />
+              <e p="localhost.pfx" t="Include" />
             </e>
             <e p="Controllers" t="Include">
               <e p="ResourcesController.cs" t="Include" />
@@ -569,14 +600,19 @@
           <e p="Pacco.Services.Availability.Infrastructure" t="IncludeRecursive">
             <e p="bin" t="ExcludeRecursive" />
             <e p="Decorators" t="Include">
+              <e p="JaegerCommandHandlerDecorator.cs" t="Include" />
               <e p="OutboxCommandHandlerDecorator.cs" t="Include" />
               <e p="OutboxEventHandlerDecorator.cs" t="Include" />
+              <e p="SecurityDecorator.cs" t="Include" />
             </e>
             <e p="Exceptions" t="Include">
               <e p="ExceptionToMessageMapper.cs" t="Include" />
               <e p="ExceptionToResponseMapper.cs" t="Include" />
             </e>
             <e p="Extensions.cs" t="Include" />
+            <e p="Metrics" t="Include">
+              <e p="MetricsJob.cs" t="Include" />
+            </e>
             <e p="Mongo" t="Include">
               <e p="Documents" t="Include">
                 <e p="Extensions.cs" t="Include" />
@@ -608,9 +644,6 @@
               <e p="EventMapper.cs" t="Include" />
               <e p="EventProcessor.cs" t="Include" />
               <e p="MessageBroker.cs" t="Include" />
-            </e>
-            <e p="tests" t="Include">
-              <e p="EnableInternalsTesting.cs" t="Include" />
             </e>
           </e>
         </e>
@@ -653,6 +686,7 @@
               </e>
             </e>
             <e p="Pacco.Services.Availability.Tests.Performance.csproj" t="IncludeRecursive" />
+            <e p="PerformanceTests.cs" t="Include" />
           </e>
           <e p="Pacco.Services.Availability.Tests.Shared" t="IncludeRecursive">
             <e p="bin" t="ExcludeRecursive" />
@@ -1136,6 +1170,306 @@
           <e p="Operations.proto" t="Include" />
           <e p="Pacco.Services.Operations.GrpcClient.csproj" t="IncludeRecursive" />
           <e p="Program.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Pacco.Services.OrderMaker" t="Include">
+        <e p="src\Pacco.Services.OrderMaker" t="IncludeRecursive">
+          <e p="appsettings.development.json" t="Include" />
+          <e p="appsettings.docker.json" t="Include" />
+          <e p="appsettings.json" t="Include" />
+          <e p="appsettings.local.json" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="certs" t="Include">
+            <e p="localhost.cer" t="Include" />
+          </e>
+          <e p="Commands" t="Include">
+            <e p="External" t="Include">
+              <e p="AddParcelToOrder.cs" t="Include" />
+              <e p="ApproveOrder.cs" t="Include" />
+              <e p="AssignVehicleToOrder.cs" t="Include" />
+              <e p="CancelOrder.cs" t="Include" />
+              <e p="CreateOrder.cs" t="Include" />
+              <e p="ReserveResource.cs" t="Include" />
+            </e>
+            <e p="MakeOrder.cs" t="Include" />
+          </e>
+          <e p="CorrelationContext.cs" t="Include" />
+          <e p="DTO" t="Include">
+            <e p="ReservationDto.cs" t="Include" />
+            <e p="ResourceDto.cs" t="Include" />
+            <e p="VehicleDto.cs" t="Include" />
+          </e>
+          <e p="Events" t="Include">
+            <e p="External" t="Include">
+              <e p="OrderApproved.cs" t="Include" />
+              <e p="OrderCreated.cs" t="Include" />
+              <e p="ParcelAddedToOrder.cs" t="Include" />
+              <e p="ResourceReserved.cs" t="Include" />
+              <e p="VehicleAssignedToOrder.cs" t="Include" />
+            </e>
+            <e p="MakeOrderCompleted.cs" t="Include" />
+            <e p="Rejected" t="Include">
+              <e p="MakeOrderRejected.cs" t="Include" />
+            </e>
+          </e>
+          <e p="ExceptionToResponseMapper.cs" t="Include" />
+          <e p="Extensions.cs" t="Include" />
+          <e p="Handlers" t="Include">
+            <e p="AIOrderMakingHandler.cs" t="Include" />
+          </e>
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Pacco.Services.OrderMaker.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Pacco.Services.OrderMaker.csproj" t="IncludeRecursive" />
+          <e p="Program.cs" t="Include" />
+          <e p="Properties" t="Include">
+            <e p="launchSettings.json" t="Include" />
+          </e>
+          <e p="Sagas" t="Include">
+            <e p="AIMakingOrderData.cs" t="Include" />
+            <e p="AIOrderMakingSaga.cs" t="Include" />
+          </e>
+          <e p="Services" t="Include">
+            <e p="Clients" t="Include">
+              <e p="AvailabilityServiceClient.cs" t="Include" />
+              <e p="IAvailabilityServiceClient.cs" t="Include" />
+              <e p="IVehiclesServiceClient.cs" t="Include" />
+              <e p="VehiclesServiceClient.cs" t="Include" />
+            </e>
+            <e p="IResourceReservationsService.cs" t="Include" />
+            <e p="ResourceReservationsService.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Pacco.Services.Orders" t="Include">
+        <e p="src\Pacco.Services.Orders.Api" t="IncludeRecursive">
+          <e p="appsettings.development.json" t="Include" />
+          <e p="appsettings.docker.json" t="Include" />
+          <e p="appsettings.json" t="Include" />
+          <e p="appsettings.local.json" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="certs" t="Include">
+            <e p="localhost.cer" t="Include" />
+          </e>
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Pacco.Services.Orders.Api.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Pacco.Services.Orders.Api.csproj" t="IncludeRecursive" />
+          <e p="Program.cs" t="Include" />
+          <e p="Properties" t="Include">
+            <e p="launchSettings.json" t="Include" />
+          </e>
+        </e>
+        <e p="src\Pacco.Services.Orders.Application" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Commands" t="Include">
+            <e p="AddParcelToOrder.cs" t="Include" />
+            <e p="ApproveOrder.cs" t="Include" />
+            <e p="AssignVehicleToOrder.cs" t="Include" />
+            <e p="CancelOrder.cs" t="Include" />
+            <e p="CreateOrder.cs" t="Include" />
+            <e p="DeleteOrder.cs" t="Include" />
+            <e p="DeleteParcelFromOrder.cs" t="Include" />
+            <e p="Handlers" t="Include">
+              <e p="AddParcelToOrderHandler.cs" t="Include" />
+              <e p="ApproveOrderHandler.cs" t="Include" />
+              <e p="AssignVehicleToOrderHandler.cs" t="Include" />
+              <e p="CancelOrderHandler.cs" t="Include" />
+              <e p="CreateOrderHandler.cs" t="Include" />
+              <e p="DeleteOrderHandler.cs" t="Include" />
+              <e p="DeleteParcelFromOrderHandler.cs" t="Include" />
+            </e>
+          </e>
+          <e p="ContractAttribute.cs" t="Include" />
+          <e p="DTO" t="Include">
+            <e p="OrderDto.cs" t="Include" />
+            <e p="OrderPricingDto.cs" t="Include" />
+            <e p="ParcelDto.cs" t="Include" />
+            <e p="VehicleDto.cs" t="Include" />
+          </e>
+          <e p="Events" t="Include">
+            <e p="External" t="Include">
+              <e p="CustomerCreated.cs" t="Include" />
+              <e p="DeliveryCompleted.cs" t="Include" />
+              <e p="DeliveryFailed.cs" t="Include" />
+              <e p="DeliveryStarted.cs" t="Include" />
+              <e p="Handlers" t="Include">
+                <e p="CustomerCreatedHandler.cs" t="Include" />
+                <e p="DeliveryCompletedHandler.cs" t="Include" />
+                <e p="DeliveryFailedHandler.cs" t="Include" />
+                <e p="DeliveryStartedHandler.cs" t="Include" />
+                <e p="ParcelDeletedHandler.cs" t="Include" />
+                <e p="ResourceReservationCanceledHandler.cs" t="Include" />
+                <e p="ResourceReservedHandler.cs" t="Include" />
+              </e>
+              <e p="ParcelDeleted.cs" t="Include" />
+              <e p="ResourceReservationCanceled.cs" t="Include" />
+              <e p="ResourceReserved.cs" t="Include" />
+            </e>
+            <e p="OrderApproved.cs" t="Include" />
+            <e p="OrderCanceled.cs" t="Include" />
+            <e p="OrderCompleted.cs" t="Include" />
+            <e p="OrderCreated.cs" t="Include" />
+            <e p="OrderDeleted.cs" t="Include" />
+            <e p="OrderDelivering.cs" t="Include" />
+            <e p="ParcelAddedToOrder.cs" t="Include" />
+            <e p="ParcelDeletedFromOrder.cs" t="Include" />
+            <e p="Rejected" t="Include">
+              <e p="AddParcelToOrderRejected.cs" t="Include" />
+              <e p="ApproveOrderRejected.cs" t="Include" />
+              <e p="AssignVehicleToOrderRejected.cs" t="Include" />
+              <e p="CancelOrderRejected.cs" t="Include" />
+              <e p="CompleteOrderRejected.cs" t="Include" />
+              <e p="CreateOrderRejected.cs" t="Include" />
+              <e p="DeleteOrderRejected.cs" t="Include" />
+              <e p="DeleteParcelFromOrderRejected.cs" t="Include" />
+              <e p="DeliveringOrderRejected.cs" t="Include" />
+              <e p="OrderForDeliveryNotFound.cs" t="Include" />
+              <e p="OrderForReservedVehicleNotFound.cs" t="Include" />
+            </e>
+            <e p="VehicleAssignedToOrder.cs" t="Include" />
+          </e>
+          <e p="Exceptions" t="Include">
+            <e p="AppException.cs" t="Include" />
+            <e p="CustomerAlreadyAddedException.cs" t="Include" />
+            <e p="OrderForReservedVehicleNotFoundException.cs" t="Include" />
+            <e p="OrderHasNoParcelsException.cs" t="Include" />
+            <e p="OrderNotFoundException.cs" t="Include" />
+            <e p="ParcelNotFoundException.cs" t="Include" />
+            <e p="UnauthorizedOrderAccessException.cs" t="Include" />
+            <e p="VehicleNotFoundException.cs" t="Include" />
+          </e>
+          <e p="Extensions.cs" t="Include" />
+          <e p="IAppContext.cs" t="Include" />
+          <e p="IIdentityContext.cs" t="Include" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Pacco.Services.Orders.Application.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Pacco.Services.Orders.Application.csproj" t="IncludeRecursive" />
+          <e p="Queries" t="Include">
+            <e p="GetOrder.cs" t="Include" />
+            <e p="GetOrders.cs" t="Include" />
+          </e>
+          <e p="Services" t="Include">
+            <e p="Clients" t="Include">
+              <e p="IParcelsServiceClient.cs" t="Include" />
+              <e p="IPricingServiceClient.cs" t="Include" />
+              <e p="IVehiclesServiceClient.cs" t="Include" />
+            </e>
+            <e p="IDateTimeProvider.cs" t="Include" />
+            <e p="IEventMapper.cs" t="Include" />
+            <e p="IMessageBroker.cs" t="Include" />
+          </e>
+        </e>
+        <e p="src\Pacco.Services.Orders.Core" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Entities" t="Include">
+            <e p="AggregateId.cs" t="Include" />
+            <e p="AggregateRoot.cs" t="Include" />
+            <e p="Customer.cs" t="Include" />
+            <e p="Order.cs" t="Include" />
+            <e p="OrderStatus.cs" t="Include" />
+            <e p="Parcel.cs" t="Include" />
+          </e>
+          <e p="Events" t="Include">
+            <e p="OrderStateChanged.cs" t="Include" />
+            <e p="ParcelAdded.cs" t="Include" />
+            <e p="ParcelDeleted.cs" t="Include" />
+          </e>
+          <e p="Exceptions" t="Include">
+            <e p="CannotChangeOrderPriceException.cs" t="Include" />
+            <e p="CannotChangeOrderStateException.cs" t="Include" />
+            <e p="CannotDeleteOrderException.cs" t="Include" />
+            <e p="CustomerNotFoundException.cs" t="Include" />
+            <e p="DomainException.cs" t="Include" />
+            <e p="InvalidAggregateIdException.cs" t="Include" />
+            <e p="InvalidOrderPriceException.cs" t="Include" />
+            <e p="OrderParcelNotFoundException.cs" t="Include" />
+            <e p="ParcelAlreadyAddedToOrderException.cs" t="Include" />
+          </e>
+          <e p="IDomainEvent.cs" t="Include" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Pacco.Services.Orders.Core.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Pacco.Services.Orders.Core.csproj" t="IncludeRecursive" />
+          <e p="Repositories" t="Include">
+            <e p="ICustomerRepository.cs" t="Include" />
+            <e p="IParcelRepository.cs" t="Include" />
+          </e>
+        </e>
+        <e p="src\Pacco.Services.Orders.Infrastructure" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Contexts" t="Include">
+            <e p="AppContext.cs" t="Include" />
+            <e p="AppContextFactory.cs" t="Include" />
+            <e p="CorrelationContext.cs" t="Include" />
+            <e p="IdentityContext.cs" t="Include" />
+          </e>
+          <e p="Decorators" t="Include">
+            <e p="OutboxCommandHandlerDecorator.cs" t="Include" />
+            <e p="OutboxEventHandlerDecorator.cs" t="Include" />
+          </e>
+          <e p="Exceptions" t="Include">
+            <e p="ExceptionToMessageMapper.cs" t="Include" />
+            <e p="ExceptionToResponseMapper.cs" t="Include" />
+          </e>
+          <e p="Extensions.cs" t="Include" />
+          <e p="IAppContextFactory.cs" t="Include" />
+          <e p="Logging" t="Include">
+            <e p="Extensions.cs" t="Include" />
+            <e p="MessageToLogTemplateMapper.cs" t="Include" />
+          </e>
+          <e p="Mongo" t="Include">
+            <e p="Documents" t="Include">
+              <e p="CustomerDocument.cs" t="Include" />
+              <e p="Extensions.cs" t="Include" />
+              <e p="OrderDocument.cs" t="Include" />
+            </e>
+            <e p="Queries" t="Include">
+              <e p="Handlers" t="Include">
+                <e p="GetOrderHandler.cs" t="Include" />
+                <e p="GetOrdersHandler.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Repositories" t="Include">
+              <e p="CustomerMongoRepository.cs" t="Include" />
+              <e p="OrderMongoRepository.cs" t="Include" />
+            </e>
+          </e>
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Pacco.Services.Orders.Infrastructure.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Pacco.Services.Orders.Infrastructure.csproj" t="IncludeRecursive" />
+          <e p="Services" t="Include">
+            <e p="Clients" t="Include">
+              <e p="ParcelsServiceClient.cs" t="Include" />
+              <e p="PricingServiceClient.cs" t="Include" />
+              <e p="VehiclesServiceClient.cs" t="Include" />
+            </e>
+            <e p="DateTimeProvider.cs" t="Include" />
+            <e p="EventMapper.cs" t="Include" />
+            <e p="MessageBroker.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="Pacco.sln" t="IncludeFlat" />

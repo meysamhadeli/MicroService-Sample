@@ -1,0 +1,24 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: infra-ingress
+spec:
+  rules:
+  - host: redis.meysam.com
+    http:
+      paths:
+      - backend:
+          serviceName: redis-service
+          servicePort: 6379
+  - host: mongo.meysam.com
+    http:
+      paths:
+      - backend:
+          serviceName: mongo-service
+          servicePort: 27017
+  - host: rabbitmq.meysam.com
+    http:
+      paths:
+      - backend:
+          serviceName: rabbitmq-service
+          servicePort: 15672

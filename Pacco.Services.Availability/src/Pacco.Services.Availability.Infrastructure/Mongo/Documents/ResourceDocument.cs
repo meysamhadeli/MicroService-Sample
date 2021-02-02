@@ -4,7 +4,7 @@ using MicroPack.MicroPack.Types;
 
 namespace Pacco.Services.Availability.Infrastructure.Mongo.Documents
 {
-    internal sealed class ResourceDocument : IIdentifiable<Guid>
+    public class ResourceDocument : IIdentifiable<Guid>
     {
         public Guid Id { get; set; }
         public int Version { get; set; }

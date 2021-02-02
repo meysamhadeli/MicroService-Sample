@@ -13,7 +13,7 @@ scrape_configs:
 
   - job_name: 'availability-service'
     static_configs:
-      - targets: ['availability-service']
+      - targets: ['docker.for.win.localhost:5001']
 
   - job_name: 'customers-service'
     static_configs:

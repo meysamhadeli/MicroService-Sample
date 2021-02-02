@@ -3,11 +3,11 @@ using System.Threading.Tasks;
 
 namespace MicroPack.Vault
 {
-    public interface IVaultStore
+    public interface IKeyValueSecrets
     {
         Task<T> GetDefaultAsync<T>();
         Task<IDictionary<string, object>> GetDefaultAsync();
-        Task<T> GetAsync<T>(string key);
-        Task<IDictionary<string, object>> GetAsync(string key);
+        Task<T> GetAsync<T>(string path);
+        Task<IDictionary<string, object>> GetAsync(string path);
     }
 }

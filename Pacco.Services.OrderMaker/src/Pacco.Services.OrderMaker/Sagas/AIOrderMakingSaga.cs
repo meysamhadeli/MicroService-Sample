@@ -52,7 +52,7 @@ namespace Pacco.Services.OrderMaker.Sagas
                 OrderApproved m => m.OrderId.ToString(),
                 _ => base.ResolveId(message, context)
             };
-
+  
         public async Task HandleAsync(MakeOrder message, ISagaContext context)
         {
             _logger.LogInformation($"Started a saga for order: '{message.OrderId}'.");
@@ -62,10 +62,12 @@ namespace Pacco.Services.OrderMaker.Sagas
 
             await _publisher.PublishAsync(new CreateOrder(Data.OrderId, message.CustomerId),
                 messageContext: _accessor.CorrelationContext,
-                headers: new Dictionary<string, object>
+                headers: new Dictionary<string, object>()
                 {
+                    //{"SagaHeader",SagaStates.Pending.ToString()}
                     [SagaHeader] = SagaStates.Pending.ToString()
                 });
+            
         }
 
         public async Task HandleAsync(OrderCreated message, ISagaContext context)

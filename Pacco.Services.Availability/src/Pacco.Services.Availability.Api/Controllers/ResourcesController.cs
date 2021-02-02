@@ -51,6 +51,7 @@ namespace Pacco.Services.Availability.Api.Controllers
         [HttpGet]
         public async Task<ActionResult<string>> Get()
         {
+            await Task.Delay(1000);
             return "meysam";
         }
 

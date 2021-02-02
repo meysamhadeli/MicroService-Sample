@@ -55,8 +55,8 @@ services:
     container_name: mongo
     restart: unless-stopped
     # environment:
-    #   - MONGO_INITDB_ROOT_USERNAME=root
-    #   - MONGO_INITDB_ROOT_PASSWORD=secret
+     # - MONGO_INITDB_ROOT_USERNAME=root
+     # - MONGO_INITDB_ROOT_PASSWORD=secret
     networks:
       - pacco
     ports:
@@ -145,4 +145,3 @@ volumes:
     driver: local
   # seq:
   #   driver: local
-  
