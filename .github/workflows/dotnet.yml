@@ -20,7 +20,7 @@ jobs:
         
     - name: Print slug/short variables
       run: |
-        echo "   branch        : ${{ github.head_ref }}"
+        echo "   branch        : ${{ GITHUB_REF#refs/heads/ }}"
         echo "Github_ID: ${{ github.run_id }}"
         echo "   username        : ${{ secrets.DOCKER_USERNAME }}"
         echo "   password        : ${{ secrets.DOCKER_PASSWORD }}"
