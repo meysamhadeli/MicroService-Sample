@@ -19,5 +19,5 @@ jobs:
     
     - name: build and dockerize
       run: |
-       sh ./../../scripts/build.sh
-       sh ./../../scripts/dockerize.sh
+       sh ./../scripts/build.sh
+       sh ./../scripts/dockerize.sh
