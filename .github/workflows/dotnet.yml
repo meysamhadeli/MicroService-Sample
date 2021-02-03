@@ -41,8 +41,8 @@ jobs:
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-        Branch_Name: ${{ env.GITHUB_REF_SLUG }}
-        Github_ID: ${{ env.Github_ID }}
+        Branch_Name: "master"
+        Github_ID: 1222
       run: |
        sh ./scripts/dockerize.sh
     
