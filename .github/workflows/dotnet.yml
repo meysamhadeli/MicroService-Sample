@@ -37,10 +37,14 @@ jobs:
         echo "Short SHA variables"
         echo "   sha        : ${{ env.GITHUB_SHA_SHORT }}"
         
-    env:
+    - name: build
+      env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
         Branch_Name: ${{ env.GITHUB_REF_SLUG }}
         Github_ID: ${{ env.Github_ID }}
+      run: |
+       sh ./scripts/dockerize.sh
+    
  
       
