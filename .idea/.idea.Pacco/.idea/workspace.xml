@@ -36,11 +36,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68b822f7-648c-444c-96de-7a0b39bf4f4d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/scripts/dotnet-pack-micro-pack.sh" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/scripts/dotnet-pack-micro-pack.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Pacco.Services.Availability.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Pacco.Services.Availability.Api.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Pacco.Services.Availability.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Pacco.Services.Availability.Application.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.EndToEnd/Pacco.Services.Availability.Tests.EndToEnd.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.EndToEnd/Pacco.Services.Availability.Tests.EndToEnd.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Pacco.Services.Availability.Tests.Shared.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Pacco.Services.Availability.Tests.Shared.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,8 +217,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Infrastructure/Jaeger/Extensions.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Infrastructure/Services/Clients/CustomersServiceClient.cs" />
       <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Events/Rejected/AddResourceRejected.cs" />
       <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Events/Rejected/DeleteResourceRejected.cs" />
       <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Events/Rejected/ReleaseResourceRejected.cs" />
@@ -271,6 +266,8 @@
       <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Decorators/SecurityDecorator.cs" />
       <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Pacco.Services.Availability.Api.csproj" />
       <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Pacco.Services.Availability.Application.csproj" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.EndToEnd/Pacco.Services.Availability.Tests.EndToEnd.csproj" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Pacco.Services.Availability.Tests.Shared.csproj" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1j0YylGMOVIFPQMO18RhwYwhPRt" />
@@ -537,6 +534,7 @@
       <workItem from="1611234014983" duration="585000" />
       <workItem from="1612363028382" duration="827000" />
       <workItem from="1612389652712" duration="180000" />
+      <workItem from="1612390118962" duration="272000" />
     </task>
     <task id="LOCAL-00001" summary="Add MicroPack to solution">
       <created>1603465351817</created>

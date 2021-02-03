@@ -14,10 +14,10 @@
     <PackageReference Include="Shouldly" Version="3.0.2" />
     <PackageReference Include="xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
+    <PackageReference Include="MicroPack" Version="1.2.*" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\MicroPack\src\MicroPack.csproj" />
     <ProjectReference Include="..\..\src\Pacco.Services.Availability.Api\Pacco.Services.Availability.Api.csproj" />
     <ProjectReference Include="..\..\src\Pacco.Services.Availability.Application\Pacco.Services.Availability.Application.csproj" />
     <ProjectReference Include="..\..\src\Pacco.Services.Availability.Infrastructure\Pacco.Services.Availability.Infrastructure.csproj" />
