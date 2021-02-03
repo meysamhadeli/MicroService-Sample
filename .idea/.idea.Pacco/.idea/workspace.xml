@@ -36,39 +36,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68b822f7-648c-444c-96de-7a0b39bf4f4d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Decorators/JaegerCommandHandlerDecorator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Decorators/SecurityDecorator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Metrics/MetricsJob.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Performance/PerformanceTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/riderModule.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Metrics/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Metrics/MetricsOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MicroPack.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/MicroPack.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Security/Convey.Security.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/Vault/Extensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/IVaultStore.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/VaultAuthTypeNotSupportedException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/Vault/VaultAuthTypeNotSupportedException.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/VaultException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/Vault/VaultException.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/VaultOptions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/Vault/VaultOptions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/VaultStore.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Controllers/ResourcesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Controllers/ResourcesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/appsettings.local.json" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/appsettings.local.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Extensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Mongo/Documents/ReservationDocument.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Mongo/Documents/ReservationDocument.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Mongo/Documents/ResourceDocument.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Mongo/Documents/ResourceDocument.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Services/Clients/CustomersServiceClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Services/Clients/CustomersServiceClient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Tests/EnableInternalsTesting.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/appsettings.local.json" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/appsettings.local.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/appsettings.local.json" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/appsettings.local.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.OrderMaker/src/Pacco.Services.OrderMaker/Sagas/AIOrderMakingSaga.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.OrderMaker/src/Pacco.Services.OrderMaker/Sagas/AIOrderMakingSaga.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco/compose/infrastructure.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco/compose/infrastructure.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco/compose/prometheus/prometheus.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco/compose/prometheus/prometheus.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroPack/scripts/dotnet-pack-micro-pack.sh" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/scripts/dotnet-pack-micro-pack.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Pacco.Services.Availability.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Pacco.Services.Availability.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Pacco.Services.Availability.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Pacco.Services.Availability.Application.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,201 +51,175 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/IMessageOutboxAccessor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/IMessageOutboxConfigurator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/IMessageOutbox.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/OutboxOptions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Plugins/RabbitMqPluginsRegistry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/IAccessTokenService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/JsonWebTokenPayload.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/JsonWebToken.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/JwtHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/IJwtHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/AuthAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/JwtAuthAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/AccessTokenValidatorMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/Services/IMessageBroker.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2BC5ED24-0D5C-402C-8B6A-BD14FFCEE267/2AC/MethodBase.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Outbox/InMemoryMessageOutbox.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/AccessTokenService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Subscribers/RabbitMqSubscriber.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/JwtOptions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/Services/Identity/RefreshTokenService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers/IBusPublisher.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/Services/Identity/IdentityService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/CQRS/Commands/ICommandHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers/IMessagePropertiesAccessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.Mongo/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers/IMessageProperties.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.Mongo/Internals/MongoOutboxInitializer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers/CorrelationContextAccessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.Mongo/Internals/MongoMessageOutbox.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers/IBusSubscriber.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers/ICorrelationContextAccessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.EntityFramework/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger/IJaegerOptionsBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.EntityFramework/Internals/EntityFrameworkMessageOutbox.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger/JaegerOptions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/appsettings.local.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/appsettings.local.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication/Controllers/WeatherForecastController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Auth/PasswordService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Auth/Rng.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Auth/JwtProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger/Builders/JaegerOptionsBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway/src/Pacco.APIGateway/Infrastructure/CorrelationContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Contexts/CorrelationContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway/src/Pacco.APIGateway/Infrastructure/CorrelationContextBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Infrastructure/Contexts/CorrelationContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Contexts/AppContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Contexts/IdentityContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Infrastructure/Contexts/IdentityContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Contexts/AppContextFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Infrastructure/Contexts/AppContextFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Services/MessageBroker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Infrastructure/Services/MessageBroker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Decorators/OutboxCommandHandlerDecorator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Decorators/OutboxEventHandlerDecorator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Exceptions/ExceptionToResponseMapper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway/src/Pacco.APIGateway/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Exceptions/ExceptionToMessageMapper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/Logging/CorrelationContextLoggingMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/Logging/Options/ConsoleOptions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/Logging/Options/SeqOptions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/Logging/Options/ElkOptions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Messages/OutboxMessage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/Logging/Options/FileOptions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Messages/InboxMessage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/WebApi/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MicroPack/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway/src/Pacco.APIGateway/Infrastructure/CorrelationContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/CQRS/Commands/ICommandHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Processors/OutboxProcessor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway/src/Pacco.APIGateway/Infrastructure/CorrelationContextBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Configurators/MessageOutboxConfigurator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Application/IIdentityContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/appsettings.local.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/appsettings.development.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/appsettings.docker.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/appsettings.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2BC5ED24-0D5C-402C-8B6A-BD14FFCEE267/30/4972c254/Func`2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Startup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Application/DTO/CustomerDto.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/ocelot.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2BC5ED24-0D5C-402C-8B6A-BD14FFCEE267/df/15fa2fe6/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F7CA45F0-C5CF-4243-9732-FE9571C41B37/1B/HostingOptions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Security/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F7CA45F0-C5CF-4243-9732-FE9571C41B37/1E/AspNetCoreDiagnosticOptions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/messages.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Security/ISigner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/67DEEEA0-6C91-48C7-AF38-A73CD231FD1B/02/97923dfb/HttpContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Infrastructure/Contexts/CorrelationContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Security/Internals/Signer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Infrastructure/Contexts/IdentityContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Security/Internals/Hasher.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Infrastructure/Contexts/AppContextFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Security/Internals/Encryptor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Hubs/PaccoHub.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/233AC80E-3FE7-49B0-A48C-1BD1CECF5EA0/2f/7c266fc7/AppMetricsServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Mongo/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Infrastructure/Services/MessageBroker.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MicroPack/ConveyBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MicroPack/IConveyBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/RabbitMqPlugin.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/ConventionsRegistry.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8338029A-4D54-40B8-9F70-31A55A74DF13/40/248f9e5f/MetricsMiddlewareApplicationBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/IConventions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/HubWrapper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/IContextProvider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2BC5ED24-0D5C-402C-8B6A-BD14FFCEE267/1E0/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/HubService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/IRabbitMqSerializer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/849B28EE-106E-4AF5-A970-AC152CA22BF5/14/4b72e0d6/DefaultEndpointsApplicationBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/RabbitMqOptions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Auth/JwtProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/appsettings.development.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/appsettings.docker.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CB515CC-B7A8-46D5-9718-66F0C2E452EA/dd/4935ad8a/DefaultEndpointsApplicationBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/CorrelationContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/OperationsService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/AnonymousRoutesOptions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/appsettings.local.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/messages.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/appsettings.development.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/AsyncRoutesOptions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Plugins/RabbitMqPluginsRegistry.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/IAccessTokenService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/appsettings.docker.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/ocelot.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/DTO/OperationDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/appsettings.development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/Controllers/Customers2Controller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/appsettings.docker.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/obj/Debug/netcoreapp3.1/Operations.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/CorrelationContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/obj/Debug/netcoreapp3.1/OperationsGrpc.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Hubs/PaccoHub.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/AsyncRoutesMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/AnonymousRoutesOptions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/AsyncRoutesOptions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/IAnonymousRouteValidator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/ResourceIdGeneratorMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/IPayloadBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/CorrelationContextHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/CorrelationContextBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/AsyncRouteOptions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Mongo/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Auth/PasswordService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/DTO/OperationDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/ICorrelationContextBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Auth/Rng.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/PayloadBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/AnonymousRouteValidator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Services/MessageBroker.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/JsonWebTokenPayload.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/Controllers/Customers2Controller.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/JsonWebToken.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/CorrelationContextHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/JwtHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/ExceptionToResponseMapper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/IJwtHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/AuthAttribute.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/JwtAuthAttribute.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/AccessTokenValidatorMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/AccessTokenService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/JwtOptions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication/Controllers/WeatherForecastController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/EF7CC6D6-928D-4251-A19B-D12387C95CD3/1/WebApplicationFactory.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Application/Commands/CompleteCustomerRegistration.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/IIdentityContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers/IBusPublisher.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/obj/Debug/netcoreapp3.1/Operations.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Subscribers/RabbitMqSubscriber.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers/IMessagePropertiesAccessor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers/IMessageProperties.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/AnonymousRouteValidator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Security/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Security/ISigner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Application/IIdentityContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Application/DTO/CustomerDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/Redis/IRedisOptionsBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers/CorrelationContextAccessor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/ContractAttribute.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers/IBusSubscriber.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Redis/RedisOptions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers/ICorrelationContextAccessor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Redis/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Contexts/CorrelationContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/obj/Debug/netcoreapp3.1/OperationsGrpc.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/IAppContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Redis/Builders/RedisOptionsBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Contexts/AppContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/20735148-1523-4917-A5E8-F91B0B239405/54/JsonSerializerInternalReader.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Contexts/IdentityContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Contexts/AppContextFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Decorators/OutboxCommandHandlerDecorator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Infrastructure/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Decorators/OutboxEventHandlerDecorator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Types/SignalrOptions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Exceptions/ExceptionToResponseMapper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Exceptions/ExceptionToMessageMapper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Types/OperationState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Handlers/GenericEventHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.Mongo/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Queries/GetOperation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Infrastructure/GrpcServiceHost.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.Mongo/Internals/MongoOutboxInitializer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/21BCA824-3AF7-4B5B-A3D8-97D8E6C79E81/3/LoggerConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.Mongo/Internals/MongoMessageOutbox.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Types/SignalrOptions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Redis/RedisOptions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Redis/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Redis/Builders/RedisOptionsBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Types/OperationState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.EntityFramework/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9266CB88-28FF-46EC-8EB1-7AAA8D5921C5/75/2ce04450/ISagaCoordinator.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/appsettings.local.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger/IJaegerOptionsBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger/JaegerOptions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Queries/GetOperation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.CQRS/Dispatchers/ServiceBusMessageDispatcher.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Handlers/GenericRejectedEventHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Handlers/GenericCommandHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Handlers/GenericEventHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/IIdentityContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Handlers/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/IOperationsService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/HubService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/IHubWrapper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9266CB88-28FF-46EC-8EB1-7AAA8D5921C5/d4/8a822c99/SagaStates.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.EntityFramework/Internals/EntityFrameworkMessageOutbox.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/OperationUpdatedEventArgs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/HubWrapper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/ContractAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/IHubService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/OperationsService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Infrastructure/CorrelationContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/IAppContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Infrastructure/ExceptionToResponseMapper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/53CF9CE5-185B-4256-B9B5-67A070495B48/0f/169fd822/IBusPublisher.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Infrastructure/RequestsOptions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/appsettings.local.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/WebApi/PublicContractsMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Infrastructure/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/appsettings.development.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Infrastructure/Subscriptions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/appsettings.docker.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.GrpcClient/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9266CB88-28FF-46EC-8EB1-7AAA8D5921C5/d1/e10d4384/Saga`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9266CB88-28FF-46EC-8EB1-7AAA8D5921C5/99/4971a356/ISaga.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9266CB88-28FF-46EC-8EB1-7AAA8D5921C5/67/22f01a95/Saga.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger/Builders/JaegerOptionsBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9266CB88-28FF-46EC-8EB1-7AAA8D5921C5/fa/1f412966/SagaId.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway/src/Pacco.APIGateway/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/Events/SignedIn.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.CQRS/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/FAB8AF11-488B-4973-9928-A24541F28226/8/HttpClientFactoryServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9266CB88-28FF-46EC-8EB1-7AAA8D5921C5/50/59317b4d/ISagaAction`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2BC5ED24-0D5C-402C-8B6A-BD14FFCEE267/25F/AsyncMethodBuilder.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.CQRS/Dispatchers/ServiceBusMessageDispatcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/IMessageOutboxAccessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/IMessageOutboxConfigurator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/IMessageOutbox.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Application/Commands/CompleteCustomerRegistration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/OutboxOptions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Outbox/InMemoryMessageOutbox.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Security/Internals/Signer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Messages/OutboxMessage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Security/Internals/Hasher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Messages/InboxMessage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Security/Internals/Encryptor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/WebApi/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Processors/OutboxProcessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Configurators/MessageOutboxConfigurator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/WebApi/PublicContractsMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/RabbitMqPlugin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Infrastructure/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/ConventionsRegistry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/Events/SignedIn.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/IConventions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/IContextProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MicroPack/ConveyBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MicroPack/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/IRabbitMqSerializer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MicroPack/IConveyBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/RabbitMqOptions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Infrastructure/Decorators/OutboxCommandHandlerDecorator.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Infrastructure/Decorators/OutboxEventHandlerDecorator.cs" />
       <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Infrastructure/Jaeger/Extensions.cs" />
       <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Infrastructure/Services/Clients/CustomersServiceClient.cs" />
       <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Events/Rejected/AddResourceRejected.cs" />
@@ -323,6 +269,8 @@
       <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/appsettings.local.json" />
       <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/appsettings.json" />
       <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Decorators/SecurityDecorator.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Pacco.Services.Availability.Api.csproj" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Pacco.Services.Availability.Application.csproj" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1j0YylGMOVIFPQMO18RhwYwhPRt" />
@@ -587,6 +535,8 @@
       <workItem from="1610787916831" duration="8919000" />
       <workItem from="1610883299232" duration="2307000" />
       <workItem from="1611234014983" duration="585000" />
+      <workItem from="1612363028382" duration="827000" />
+      <workItem from="1612389652712" duration="180000" />
     </task>
     <task id="LOCAL-00001" summary="Add MicroPack to solution">
       <created>1603465351817</created>

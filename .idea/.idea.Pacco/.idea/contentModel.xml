@@ -126,6 +126,7 @@
             <e p="MicroPackHttpLoggingFilter.cs" t="Include" />
             <e p="MicroPackLoggingScopeHttpMessageHandler.cs" t="Include" />
           </e>
+          <e p="icon.png" t="Include" />
           <e p="Logging" t="Include">
             <e p="CorrelationContextLoggingMiddleware.cs" t="Include" />
             <e p="Extensions.cs" t="Include" />
