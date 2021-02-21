@@ -36,8 +36,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68b822f7-648c-444c-96de-7a0b39bf4f4d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/MicroPack/src/EventStore/EventSourceOptions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroPack/src/MicroPack.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/MicroPack.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroPack/src/Mongo/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/Mongo/Extensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/JsonParser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MicroPack/src/Vault/JsonParser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroPack/src/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Pacco.Services.Availability.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Pacco.Services.Availability.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Events/IDomainEventHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Events/IDomainEventHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Pacco.Services.Availability.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Pacco.Services.Availability.Application.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Services/IEventMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Services/IEventMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Services/IEventProcessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Services/IEventProcessor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Entities/AggregateRoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Entities/AggregateRoot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Entities/Resource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Entities/Resource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Events/IDomainEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Events/ReservationAdded.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Events/ReservationAdded.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Events/ReservationCanceled.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Events/ReservationCanceled.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Events/ReservationReleased.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Events/ReservationReleased.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Events/ResourceCreated.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Events/ResourceCreated.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Events/ResourceDeleted.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Events/ResourceDeleted.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Pacco.Services.Availability.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Pacco.Services.Availability.Core.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Extensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Mongo/Documents/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Mongo/Documents/Extensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Mongo/Documents/ResourceDocument.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Mongo/Documents/ResourceDocument.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Services/EventMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Services/EventMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Services/EventProcessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Services/EventProcessor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.EndToEnd/Pacco.Services.Availability.Tests.EndToEnd.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.EndToEnd/Pacco.Services.Availability.Tests.EndToEnd.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Pacco.Services.Availability.Tests.Shared.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Pacco.Services.Availability.Tests.Shared.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Unit/Application/Handlers/ReserveResourceHandlerTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Unit/Application/Handlers/ReserveResourceHandlerTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Unit/Core/Entities/CreateResourceTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Unit/Core/Entities/CreateResourceTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,226 +78,227 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Plugins/RabbitMqPluginsRegistry.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/IAccessTokenService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/JsonWebTokenPayload.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/JsonWebToken.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/JwtHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/IJwtHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/AuthAttribute.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/JwtAuthAttribute.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/AccessTokenValidatorMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/Services/IMessageBroker.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/AccessTokenService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Subscribers/RabbitMqSubscriber.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/JwtOptions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/Services/Identity/RefreshTokenService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers/IBusPublisher.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/Services/Identity/IdentityService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/CQRS/Commands/ICommandHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers/IMessagePropertiesAccessor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.Mongo/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers/IMessageProperties.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.Mongo/Internals/MongoOutboxInitializer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers/CorrelationContextAccessor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.Mongo/Internals/MongoMessageOutbox.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers/IBusSubscriber.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers/ICorrelationContextAccessor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.EntityFramework/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger/IJaegerOptionsBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.EntityFramework/Internals/EntityFrameworkMessageOutbox.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger/JaegerOptions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Outbox/InMemoryMessageOutbox.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Handlers/GenericRejectedEventHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Messages/OutboxMessage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Handlers/GenericCommandHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Messages/InboxMessage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Handlers/GenericEventHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Processors/OutboxProcessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Handlers/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Configurators/MessageOutboxConfigurator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/appsettings.local.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/appsettings.local.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication/Controllers/WeatherForecastController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Auth/PasswordService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Auth/Rng.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Auth/JwtProvider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger/Builders/JaegerOptionsBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway/src/Pacco.APIGateway/Infrastructure/CorrelationContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/appsettings.development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/appsettings.docker.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/RabbitMqPlugin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/ConventionsRegistry.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Contexts/CorrelationContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway/src/Pacco.APIGateway/Infrastructure/CorrelationContextBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Infrastructure/Contexts/CorrelationContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Contexts/AppContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Contexts/IdentityContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Infrastructure/Contexts/IdentityContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Contexts/AppContextFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Infrastructure/Contexts/AppContextFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/IOperationsService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/HubService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/IConventions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/IHubWrapper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/IContextProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/OperationUpdatedEventArgs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/HubWrapper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/IHubService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/IRabbitMqSerializer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/OperationsService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/RabbitMqOptions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Services/MessageBroker.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Infrastructure/Services/MessageBroker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Decorators/OutboxCommandHandlerDecorator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Decorators/OutboxEventHandlerDecorator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Exceptions/ExceptionToResponseMapper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway/src/Pacco.APIGateway/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/CQRS/Commands/ICommandHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Exceptions/ExceptionToMessageMapper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Infrastructure/CorrelationContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Infrastructure/ExceptionToResponseMapper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Infrastructure/RequestsOptions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Plugins/RabbitMqPluginsRegistry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Infrastructure/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Infrastructure/Subscriptions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.GrpcClient/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/BC542A5C-3AD0-4C34-A080-02E941B52719/1E0/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/appsettings.local.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Subscribers/RabbitMqSubscriber.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/Events/SignedIn.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Application/Commands/CompleteCustomerRegistration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.Mongo/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.Mongo/Internals/MongoOutboxInitializer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.Mongo/Internals/MongoMessageOutbox.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.EntityFramework/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/Services/IMessageBroker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Infrastructure/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/WebApi/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/WebApi/PublicContractsMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.EntityFramework/Internals/EntityFrameworkMessageOutbox.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/Services/Identity/RefreshTokenService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/Services/Identity/IdentityService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Infrastructure/Contexts/CorrelationContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Infrastructure/Contexts/IdentityContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Infrastructure/Contexts/AppContextFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Infrastructure/Services/MessageBroker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/appsettings.local.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/appsettings.development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/appsettings.docker.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/ocelot.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/appsettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/Logging/CorrelationContextLoggingMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/Logging/Options/ConsoleOptions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/Logging/Options/SeqOptions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/Logging/Options/ElkOptions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/Logging/Options/FileOptions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/appsettings.development.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/appsettings.docker.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/appsettings.local.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/messages.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/appsettings.development.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/appsettings.docker.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/ocelot.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/appsettings.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Startup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/DTO/OperationDto.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/appsettings.development.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/Controllers/Customers2Controller.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/appsettings.docker.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway/src/Pacco.APIGateway/Infrastructure/CorrelationContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/messages.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway/src/Pacco.APIGateway/Infrastructure/CorrelationContextBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/DTO/OperationDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Security/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Security/ISigner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Security/Internals/Signer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Security/Internals/Hasher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Security/Internals/Encryptor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MicroPack/ConveyBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MicroPack/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MicroPack/IConveyBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication/Controllers/WeatherForecastController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Redis/IRedisOptionsBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/IAccessTokenService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/JsonWebTokenPayload.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Redis/RedisOptions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/JsonWebToken.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Redis/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/JwtHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/IJwtHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/AuthAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/JwtAuthAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/AccessTokenValidatorMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Auth/PasswordService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/AccessTokenService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Auth/Rng.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/obj/Debug/netcoreapp3.1/Operations.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/appsettings.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/CorrelationContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Authentication/JwtOptions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Infrastructure/Auth/JwtProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Redis/Builders/RedisOptionsBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers/IBusPublisher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway/src/Pacco.APIGateway/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers/IMessagePropertiesAccessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers/IMessageProperties.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/obj/Debug/netcoreapp3.1/OperationsGrpc.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Infrastructure/GrpcServiceHost.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers/CorrelationContextAccessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers/IBusSubscriber.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers/ICorrelationContextAccessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger/IJaegerOptionsBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.CQRS/Dispatchers/ServiceBusMessageDispatcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger/JaegerOptions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Hubs/PaccoHub.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger/Builders/JaegerOptionsBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/IIdentityContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Types/SignalrOptions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Application/IIdentityContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Types/OperationState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/CorrelationContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/AsyncRoutesMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/ContractAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/AnonymousRoutesOptions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/AsyncRoutesOptions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/IAnonymousRouteValidator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/IAppContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/ResourceIdGeneratorMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/IPayloadBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/CorrelationContextHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/CorrelationContextBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/AsyncRouteOptions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Mongo/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/ICorrelationContextBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Queries/GetOperation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/Mongo/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/PayloadBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/ExceptionToResponseMapper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/AnonymousRouteValidator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Security/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Security/ISigner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Application/IIdentityContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Application/DTO/CustomerDto.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Redis/IRedisOptionsBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Infrastructure/GrpcServiceHost.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Types/SignalrOptions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Redis/RedisOptions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Redis/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Redis/Builders/RedisOptionsBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Types/OperationState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Queries/GetOperation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.CQRS/Dispatchers/ServiceBusMessageDispatcher.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Handlers/GenericRejectedEventHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Handlers/GenericCommandHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Handlers/GenericEventHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/IIdentityContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Handlers/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/IOperationsService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/HubService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/IHubWrapper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/OperationUpdatedEventArgs.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/HubWrapper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/ContractAttribute.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/IHubService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Services/OperationsService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Infrastructure/CorrelationContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/IAppContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Infrastructure/ExceptionToResponseMapper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Infrastructure/RequestsOptions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Infrastructure/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.Api/Infrastructure/Subscriptions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Operations/src/Pacco.Services.Operations.GrpcClient/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.CQRS/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Infrastructure/AnonymousRouteValidator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Application/DTO/CustomerDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/IMessageOutboxAccessor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/IMessageOutboxConfigurator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/IMessageOutbox.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Application/Commands/CompleteCustomerRegistration.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/OutboxOptions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Outbox/InMemoryMessageOutbox.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Security/Internals/Signer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Messages/OutboxMessage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Security/Internals/Hasher.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Messages/InboxMessage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/Security/Internals/Encryptor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/WebApi/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Processors/OutboxProcessor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Configurators/MessageOutboxConfigurator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/WebApi/PublicContractsMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/RabbitMqPlugin.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Infrastructure/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/ConventionsRegistry.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Application/Events/SignedIn.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/IConventions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/IContextProvider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MicroPack/ConveyBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MicroPack/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/IRabbitMqSerializer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MicroPack/IConveyBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/RabbitMqOptions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/OutboxOptions.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Events/Rejected/AddResourceRejected.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Events/Rejected/DeleteResourceRejected.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Events/Rejected/ReleaseResourceRejected.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Events/Rejected/ReleaseResourceReservationRejected.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Api/appsettings.json" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Api/Startup.cs" />
-      <option value="$PROJECT_DIR$/MicroPack/src/CQRS/Commands/Extensions.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Api/Controllers/ResourcesController.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Application/Extensions.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Infrastructure/Extensions.cs" />
-      <option value="$PROJECT_DIR$/MicroPack/src/WebApi/Extensions.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/src/Pacco.Services.Availability.Api/Program.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability-master/tests/Pacco.Services.Availability.Tests.EndToEnd/Sync/AddResourceTests.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Factories/PaccoApplicationFactory.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/ReserveResourceHandler.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Unit/Application/Handlers/ReserveResourceHandlerTests.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Unit/Core/Entities/CreateResourceTests.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Fixtures/RabbitMqFixture.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Integration/Async/AddResourceTests.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Performance/PerformanceTests.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.OrderMaker/src/Pacco.Services.OrderMaker/Sagas/AIOrderMakingSaga.cs" />
-      <option value="$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Decorators/LoggingHandlerDecorator.cs" />
-      <option value="$PROJECT_DIR$/MicroPack/src/Metrics.AppMetrics/Builders/MetricsOptionsBuilder.cs" />
-      <option value="$PROJECT_DIR$/MicroPack/src/Metrics.AppMetrics/MetricsOptions.cs" />
-      <option value="$PROJECT_DIR$/MicroPack/src/Metrics.AppMetrics/Extensions.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Metrics/MetricsJob.cs" />
-      <option value="$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger/Extensions.cs" />
-      <option value="$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger.RabbitMQ/Plugins/JaegerPlugin.cs" />
-      <option value="$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger.RabbitMQ/Extensions.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Identity/src/Pacco.Services.Identity.Api/appsettings.local.json" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Decorators/JaegerCommandHandlerDecorator.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Mongo/Documents/ResourceDocument.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Mongo/Documents/ReservationDocument.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Controllers/ResourcesController.cs" />
-      <option value="$PROJECT_DIR$/MicroPack/src/Vault/Extensions.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Program.cs" />
-      <option value="$PROJECT_DIR$/MicroPack/src/Security/Extensions.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Services/Clients/CustomersServiceClient.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/appsettings.local.json" />
-      <option value="$PROJECT_DIR$/MicroPack/src/WebApi.Security/Extensions.cs" />
-      <option value="$PROJECT_DIR$/MicroPack/src/WebApi.Security/CertificateMiddleware.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Customers/src/Pacco.Services.Customers.Api/appsettings.json" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Extensions.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/appsettings.local.json" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/appsettings.json" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Decorators/SecurityDecorator.cs" />
-      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Pacco.Services.Availability.Api.csproj" />
       <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Pacco.Services.Availability.Application.csproj" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Pacco.Services.Availability.Api.csproj" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Startup.cs" />
+      <option value="$PROJECT_DIR$/MicroPack/src/Mongo/Extensions.cs" />
+      <option value="$PROJECT_DIR$/MicroPack/src/EventStore/EventSourceOptions.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/appsettings.json" />
       <option value="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.EndToEnd/Pacco.Services.Availability.Tests.EndToEnd.csproj" />
       <option value="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Pacco.Services.Availability.Tests.Shared.csproj" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Entities/AggregateRoot.cs" />
+      <option value="$PROJECT_DIR$/MicroPack/src/EventStore/EventBus/EventConsumerFactory.cs" />
+      <option value="$PROJECT_DIR$/MicroPack/src/EventStore/EventBus/IEventConsumer.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Mongo/Documents/ResourceDocument.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Unit/Core/Entities/CreateResourceTests.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Services/EventProcessor.cs" />
+      <option value="$PROJECT_DIR$/MicroPack/src/EventStore/Models/IDomainEvent.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/AddResource.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.EndToEnd/Sync/AddResourceTests.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Integration/Async/AddResourceTests.cs" />
+      <option value="$PROJECT_DIR$/MicroPack/src/EventStore/Repo.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Unit/Application/Handlers/ReserveResourceHandlerTests.cs" />
+      <option value="$PROJECT_DIR$/MicroPack/src/EventStore/Models/Aggregate.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Services/EventMapper.cs" />
+      <option value="$PROJECT_DIR$/MicroPack/src/EventStore/IEventsRepository.cs" />
+      <option value="$PROJECT_DIR$/MicroPack/src/EventStore/IEventSerializer.cs" />
+      <option value="$PROJECT_DIR$/MicroPack/src/EventStore/Models/BaseDomainEvent.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/DeleteResourceHandler.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/ReleaseResourceReservationHandler.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/ReserveResourceHandler.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Mongo/Documents/Extensions.cs" />
+      <option value="$PROJECT_DIR$/MicroPack/src/EventStore/Models/IAggregateRoot.cs" />
+      <option value="$PROJECT_DIR$/MicroPack/src/EventStore/Models/BaseAggregateRoot.cs" />
+      <option value="$PROJECT_DIR$/MicroPack/src/EventStore/EventsRepository.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Services/IEventProcessor.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Events/IDomainEventHandler.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Services/IEventMapper.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/EventStore/JsonEventSerializer.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/EventStore/Models/IAggregateRoot.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Events/ReservationAdded.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Events/ReservationCanceled.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Events/ReservationReleased.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Events/ResourceDeleted.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/EventStore/Models/BaseAggregateRoot.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/EventStore/EventsRepository.cs" />
+      <option value="$PROJECT_DIR$/MicroPack/src/EventStore/Extensions.cs" />
+      <option value="$PROJECT_DIR$/MicroPack/src/EventStore/IEventsService.cs" />
+      <option value="$PROJECT_DIR$/MicroPack/src/EventStore/EventsService.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Infrastructure/Extensions.cs" />
+      <option value="$PROJECT_DIR$/MicroPack/src/EventStore/JsonEventSerializer.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Entities/Resource.cs" />
+      <option value="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Events/ResourceCreated.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1j0YylGMOVIFPQMO18RhwYwhPRt" />
@@ -282,7 +313,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.35005337" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.4701174" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="ToolWindowBuild.ShowToolbar" value="false" />
@@ -291,7 +322,7 @@
     <property name="do_not_show_solution_notification" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="threadsIsVisibleKey" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -535,6 +566,21 @@
       <workItem from="1612363028382" duration="827000" />
       <workItem from="1612389652712" duration="180000" />
       <workItem from="1612390118962" duration="272000" />
+      <workItem from="1612550898772" duration="328000" />
+      <workItem from="1612559827101" duration="391000" />
+      <workItem from="1613505839730" duration="591000" />
+      <workItem from="1613506456988" duration="1058000" />
+      <workItem from="1613644909521" duration="12754000" />
+      <workItem from="1613662740499" duration="1622000" />
+      <workItem from="1613675295061" duration="5022000" />
+      <workItem from="1613681026573" duration="3944000" />
+      <workItem from="1613738810041" duration="21101000" />
+      <workItem from="1613813025248" duration="9903000" />
+      <workItem from="1613827386250" duration="1477000" />
+      <workItem from="1613829380782" duration="404000" />
+      <workItem from="1613833772744" duration="652000" />
+      <workItem from="1613835898869" duration="9300000" />
+      <workItem from="1613902467504" duration="2079000" />
     </task>
     <task id="LOCAL-00001" summary="Add MicroPack to solution">
       <created>1603465351817</created>
@@ -565,6 +611,16 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -730,7 +786,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs</url>
-          <line>31</line>
+          <line>40</line>
           <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Application\Commands\Handlers\AddResourceHandler.cs" initialLine="31" containingFunctionPresentation="method 'HandleAsync'" />
           <option name="timeStamp" value="210" />
         </line-breakpoint>
@@ -929,58 +985,6 @@
           <option name="timeStamp" value="266" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs</url>
-          <line>22</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Application\Commands\Handlers\AddResourceHandler.cs" initialLine="22" containingFunctionPresentation="method 'HandleAsync'">
-            <startOffsets>
-              <option value="832" />
-            </startOffsets>
-            <endOffsets>
-              <option value="886" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="268" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs</url>
-          <line>24</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Application\Commands\Handlers\AddResourceHandler.cs" initialLine="24" containingFunctionPresentation="method 'HandleAsync'">
-            <startOffsets>
-              <option value="917" />
-            </startOffsets>
-            <endOffsets>
-              <option value="978" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="269" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs</url>
-          <line>27</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Application\Commands\Handlers\AddResourceHandler.cs" initialLine="27" containingFunctionPresentation="method 'HandleAsync'">
-            <startOffsets>
-              <option value="1018" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1083" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="270" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs</url>
-          <line>28</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Application\Commands\Handlers\AddResourceHandler.cs" initialLine="28" containingFunctionPresentation="method 'HandleAsync'">
-            <startOffsets>
-              <option value="1096" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1133" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="271" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/ReserveResourceHandler.cs</url>
           <line>38</line>
           <properties documentPath="C:\Users\Meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Application\Commands\Handlers\ReserveResourceHandler.cs" initialLine="38" containingFunctionPresentation="method 'HandleAsync'">
@@ -1005,6 +1009,481 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="302" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/EventStore/EventsService.cs</url>
+          <line>34</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\EventsService.cs" initialLine="27" containingFunctionPresentation="method 'PersistAsync'" />
+          <option name="timeStamp" value="308" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs</url>
+          <line>38</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Application\Commands\Handlers\AddResourceHandler.cs" initialLine="34" containingFunctionPresentation="method 'HandleAsync'">
+            <startOffsets>
+              <option value="1577" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1629" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="311" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/EventStore/Models/BaseAggregateRoot.cs</url>
+          <line>53</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\Models\BaseAggregateRoot.cs" initialLine="46" containingFunctionPresentation="method 'Create'" />
+          <option name="timeStamp" value="326" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/EventStore/Models/BaseAggregateRoot.cs</url>
+          <line>54</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\Models\BaseAggregateRoot.cs" initialLine="47" containingFunctionPresentation="method 'Create'" />
+          <option name="timeStamp" value="327" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/EventStore/Models/BaseAggregateRoot.cs</url>
+          <line>55</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\Models\BaseAggregateRoot.cs" initialLine="48" containingFunctionPresentation="method 'Create'" />
+          <option name="timeStamp" value="328" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/EventStore/Models/BaseAggregateRoot.cs</url>
+          <line>57</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\Models\BaseAggregateRoot.cs" initialLine="50" containingFunctionPresentation="method 'Create'" />
+          <option name="timeStamp" value="329" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/EventStore/Models/BaseAggregateRoot.cs</url>
+          <line>62</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\Models\BaseAggregateRoot.cs" initialLine="55" containingFunctionPresentation="method 'Create'" />
+          <option name="timeStamp" value="331" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/EventStore/Models/BaseAggregateRoot.cs</url>
+          <line>64</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\Models\BaseAggregateRoot.cs" initialLine="57" containingFunctionPresentation="method 'Create'" />
+          <option name="timeStamp" value="332" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs</url>
+          <line>36</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Application\Commands\Handlers\AddResourceHandler.cs" initialLine="34" containingFunctionPresentation="method 'HandleAsync'">
+            <startOffsets>
+              <option value="1482" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1551" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="338" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Commands/Handlers/AddResourceHandler.cs</url>
+          <line>39</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Application\Commands\Handlers\AddResourceHandler.cs" initialLine="37" containingFunctionPresentation="method 'HandleAsync'">
+            <startOffsets>
+              <option value="1638" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1639" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="351" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/EventStore/Models/Aggregate.cs</url>
+          <line>19</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\Models\Aggregate.cs" initialLine="19" containingFunctionPresentation="method 'AddEvent'" />
+          <option name="timeStamp" value="381" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/EventStore/Models/Aggregate.cs</url>
+          <line>17</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\Models\Aggregate.cs" initialLine="17" containingFunctionPresentation="method 'AddEvent'" />
+          <option name="timeStamp" value="382" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/EventStore/Models/Aggregate.cs</url>
+          <line>18</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\Models\Aggregate.cs" initialLine="18" containingFunctionPresentation="method 'AddEvent'" />
+          <option name="timeStamp" value="383" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/EventStore/Models/BaseAggregateRoot.cs</url>
+          <line>33</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\Models\BaseAggregateRoot.cs" initialLine="33" containingFunctionPresentation="method 'AddEvent'" />
+          <option name="timeStamp" value="404" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/EventStore/Models/BaseAggregateRoot.cs</url>
+          <line>31</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\Models\BaseAggregateRoot.cs" initialLine="31" containingFunctionPresentation="method 'AddEvent'" />
+          <option name="timeStamp" value="405" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/EventStore/Models/BaseAggregateRoot.cs</url>
+          <line>29</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\Models\BaseAggregateRoot.cs" initialLine="29" containingFunctionPresentation="method 'AddEvent'" />
+          <option name="timeStamp" value="406" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/EventStore/Models/BaseAggregateRoot.cs</url>
+          <line>34</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\Models\BaseAggregateRoot.cs" initialLine="34" containingFunctionPresentation="method 'AddEvent'" />
+          <option name="timeStamp" value="407" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/EventStore/Models/BaseDomainEvent.cs</url>
+          <line>19</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\Models\BaseDomainEvent.cs" initialLine="19" containingFunctionPresentation="constructor 'BaseDomainEvent'" />
+          <option name="timeStamp" value="434" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/EventStore/Models/BaseDomainEvent.cs</url>
+          <line>20</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\Models\BaseDomainEvent.cs" initialLine="20" containingFunctionPresentation="constructor 'BaseDomainEvent'" />
+          <option name="timeStamp" value="435" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/EventStore/Models/BaseDomainEvent.cs</url>
+          <line>22</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\Models\BaseDomainEvent.cs" initialLine="22" containingFunctionPresentation="constructor 'BaseDomainEvent'" />
+          <option name="timeStamp" value="436" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/EventStore/JsonEventSerializer.cs</url>
+          <line>51</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Core\EventStore\JsonEventSerializer.cs" initialLine="43" containingFunctionPresentation="method 'Deserialize'" />
+          <option name="timeStamp" value="451" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/EventStore/Models/BaseAggregateRoot.cs</url>
+          <line>53</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Core\EventStore\Models\BaseAggregateRoot.cs" initialLine="53" containingFunctionPresentation="method 'Create'" />
+          <option name="timeStamp" value="456" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/EventStore/Models/BaseAggregateRoot.cs</url>
+          <line>55</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Core\EventStore\Models\BaseAggregateRoot.cs" initialLine="55" containingFunctionPresentation="method 'Create'" />
+          <option name="timeStamp" value="457" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/EventStore/Models/BaseAggregateRoot.cs</url>
+          <line>57</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Core\EventStore\Models\BaseAggregateRoot.cs" initialLine="57" containingFunctionPresentation="method 'Create'" />
+          <option name="timeStamp" value="458" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/EventStore/Models/BaseAggregateRoot.cs</url>
+          <line>58</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Core\EventStore\Models\BaseAggregateRoot.cs" initialLine="58" containingFunctionPresentation="method 'Create'" />
+          <option name="timeStamp" value="459" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/EventStore/Models/BaseAggregateRoot.cs</url>
+          <line>59</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Core\EventStore\Models\BaseAggregateRoot.cs" initialLine="59" containingFunctionPresentation="method 'Create'" />
+          <option name="timeStamp" value="460" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/EventStore/Models/BaseAggregateRoot.cs</url>
+          <line>60</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Core\EventStore\Models\BaseAggregateRoot.cs" initialLine="60" containingFunctionPresentation="method 'Create'" />
+          <option name="timeStamp" value="461" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/EventStore/Models/BaseAggregateRoot.cs</url>
+          <line>62</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Core\EventStore\Models\BaseAggregateRoot.cs" initialLine="62" containingFunctionPresentation="method 'Create'" />
+          <option name="timeStamp" value="462" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/EventStore/Models/BaseAggregateRoot.cs</url>
+          <line>64</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Core\EventStore\Models\BaseAggregateRoot.cs" initialLine="64" containingFunctionPresentation="method 'Create'" />
+          <option name="timeStamp" value="463" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/EventStore/EventsRepository.cs</url>
+          <line>88</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Core\EventStore\EventsRepository.cs" initialLine="88" containingFunctionPresentation="method 'RehydrateAsync'" />
+          <option name="timeStamp" value="467" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/EventStore/EventsRepository.cs</url>
+          <line>90</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Core\EventStore\EventsRepository.cs" initialLine="90" containingFunctionPresentation="method 'RehydrateAsync'" />
+          <option name="timeStamp" value="468" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/EventStore/EventsRepository.cs</url>
+          <line>82</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Core\EventStore\EventsRepository.cs" initialLine="82" containingFunctionPresentation="method 'RehydrateAsync'" />
+          <option name="timeStamp" value="469" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/EventStore/JsonEventSerializer.cs</url>
+          <line>29</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Core\EventStore\JsonEventSerializer.cs" initialLine="29" containingFunctionPresentation="method 'Deserialize'" />
+          <option name="timeStamp" value="471" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/EventStore/JsonEventSerializer.cs</url>
+          <line>36</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Core\EventStore\JsonEventSerializer.cs" initialLine="36" containingFunctionPresentation="lambda expression inside method 'Deserialize'" />
+          <option name="timeStamp" value="472" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/EventStore/JsonEventSerializer.cs</url>
+          <line>38</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Core\EventStore\JsonEventSerializer.cs" initialLine="38" containingFunctionPresentation="method 'Deserialize'" />
+          <option name="timeStamp" value="473" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/EventStore/JsonEventSerializer.cs</url>
+          <line>40</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Core\EventStore\JsonEventSerializer.cs" initialLine="40" containingFunctionPresentation="method 'Deserialize'" />
+          <option name="timeStamp" value="474" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/EventStore/JsonEventSerializer.cs</url>
+          <line>42</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Core\EventStore\JsonEventSerializer.cs" initialLine="42" containingFunctionPresentation="method 'Deserialize'" />
+          <option name="timeStamp" value="475" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/EventStore/JsonEventSerializer.cs</url>
+          <line>43</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Core\EventStore\JsonEventSerializer.cs" initialLine="43" containingFunctionPresentation="method 'Deserialize'" />
+          <option name="timeStamp" value="476" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/EventStore/Models/BaseAggregateRoot.cs</url>
+          <line>45</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Core\EventStore\Models\BaseAggregateRoot.cs" initialLine="45" containingFunctionPresentation="constructor 'BaseAggregateRoot'" />
+          <option name="timeStamp" value="477" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/EventStore/Models/BaseAggregateRoot.cs</url>
+          <line>47</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Core\EventStore\Models\BaseAggregateRoot.cs" initialLine="47" containingFunctionPresentation="constructor 'BaseAggregateRoot'" />
+          <option name="timeStamp" value="479" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/EventStore/Models/BaseAggregateRoot.cs</url>
+          <line>48</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\Pacco.Services.Availability\src\Pacco.Services.Availability.Core\EventStore\Models\BaseAggregateRoot.cs" initialLine="48" containingFunctionPresentation="constructor 'BaseAggregateRoot'" />
+          <option name="timeStamp" value="480" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/EventStore/EventsRepository.cs</url>
+          <line>88</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\EventsRepository.cs" initialLine="88" containingFunctionPresentation="method 'RehydrateAsync'">
+            <startOffsets>
+              <option value="2814" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2903" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="481" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/EventStore/EventsRepository.cs</url>
+          <line>96</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\EventsRepository.cs" initialLine="96" containingFunctionPresentation="method 'Map'">
+            <startOffsets>
+              <option value="3154" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3240" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="482" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/EventStore/JsonEventSerializer.cs</url>
+          <line>43</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\JsonEventSerializer.cs" initialLine="43" containingFunctionPresentation="method 'Deserialize'">
+            <startOffsets>
+              <option value="1547" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1631" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="483" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/EventStore/JsonEventSerializer.cs</url>
+          <line>45</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\JsonEventSerializer.cs" initialLine="45" containingFunctionPresentation="method 'Deserialize'">
+            <startOffsets>
+              <option value="1645" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1680" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="484" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/EventStore/JsonEventSerializer.cs</url>
+          <line>46</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\JsonEventSerializer.cs" initialLine="46" containingFunctionPresentation="method 'Deserialize'">
+            <startOffsets>
+              <option value="1689" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1690" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="485" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/EventStore/EventsRepository.cs</url>
+          <line>90</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\EventsRepository.cs" initialLine="90" containingFunctionPresentation="method 'RehydrateAsync'">
+            <startOffsets>
+              <option value="2929" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2943" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="486" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/Domain/BaseAggregateRoot.cs</url>
+          <line>54</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseAggregateRoot.cs" initialLine="54" containingFunctionPresentation="method 'Create'">
+            <startOffsets>
+              <option value="1743" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1791" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="488" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/Domain/BaseAggregateRoot.cs</url>
+          <line>55</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseAggregateRoot.cs" initialLine="55" containingFunctionPresentation="method 'Create'">
+            <startOffsets>
+              <option value="1804" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1848" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="489" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/Domain/BaseAggregateRoot.cs</url>
+          <line>57</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseAggregateRoot.cs" initialLine="57" containingFunctionPresentation="method 'Create'">
+            <startOffsets>
+              <option value="1870" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1929" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="490" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/Domain/BaseAggregateRoot.cs</url>
+          <line>58</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseAggregateRoot.cs" initialLine="58" containingFunctionPresentation="method 'Create'">
+            <startOffsets>
+              <option value="1942" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1968" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="491" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/Domain/BaseAggregateRoot.cs</url>
+          <line>59</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseAggregateRoot.cs" initialLine="59" containingFunctionPresentation="method 'Create'">
+            <startOffsets>
+              <option value="1986" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2016" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="492" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/Domain/BaseAggregateRoot.cs</url>
+          <line>62</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseAggregateRoot.cs" initialLine="62" containingFunctionPresentation="method 'Create'">
+            <startOffsets>
+              <option value="2090" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2111" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="493" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/Domain/BaseAggregateRoot.cs</url>
+          <line>64</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseAggregateRoot.cs" initialLine="64" containingFunctionPresentation="method 'Create'">
+            <startOffsets>
+              <option value="2133" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2147" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="494" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/Domain/BaseAggregateRoot.cs</url>
+          <line>47</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseAggregateRoot.cs" initialLine="47" containingFunctionPresentation="constructor 'BaseAggregateRoot'">
+            <startOffsets>
+              <option value="1407" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1424" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="495" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/Domain/BaseAggregateRoot.cs</url>
+          <line>60</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseAggregateRoot.cs" initialLine="60" containingFunctionPresentation="method 'Create'">
+            <startOffsets>
+              <option value="2037" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2068" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="496" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MicroPack/src/Domain/BaseDomainEvent.cs</url>
+          <line>23</line>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseDomainEvent.cs" initialLine="23" containingFunctionPresentation="constructor 'BaseDomainEvent'">
+            <startOffsets>
+              <option value="765" />
+            </startOffsets>
+            <endOffsets>
+              <option value="801" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="497" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

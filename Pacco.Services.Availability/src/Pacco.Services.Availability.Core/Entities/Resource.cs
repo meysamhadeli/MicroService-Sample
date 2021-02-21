@@ -1,37 +1,28 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using MicroPack.Domain;
 using Pacco.Services.Availability.Core.Events;
 using Pacco.Services.Availability.Core.Exceptions;
 using Pacco.Services.Availability.Core.ValueObjects;
 
 namespace Pacco.Services.Availability.Core.Entities
 {
-    public class Resource : AggregateRoot
+    public class Resource : BaseAggregateRoot<Resource, Guid>
     {
-        private ISet<string> _tags = new HashSet<string>();
-        private ISet<Reservation> _reservations = new HashSet<Reservation>();
-        
-        public IEnumerable<string> Tags
+        public Resource()
         {
-            get => _tags;
-            private set => _tags = new HashSet<string>(value);
-        }
-        
-        public IEnumerable<Reservation> Reservations
-        {
-            get => _reservations;
-            private set => _reservations = new HashSet<Reservation>(value);
         }
 
-        public Resource(Guid id, IEnumerable<string> tags, IEnumerable<Reservation> reservations = null,
-            int version = 0)
+        public HashSet<Reservation> Reservations { get; private set; }
+        public HashSet<string> Tags { get; private set; }
+
+        public Resource(Guid id, IEnumerable<string> tags, IEnumerable<Reservation> reservations = null) : base(id)
         {
             ValidateTags(tags);
             Id = id;
-            Tags = tags;
-            Reservations = reservations ?? Enumerable.Empty<Reservation>();
-            Version = version;
+            Tags = tags.ToHashSet();
+            Reservations = reservations?.ToHashSet() ?? new HashSet<Reservation>();
         }
 
         private static void ValidateTags(IEnumerable<string> tags)
@@ -56,24 +47,24 @@ namespace Pacco.Services.Availability.Core.Entities
 
         public void AddReservation(Reservation reservation)
         {
-            var hasCollidingReservation = _reservations.Any(HasTheSameReservationDate);
+            var hasCollidingReservation = Reservations.Any(HasTheSameReservationDate);
             if (hasCollidingReservation)
             {
-                var collidingReservation = _reservations.First(HasTheSameReservationDate);
+                var collidingReservation = Reservations.First(HasTheSameReservationDate);
                 if (collidingReservation.Priority >= reservation.Priority)
                 {
                     throw new CannotExpropriateReservationException(Id, reservation.DateTime.Date);
                 }
 
-                if (_reservations.Remove(collidingReservation))
+                if (Reservations.Remove(collidingReservation))
                 {
-                    AddEvent(new ReservationCanceled(this, collidingReservation));
+                    AddEvent(new ReservationCanceled(new Resource(Id, Tags, Reservations), collidingReservation));
                 }
             }
 
-            if (_reservations.Add(reservation))
+            if (Reservations.Add(reservation))
             {
-                AddEvent(new ReservationAdded(this, reservation));
+                AddEvent(new ReservationAdded(new Resource(Id, Tags, Reservations), reservation));
             }
 
             bool HasTheSameReservationDate(Reservation r) => r.DateTime.Date == reservation.DateTime.Date;
@@ -81,22 +72,33 @@ namespace Pacco.Services.Availability.Core.Entities
 
         public void ReleaseReservation(Reservation reservation)
         {
-            if (!_reservations.Remove(reservation))
+            if (!Reservations.Remove(reservation))
             {
                 return;
             }
-            
-            AddEvent(new ReservationReleased(this, reservation));
+
+            AddEvent(new ReservationReleased(new Resource(Id, Tags, Reservations), reservation));
         }
 
         public void Delete()
         {
             foreach (var reservation in Reservations)
             {
-                AddEvent(new ReservationCanceled(this, reservation));
+                AddEvent(new ReservationCanceled(new Resource(Id, Tags, Reservations), reservation));
             }
-            
-            AddEvent(new ResourceDeleted(this));
+
+            AddEvent(new ResourceDeleted(Id, Tags, Reservations));
+        }
+
+        protected override void Apply(IDomainEvent<Guid> @event)
+        {
+            switch (@event)
+            {
+                case ResourceCreated r:
+                    this.Id = r.Id;
+                    this.Tags = r.Tags.ToHashSet();
+                    break;
+            }
         }
     }
 }

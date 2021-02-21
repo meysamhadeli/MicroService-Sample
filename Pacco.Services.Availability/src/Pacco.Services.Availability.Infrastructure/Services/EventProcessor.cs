@@ -2,11 +2,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MicroPack.CQRS.Events;
+using MicroPack.Domain;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Pacco.Services.Availability.Application.Events;
 using Pacco.Services.Availability.Application.Services;
-using Pacco.Services.Availability.Core.Events;
 
 namespace Pacco.Services.Availability.Infrastructure.Services
 {
@@ -40,6 +40,8 @@ namespace Pacco.Services.Availability.Infrastructure.Services
                 return;
             }
 
+            
+            
             _logger.LogTrace("Processing integration events...");
             await _messageBroker.PublishAsync(integrationEvents);
         }

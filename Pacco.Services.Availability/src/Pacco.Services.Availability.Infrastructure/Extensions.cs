@@ -1,9 +1,9 @@
 ﻿using System;
+using EventStore.ClientAPI;
 using MicroPack.Consul;
 using MicroPack.CQRS.Commands;
 using MicroPack.CQRS.Events;
-using MicroPack.CQRS.Queries;
-using MicroPack.Fabio;
+using MicroPack.EventStore;
 using MicroPack.Http;
 using MicroPack.MessageBrokers.CQRS;
 using MicroPack.MessageBrokers.Outbox;
@@ -26,10 +26,11 @@ using Pacco.Services.Availability.Application.Commands;
 using Pacco.Services.Availability.Application.Events.External;
 using Pacco.Services.Availability.Application.Services;
 using Pacco.Services.Availability.Application.Services.Clients;
+using Pacco.Services.Availability.Core.Entities;
+using Pacco.Services.Availability.Core.Events;
 using Pacco.Services.Availability.Core.Repositories;
 using Pacco.Services.Availability.Infrastructure.Decorators;
 using Pacco.Services.Availability.Infrastructure.Exceptions;
-using Pacco.Services.Availability.Infrastructure.Metrics;
 using Pacco.Services.Availability.Infrastructure.Mongo.Documents;
 using Pacco.Services.Availability.Infrastructure.Mongo.Repositories;
 using Pacco.Services.Availability.Infrastructure.Services;
@@ -60,7 +61,7 @@ namespace Pacco.Services.Availability.Infrastructure
             services.AddCertificateAuthentication();
             services.AddSecurity();
             //.AddFabio();
-           // services.AddHostedService<MetricsJob>();
+            // services.AddHostedService<MetricsJob>();
             services.AddMetricsInternal();
             services.AddJaeger();
 
@@ -71,6 +72,9 @@ namespace Pacco.Services.Availability.Infrastructure
             services.AddMongo()
                 .AddMongoRepository<ResourceDocument, Guid>("resources");
 
+            services.AddEventStore()
+                .AddEventsRepository<Resource, Guid>();
+            
             return services;
         }
 
