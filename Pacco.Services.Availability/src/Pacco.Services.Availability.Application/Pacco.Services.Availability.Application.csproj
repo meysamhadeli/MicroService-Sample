@@ -6,14 +6,13 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.10" />
-        <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.10" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.10"/>
+        <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.10"/>
     </ItemGroup>
 
     <ItemGroup>
-<!--        <PackageReference Include="MicroPack" Version="1.2.*" />-->
-      <ProjectReference Include="..\..\..\MicroPack\src\MicroPack.csproj" />
-      <ProjectReference Include="..\Pacco.Services.Availability.Core\Pacco.Services.Availability.Core.csproj" />
+        <PackageReference Include="MicroPack" Version="1.2.*"/>
+        <ProjectReference Include="..\Pacco.Services.Availability.Core\Pacco.Services.Availability.Core.csproj"/>
     </ItemGroup>
 
 </Project>

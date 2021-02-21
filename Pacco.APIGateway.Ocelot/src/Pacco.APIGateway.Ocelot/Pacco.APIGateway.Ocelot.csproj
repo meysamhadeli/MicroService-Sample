@@ -35,7 +35,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\MicroPack\src\MicroPack.csproj" />
+    <PackageReference Include="MicroPack" Version="1.2.*" />
   </ItemGroup>
 
 </Project>
