@@ -35,7 +35,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68b822f7-648c-444c-96de-7a0b39bf4f4d" name="Default Changelist" comment="change refrence to package micropack" />
+    <list default="true" id="68b822f7-648c-444c-96de-7a0b39bf4f4d" name="Default Changelist" comment="change refrence to package micropack">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.sln" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -479,6 +484,8 @@
       <workItem from="1613833772744" duration="652000" />
       <workItem from="1613835898869" duration="9300000" />
       <workItem from="1613902467504" duration="4655000" />
+      <workItem from="1613916523066" duration="110000" />
+      <workItem from="1613916826921" duration="2000" />
     </task>
     <task id="LOCAL-00001" summary="Add MicroPack to solution">
       <created>1603465351817</created>
@@ -585,105 +592,49 @@
         <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs</url>
           <line>111</line>
-          <properties documentPath="$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs" initialLine="111">
-            <startOffsets>
-              <option value="4720" />
-            </startOffsets>
-            <endOffsets>
-              <option value="4744" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs" initialLine="111" />
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs</url>
           <line>113</line>
-          <properties documentPath="$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs" initialLine="113">
-            <startOffsets>
-              <option value="4775" />
-            </startOffsets>
-            <endOffsets>
-              <option value="4863" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs" initialLine="113" />
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs</url>
           <line>116</line>
-          <properties documentPath="$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs" initialLine="116">
-            <startOffsets>
-              <option value="5001" />
-            </startOffsets>
-            <endOffsets>
-              <option value="5032" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs" initialLine="116" />
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs</url>
           <line>117</line>
-          <properties documentPath="$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs" initialLine="117">
-            <startOffsets>
-              <option value="5049" />
-            </startOffsets>
-            <endOffsets>
-              <option value="5050" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs" initialLine="117" />
           <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs</url>
           <line>114</line>
-          <properties documentPath="$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs" initialLine="114">
-            <startOffsets>
-              <option value="4880" />
-            </startOffsets>
-            <endOffsets>
-              <option value="4962" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs" initialLine="114" />
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs</url>
           <line>47</line>
-          <properties documentPath="$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs" initialLine="47">
-            <startOffsets>
-              <option value="1890" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2669" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs" initialLine="47" />
           <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs</url>
           <line>95</line>
-          <properties documentPath="$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs" initialLine="97">
-            <startOffsets>
-              <option value="4110" />
-            </startOffsets>
-            <endOffsets>
-              <option value="4163" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs" initialLine="97" />
           <option name="timeStamp" value="65" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/MicroPack/src/MessageBrokers.CQRS/Dispatchers/ServiceBusMessageDispatcher.cs</url>
           <line>18</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\MicroPack\src\MessageBrokers.CQRS\Dispatchers\ServiceBusMessageDispatcher.cs" initialLine="18" containingFunctionPresentation="method 'SendAsync'">
-            <startOffsets>
-              <option value="654" />
-            </startOffsets>
-            <endOffsets>
-              <option value="716" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\MicroPack\src\MessageBrokers.CQRS\Dispatchers\ServiceBusMessageDispatcher.cs" initialLine="18" containingFunctionPresentation="method 'SendAsync'" />
           <option name="timeStamp" value="111" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
@@ -914,14 +865,7 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/MicroPack/src/WebApi.Security/DefaultCertificatePermissionValidator.cs</url>
           <line>9</line>
-          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\MicroPack\src\WebApi.Security\DefaultCertificatePermissionValidator.cs" initialLine="9" containingFunctionPresentation="method 'HasAccess'">
-            <startOffsets>
-              <option value="392" />
-            </startOffsets>
-            <endOffsets>
-              <option value="396" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\Meysam\Desktop\Pacco\MicroPack\src\WebApi.Security\DefaultCertificatePermissionValidator.cs" initialLine="9" containingFunctionPresentation="method 'HasAccess'" />
           <option name="timeStamp" value="302" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
@@ -1155,209 +1099,97 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/MicroPack/src/EventStore/EventsRepository.cs</url>
           <line>88</line>
-          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\EventsRepository.cs" initialLine="88" containingFunctionPresentation="method 'RehydrateAsync'">
-            <startOffsets>
-              <option value="2814" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2903" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\EventsRepository.cs" initialLine="88" containingFunctionPresentation="method 'RehydrateAsync'" />
           <option name="timeStamp" value="481" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/MicroPack/src/EventStore/EventsRepository.cs</url>
           <line>96</line>
-          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\EventsRepository.cs" initialLine="96" containingFunctionPresentation="method 'Map'">
-            <startOffsets>
-              <option value="3154" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3240" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\EventsRepository.cs" initialLine="96" containingFunctionPresentation="method 'Map'" />
           <option name="timeStamp" value="482" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/MicroPack/src/EventStore/JsonEventSerializer.cs</url>
           <line>43</line>
-          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\JsonEventSerializer.cs" initialLine="43" containingFunctionPresentation="method 'Deserialize'">
-            <startOffsets>
-              <option value="1547" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1631" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\JsonEventSerializer.cs" initialLine="43" containingFunctionPresentation="method 'Deserialize'" />
           <option name="timeStamp" value="483" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/MicroPack/src/EventStore/JsonEventSerializer.cs</url>
           <line>45</line>
-          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\JsonEventSerializer.cs" initialLine="45" containingFunctionPresentation="method 'Deserialize'">
-            <startOffsets>
-              <option value="1645" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1680" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\JsonEventSerializer.cs" initialLine="45" containingFunctionPresentation="method 'Deserialize'" />
           <option name="timeStamp" value="484" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/MicroPack/src/EventStore/JsonEventSerializer.cs</url>
           <line>46</line>
-          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\JsonEventSerializer.cs" initialLine="46" containingFunctionPresentation="method 'Deserialize'">
-            <startOffsets>
-              <option value="1689" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1690" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\JsonEventSerializer.cs" initialLine="46" containingFunctionPresentation="method 'Deserialize'" />
           <option name="timeStamp" value="485" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/MicroPack/src/EventStore/EventsRepository.cs</url>
           <line>90</line>
-          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\EventsRepository.cs" initialLine="90" containingFunctionPresentation="method 'RehydrateAsync'">
-            <startOffsets>
-              <option value="2929" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2943" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\EventStore\EventsRepository.cs" initialLine="90" containingFunctionPresentation="method 'RehydrateAsync'" />
           <option name="timeStamp" value="486" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/MicroPack/src/Domain/BaseAggregateRoot.cs</url>
           <line>54</line>
-          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseAggregateRoot.cs" initialLine="54" containingFunctionPresentation="method 'Create'">
-            <startOffsets>
-              <option value="1743" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1791" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseAggregateRoot.cs" initialLine="54" containingFunctionPresentation="method 'Create'" />
           <option name="timeStamp" value="488" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/MicroPack/src/Domain/BaseAggregateRoot.cs</url>
           <line>55</line>
-          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseAggregateRoot.cs" initialLine="55" containingFunctionPresentation="method 'Create'">
-            <startOffsets>
-              <option value="1804" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1848" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseAggregateRoot.cs" initialLine="55" containingFunctionPresentation="method 'Create'" />
           <option name="timeStamp" value="489" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/MicroPack/src/Domain/BaseAggregateRoot.cs</url>
           <line>57</line>
-          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseAggregateRoot.cs" initialLine="57" containingFunctionPresentation="method 'Create'">
-            <startOffsets>
-              <option value="1870" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1929" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseAggregateRoot.cs" initialLine="57" containingFunctionPresentation="method 'Create'" />
           <option name="timeStamp" value="490" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/MicroPack/src/Domain/BaseAggregateRoot.cs</url>
           <line>58</line>
-          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseAggregateRoot.cs" initialLine="58" containingFunctionPresentation="method 'Create'">
-            <startOffsets>
-              <option value="1942" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1968" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseAggregateRoot.cs" initialLine="58" containingFunctionPresentation="method 'Create'" />
           <option name="timeStamp" value="491" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/MicroPack/src/Domain/BaseAggregateRoot.cs</url>
           <line>59</line>
-          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseAggregateRoot.cs" initialLine="59" containingFunctionPresentation="method 'Create'">
-            <startOffsets>
-              <option value="1986" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2016" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseAggregateRoot.cs" initialLine="59" containingFunctionPresentation="method 'Create'" />
           <option name="timeStamp" value="492" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/MicroPack/src/Domain/BaseAggregateRoot.cs</url>
           <line>62</line>
-          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseAggregateRoot.cs" initialLine="62" containingFunctionPresentation="method 'Create'">
-            <startOffsets>
-              <option value="2090" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2111" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseAggregateRoot.cs" initialLine="62" containingFunctionPresentation="method 'Create'" />
           <option name="timeStamp" value="493" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/MicroPack/src/Domain/BaseAggregateRoot.cs</url>
           <line>64</line>
-          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseAggregateRoot.cs" initialLine="64" containingFunctionPresentation="method 'Create'">
-            <startOffsets>
-              <option value="2133" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2147" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseAggregateRoot.cs" initialLine="64" containingFunctionPresentation="method 'Create'" />
           <option name="timeStamp" value="494" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/MicroPack/src/Domain/BaseAggregateRoot.cs</url>
           <line>47</line>
-          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseAggregateRoot.cs" initialLine="47" containingFunctionPresentation="constructor 'BaseAggregateRoot'">
-            <startOffsets>
-              <option value="1407" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1424" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseAggregateRoot.cs" initialLine="47" containingFunctionPresentation="constructor 'BaseAggregateRoot'" />
           <option name="timeStamp" value="495" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/MicroPack/src/Domain/BaseAggregateRoot.cs</url>
           <line>60</line>
-          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseAggregateRoot.cs" initialLine="60" containingFunctionPresentation="method 'Create'">
-            <startOffsets>
-              <option value="2037" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2068" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseAggregateRoot.cs" initialLine="60" containingFunctionPresentation="method 'Create'" />
           <option name="timeStamp" value="496" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/MicroPack/src/Domain/BaseDomainEvent.cs</url>
           <line>23</line>
-          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseDomainEvent.cs" initialLine="23" containingFunctionPresentation="constructor 'BaseDomainEvent'">
-            <startOffsets>
-              <option value="765" />
-            </startOffsets>
-            <endOffsets>
-              <option value="801" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\meysam\Desktop\Pacco\MicroPack\src\Domain\BaseDomainEvent.cs" initialLine="23" containingFunctionPresentation="constructor 'BaseDomainEvent'" />
           <option name="timeStamp" value="497" />
         </line-breakpoint>
       </breakpoints>
