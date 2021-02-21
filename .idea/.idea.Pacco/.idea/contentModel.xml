@@ -98,6 +98,29 @@
               <e p="PagedResultBase.cs" t="Include" />
             </e>
           </e>
+          <e p="Domain" t="Include">
+            <e p="Aggregate.cs" t="Include" />
+            <e p="BaseAggregateRoot.cs" t="Include" />
+            <e p="BaseDomainEvent.cs" t="Include" />
+            <e p="BaseEntity.cs" t="Include" />
+            <e p="IAggregateRoot.cs" t="Include" />
+            <e p="IDomainEvent.cs" t="Include" />
+            <e p="IEntity.cs" t="Include" />
+            <e p="ValueObject.cs" t="Include" />
+          </e>
+          <e p="EventStore" t="Include">
+            <e p="EventSourceOptions.cs" t="Include" />
+            <e p="EventsRepository.cs" t="Include" />
+            <e p="EventsService.cs" t="Include" />
+            <e p="EventStoreConnectionWrapper.cs" t="Include" />
+            <e p="Extensions.cs" t="Include" />
+            <e p="IEventSerializer.cs" t="Include" />
+            <e p="IEventsRepository.cs" t="Include" />
+            <e p="IEventsService.cs" t="Include" />
+            <e p="IEventStoreConnectionWrapper.cs" t="Include" />
+            <e p="JsonEventSerializer.cs" t="Include" />
+            <e p="PrivateSetterContractResolver.cs" t="Include" />
+          </e>
           <e p="Fabio" t="Include">
             <e p="Builders" t="Include">
               <e p="FabioOptionsBuilder.cs" t="Include" />
@@ -126,7 +149,6 @@
             <e p="MicroPackHttpLoggingFilter.cs" t="Include" />
             <e p="MicroPackLoggingScopeHttpMessageHandler.cs" t="Include" />
           </e>
-          <e p="icon.png" t="Include" />
           <e p="Logging" t="Include">
             <e p="CorrelationContextLoggingMiddleware.cs" t="Include" />
             <e p="Extensions.cs" t="Include" />
@@ -569,7 +591,6 @@
               <e p="Resource.cs" t="Include" />
             </e>
             <e p="Events" t="Include">
-              <e p="IDomainEvent.cs" t="Include" />
               <e p="ReservationAdded.cs" t="Include" />
               <e p="ReservationCanceled.cs" t="Include" />
               <e p="ReservationReleased.cs" t="Include" />

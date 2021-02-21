@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using MicroPack.CQRS.Events;
+using MicroPack.Domain;
 using Pacco.Services.Availability.Application.Events;
 using Pacco.Services.Availability.Application.Services;
 using Pacco.Services.Availability.Core.Events;
@@ -17,7 +18,7 @@ namespace Pacco.Services.Availability.Infrastructure.Services
         public IEvent Map(IDomainEvent @event)
             => @event switch
             {
-                ResourceCreated e => (IEvent) new ResourceAdded(e.Resource.Id),
+                //ResourceCreated e => (IEvent) new ResourceAdded(e.Resource.Id),
                 ResourceDeleted e => new Application.Events.ResourceDeleted(e.Resource.Id),
                 ReservationAdded e => new ResourceReserved(e.Resource.Id, e.Reservation.DateTime),
                 ReservationReleased e => new ResourceReservationReleased(e.Resource.Id, e.Reservation.DateTime),

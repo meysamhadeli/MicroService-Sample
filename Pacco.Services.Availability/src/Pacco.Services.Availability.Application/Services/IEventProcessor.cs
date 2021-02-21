@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Pacco.Services.Availability.Core.Events;
+using MicroPack.Domain;
 
 namespace Pacco.Services.Availability.Application.Services
 {

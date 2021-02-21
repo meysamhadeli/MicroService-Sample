@@ -20,7 +20,6 @@ namespace MicroPack.Mongo
         // Helpful when dealing with integration testing
         private static bool _conventionsRegistered;
         private const string SectionName = "mongo";
-        private const string RegistryName = "persistence.mongoDb";
 
         public static IServiceCollection AddMongo(this IServiceCollection services, string sectionName = SectionName,
             Type seederType = null, bool registerConventions = true)

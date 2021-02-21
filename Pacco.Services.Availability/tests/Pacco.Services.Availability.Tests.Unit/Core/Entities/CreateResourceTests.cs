@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Pacco.Services.Availability.Core.Entities;
 using Pacco.Services.Availability.Core.Events;
@@ -16,7 +17,7 @@ namespace Pacco.Services.Availability.Tests.Unit.Core.Entities
         public void given_valid_id_and_tags_resource_should_be_created()
         {
             //Arrange
-            var id = new AggregateId();
+            var id = Guid.NewGuid();
             var tags = new[] { "tags"};
             //Act
             var resource = Act(id, tags);

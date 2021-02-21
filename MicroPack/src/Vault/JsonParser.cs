@@ -33,6 +33,7 @@ namespace MicroPack.Vault
                 ExitContext();
             }
         }
+        
 
         private void VisitProperty(JProperty property)
         {
