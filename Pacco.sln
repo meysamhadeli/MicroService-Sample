@@ -5,10 +5,6 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pacco.Services.Availability", "Pacco.Services.Availability", "{03040EA5-C4AA-4975-8152-EA8A5C251FB9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MicroPack", "MicroPack", "{D15AA996-012D-4DFD-80F5-5763A8ED6656}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroPack", "MicroPack\src\MicroPack.csproj", "{04965783-A24D-48CF-AC11-7E64CA2C7422}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pacco.Services.Identity", "Pacco.Services.Identity", "{979B3191-8EDF-42E3-B43B-3014E0DFDD64}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pacco.Services.Customers", "Pacco.Services.Customers", "{B618DD6A-6620-4652-A727-A3B309538788}"

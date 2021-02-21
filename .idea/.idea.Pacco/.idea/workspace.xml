@@ -35,265 +35,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68b822f7-648c-444c-96de-7a0b39bf4f4d" name="Default Changelist" comment="add even-store">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacco/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/MicroPack.sln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/scripts/dotnet-build-micro-pack.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/scripts/dotnet-pack-micro-pack.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Authentication/AccessTokenService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Authentication/AccessTokenValidatorMiddleware.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Authentication/AuthAttribute.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Authentication/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Authentication/IAccessTokenService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Authentication/IJwtHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Authentication/JsonWebToken.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Authentication/JsonWebTokenPayload.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Authentication/JwtAuthAttribute.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Authentication/JwtHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Authentication/JwtOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Commands/Dispatchers/CommandDispatcher.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Commands/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Commands/ICommand.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Commands/ICommandDispatcher.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Commands/ICommandHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Events/Dispatchers/EventDispatcher.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Events/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Events/IEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Events/IEventDispatcher.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Events/IEventHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Events/IRejectedEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Events/RejectedEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Queries/Dispatchers/QueryDispatcher.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Queries/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Queries/IFilter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Queries/IPagedFilter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Queries/IPagedQuery.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Queries/IQuery.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Queries/IQueryDispatcher.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Queries/IQueryHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Queries/PagedQueryBase.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Queries/PagedResult.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/CQRS/Queries/PagedResultBase.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Consul/Builders/ConsulOptionsBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Consul/ConsulOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Consul/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Consul/Http/ConsulHttpClient.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Consul/IConsulHttpClient.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Consul/IConsulOptionsBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Consul/IConsulService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Consul/IConsulServicesRegistry.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Consul/MessageHandlers/ConsulServiceDiscoveryMessageHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Consul/MessageHandlers/ConsulServiceNotFoundException.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Consul/Models/Connect.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Consul/Models/Proxy.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Consul/Models/ServiceAgent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Consul/Models/ServiceCheck.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Consul/Models/ServiceRegistration.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Consul/Models/SidecarService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Consul/Models/Upstream.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Consul/Models/Weights.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Consul/Services/ConsulHostedService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Consul/Services/ConsulService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Consul/Services/ConsulServicesRegistry.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/EventStore/EventSourceOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Fabio/Builders/FabioOptionsBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Fabio/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Fabio/FabioOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Fabio/Http/FabioHttpClient.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Fabio/IFabioHttpClient.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Fabio/IFabioOptionsBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Fabio/MessageHandlers/FabioMessageHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Http/EmptyCorrelationContextFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Http/EmptyCorrelationIdFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Http/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Http/HttpClientOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Http/HttpResult.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Http/ICorrelationContextFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Http/ICorrelationIdFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Http/IHttpClient.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Http/MicroPackHttpClient.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Http/MicroPackHttpLoggingFilter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Http/MicroPackLoggingScopeHttpMessageHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Logging/CorrelationContextLoggingMiddleware.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Logging/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Logging/LoggerOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Logging/Options/ConsoleOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Logging/Options/ElkOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Logging/Options/FileOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Logging/Options/SeqOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MailKit/Extension.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MailKit/MailKitOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.CQRS/Convey.MessageBrokers.CQRS.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.CQRS/Dispatchers/ServiceBusMessageDispatcher.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.CQRS/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.EntityFramework/Convey.MessageBrokers.Outbox.EntityFramework.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.EntityFramework/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.EntityFramework/Internals/EntityFrameworkMessageOutbox.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.Mongo/Convey.MessageBrokers.Outbox.Mongo.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.Mongo/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.Mongo/Internals/MongoMessageOutbox.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox.Mongo/Internals/MongoOutboxInitializer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Configurators/MessageOutboxConfigurator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Convey.MessageBrokers.Outbox.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/IMessageOutbox.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/IMessageOutboxAccessor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/IMessageOutboxConfigurator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Messages/InboxMessage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Messages/OutboxMessage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Outbox/InMemoryMessageOutbox.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/OutboxOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.Outbox/Processors/OutboxProcessor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Clients/RabbitMqClient.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Contexts/ContextProvider.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Conventions/ConventionsBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Conventions/ConventionsProvider.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Conventions/MessageConventions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/ConventionsRegistry.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Convey.MessageBrokers.RabbitMQ.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/IContextProvider.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/IConventions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/IConventionsBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/IConventionsProvider.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/IConventionsRegistry.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/IExceptionToMessageMapper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/IRabbitMqClient.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/IRabbitMqPlugin.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/IRabbitMqPluginsRegistry.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/IRabbitMqSerializer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Initializers/RabbitMqExchangeInitializer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Internals/RabbitMqHostedService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Plugins/IRabbitMqPluginAccessor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Plugins/IRabbitMqPluginsExecutor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Plugins/IRabbitMqPluginsRegistryAccessor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Plugins/RabbitMqPluginChain.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Plugins/RabbitMqPluginExecutor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Plugins/RabbitMqPluginsRegistry.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Publishers/RabbitMqPublisher.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/RabbitMqOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/RabbitMqPlugin.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Serializers/NewtonsoftJsonRabbitMqSerializer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers.RabbitMQ/Subscribers/RabbitMqSubscriber.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers/Convey.MessageBrokers.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers/CorrelationContextAccessor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers/IBusPublisher.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers/IBusSubscriber.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers/ICorrelationContextAccessor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers/IMessageProperties.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers/IMessagePropertiesAccessor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers/MessageAttribute.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers/MessageProperties.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MessageBrokers/MessagePropertiesAccessor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Metrics.AppMetrics/Builders/MetricsOptionsBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Metrics.AppMetrics/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Metrics.AppMetrics/IMetricsOptionsBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Metrics.AppMetrics/MetricsOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MicroPack.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MicroPack/ConveyBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MicroPack/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MicroPack/IConveyBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MicroPack/IServiceId.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MicroPack/MicroPackException.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MicroPack/ServiceId.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MicroPack/Types/AggregateId.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MicroPack/Types/AppOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MicroPack/Types/BaseEntity.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MicroPack/Types/DecoratorAttribute.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MicroPack/Types/IIdentifiable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MicroPack/Types/IInitializer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MicroPack/Types/IMessage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MicroPack/Types/IStartupInitializer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MicroPack/Types/MessageNamespaceAttribute.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/MicroPack/Types/StartupInitializer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Mongo/Builders/MongoDbOptionsBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Mongo/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Mongo/Factories/MongoSessionFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Mongo/IMongoDbInitializer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Mongo/IMongoDbOptionsBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Mongo/IMongoDbSeeder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Mongo/IMongoRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Mongo/IMongoSessionFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Mongo/Initializers/MongoDbInitializer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Mongo/MongoDbOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Mongo/Pagination.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Mongo/Repositories/MongoRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Mongo/Seeders/MongoDbSeeder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Redis/Builders/RedisOptionsBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Redis/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Redis/IRedisOptionsBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Redis/RedisOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Security/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Security/IEncryptor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Security/IHasher.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Security/ISigner.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Security/Internals/Encryptor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Security/Internals/Hasher.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Security/Internals/Signer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Swagger/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Swagger/ISwaggerOptionsBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Swagger/SwaggerOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Swagger/SwaggerOptionsBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger.RabbitMQ/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger.RabbitMQ/Plugins/JaegerPlugin.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger/Builders/JaegerOptionsBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger/Convey.Tracing.Jaeger.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger/IJaegerOptionsBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger/JaegerOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Tracing.Jaeger/Tracers/ConveyDefaultTracer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/ICertificatesIssuer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/ICertificatesService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/IKeyValueSecrets.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/ILeaseService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/Internals/CertificatesIssuer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/Internals/CertificatesService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/Internals/EmptyCertificatesIssuer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/Internals/KeyValueSecrets.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/Internals/LeaseService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/Internals/VaultHostedService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/JsonParser.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/LeaseData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/UserCredentials.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/VaultAuthTypeNotSupportedException.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/VaultException.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/Vault/VaultOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/WebApi.Security/CertificateMiddleware.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/WebApi.Security/DefaultCertificatePermissionValidator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/WebApi.Security/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/WebApi.Security/ICertificatePermissionValidator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/WebApi.Security/SecurityOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/WebApi/ConveyFormatterResolver.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/WebApi/DispatcherEndpointsBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/WebApi/EndpointsBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/WebApi/Exceptions/ErrorHandlerMiddleware.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/WebApi/Exceptions/ExceptionResponse.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/WebApi/Exceptions/IExceptionToResponseMapper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/WebApi/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/WebApi/Formatters/JsonInputFormatter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/WebApi/Formatters/JsonOutputFormatter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/WebApi/Helpers/Extensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/WebApi/IDispatcherEndpointsBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/WebApi/IEndpointsBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/WebApi/Parsers/JsonParser.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/WebApi/PublicContractAttribute.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/WebApi/PublicContractsMiddleware.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/WebApi/Requests/IRequest.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/WebApi/Requests/IRequestDispatcher.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/WebApi/Requests/IRequestHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/WebApi/Requests/RequestDispatcher.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/WebApi/WebApiEndpointDefinition.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroPack/src/WebApi/WebApiOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Pacco.APIGateway.Ocelot.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.APIGateway.Ocelot/src/Pacco.APIGateway.Ocelot/Pacco.APIGateway.Ocelot.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Pacco.Services.Availability.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Api/Pacco.Services.Availability.Api.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Pacco.Services.Availability.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Application/Pacco.Services.Availability.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Pacco.Services.Availability.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/src/Pacco.Services.Availability.Core/Pacco.Services.Availability.Core.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Pacco.Services.Availability.Tests.Shared.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Availability/tests/Pacco.Services.Availability.Tests.Shared/Pacco.Services.Availability.Tests.Shared.csproj" afterDir="false" />
-    </list>
+    <list default="true" id="68b822f7-648c-444c-96de-7a0b39bf4f4d" name="Default Changelist" comment="change refrence to package micropack" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -736,7 +478,7 @@
       <workItem from="1613829380782" duration="404000" />
       <workItem from="1613833772744" duration="652000" />
       <workItem from="1613835898869" duration="9300000" />
-      <workItem from="1613902467504" duration="4303000" />
+      <workItem from="1613902467504" duration="4655000" />
     </task>
     <task id="LOCAL-00001" summary="Add MicroPack to solution">
       <created>1603465351817</created>
@@ -766,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613913544499</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="change refrence to package micropack">
+      <created>1613915667082</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1613915667082</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -814,7 +563,8 @@
     <MESSAGE value="change in mongo repository" />
     <MESSAGE value="add rabbitMq" />
     <MESSAGE value="add even-store" />
-    <option name="LAST_COMMIT_MESSAGE" value="add even-store" />
+    <MESSAGE value="change refrence to package micropack" />
+    <option name="LAST_COMMIT_MESSAGE" value="change refrence to package micropack" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
